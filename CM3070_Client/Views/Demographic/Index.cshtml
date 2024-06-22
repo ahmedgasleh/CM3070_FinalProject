@@ -1,0 +1,636 @@
+﻿@inject IConfiguration _configuration;
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var health_region = new Dictionary<int, string>() { { 1, "Ontario" }, { 2, "Qubeac" }, { 3, "Alberta" }, { 4, "X" } };
+
+    var gender = new Dictionary<int, string>() { { 1, "Male" }, { 2, "Female" }, { 3, "X" }, { 4, "Unknown" } };
+
+    var address_type = new Dictionary<int, string>() { { 1, "Home" }, { 2, "business" } };
+
+    
+}
+
+
+
+<div id="content" class="container-fluid">
+    <div class="d-flex flex col-12 g-2">
+        <div id="targetId" hidden></div>
+        <div id="targetCallback" hidden></div>
+        <div class="col-2">
+            <div>
+                <img src="~/images/head_man-silhouette.jpg" width="120" height="120" />              
+            </div>            
+        </div>
+        <div class="col-10 py-4">
+            <div class="d-flex flex col-md-12">
+                <div class="d-flex flex col-3 px-2">
+                    <div class="col-3">
+                        <label class="col-form-label">First Name</label>                    
+                    </div>
+                    <div class="col-9"> 
+                        <input class="form-control bg-warning bg-opacity-10" name="txtFirstName" type="text" id="txtFirstName" tabindex="0">
+                    </div>           
+                </div> 
+                <div class="d-flex flex col-3 px-2">
+                    <div class="col-3">
+                        <label class="col-form-label">Last Name</label>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control bg-warning bg-opacity-10" name="txtLastName" type="text" id="txtLastName" tabindex="0" />
+                    </div>
+                </div>
+                <div class="d-flex flex col-3 px-2">
+                    <div class="col-3">
+                        <label  class="col-form-label">Health Number</label>
+                    </div>
+                    <div class="col-9">                  
+
+                        <div class="input-group mb-3">
+                            
+                            <input class="form-control bg-warning bg-opacity-10" name="txtHealthNumber" type="text" id="txtHealthNumber" tabindex="0" />
+                            <button class="btn btn-outline-primary" type="button" id="btnHealthNumber" onclick="GetPatient(); return;">...</button>
+                        </div>
+
+                        
+                    </div>
+                </div>           
+
+            </div>
+
+            <div class="d-flex flex col-md-12 py-4">                
+                <div class="d-flex flex col-3 px-2">
+                    <div class="col-3">
+                        <label class="col-form-label">Title:</label>                        
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" name="txtTitle" type="text" id="txtTitle" tabindex="0" />
+                    </div>
+                </div>          
+                <div class="d-flex flex col-3 px-2">
+                    <div class="col-3">
+                        <label class="col-form-label">Suffix:</label>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" name="txtSuffix" type="text" id="txtSuffix" tabindex="0" />
+                    </div>           
+                </div>
+                <div class="d-flex flex col-3 px-2">
+                    <div class="col-3">
+                        <label class="col-form-label">Patient Status:</label>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" name="txtPatientStatus" type="text" id="txtPatientStatus" tabindex="0" />
+                    </div>                  
+                   
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-1 py-4">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tbDemographic" role="tab" aria-controls="tbDemographic" aria-selected="true">Demographic</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tbProviders" role="tab" aria-controls="tbProviders" aria-selected="false" onclick="LoadTempTable(); return;">Providers</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#tbSchadule" role="tab" aria-controls="tbSchadule" aria-selected="false"> Schadule </a>
+            </li>
+        </ul>
+        <div class="tab-content pt-5" id="tab-content">
+            <div class="tab-pane active" id="tbDemographic" role="tabpanel" aria-labelledby="tab-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row g-1 py-2">
+                            <div class="col-12">
+                                <div class="d-flex flex col-10">
+                                    <div class="d-flex flex col-4">
+                                        <div class="col-2">
+                                            <label class="col-form-label">Health #</label>
+                                        </div>
+                                        <div class="col-5">
+                                            <input class="form-control bg-warning bg-opacity-10" name="txtHealthNumber2" type="text" id="txtHealthNumber2" tabindex="0" />
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                <select class="form-control" name="ddlHealthRegion" id="ddlHealthRegion">
+                                                    <option value="" selected disabled>Select Health Region</option>
+                                                    @foreach (var item in health_region)
+                                                    {
+                                                        <option value="@item.Key">@item.Value</option>
+                                                    }
+                                                </select>
+                                            </div>
+                                        </div>                           
+                                    </div>
+                                    <div class="px-2 d-flex flex col-3">
+                                        <div class="col-2">
+                                            <label class="col-form-label">Expiry</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <input class="form-control" name="txtExpiry" type="text" id="txtExpiry" tabindex="0" />
+                                        </div>                                       
+                                    </div>
+                                    <div class="px-2 d-flex flex col-3">
+                                        <div class="col-3">
+                                            <label class="col-form-label">File Number</label>
+                                        </div>
+                                        <div class="col-5">
+                                            <input class="form-control" name="txtFileNumber" type="text" id="txtFileNumber" tabindex="0" />
+                                        </div>
+                                        <div class="col-3">
+                                            <button type="button" class="form-control btn btn-outline-dark"> File </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-12">
+                            <div class="d-flex flex col-8">
+                                <div class="d-flex flex col-3">
+                                    <div class="col-4">
+                                        <label class="col-form-label"> Birth Date </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input class="form-control" name="txtBirthDate" type="text" id="txtBirthDate" tabindex="0" />
+                                    </div>                             
+                                </div>
+                                <div class="d-flex flex col-3">
+                                    <div class="col-2">
+                                        <label class="col-form-label"> Gender </label>
+                                    </div>
+                                    <div class="col-8">
+                                        <div>
+                                            <select class="form-control" name="ddlGender" id="ddlGender">
+                                                <option value="" selected disabled>Select Gender</option>
+                                                @foreach (var item in gender)
+                                                {
+                                                    <option value="@item.Key">@item.Value</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="d-flex flex col-4">
+                                    <div class="col-2">
+                                        <label class="col-form-label px-2"> Deceased </label>
+                                    </div>
+                                    <div class="col-1 py-1">
+                                        <input class=" form-control form-check-input px-2" type="checkbox" value="" id="isDeceased" >
+                                    </div>
+                                    <div class="col-4">
+                                        <input class="form-control px-2" name="txtDeceasedDate" type="text" id="txtDeceasedDate" tabindex="0" disabled />
+                                    </div>                        
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex col-8 py-2">
+                                <div class="col-1">
+                                    <label class="col-form-label"> FamilyPhys </label>
+                                </div>  
+                                
+                                <div class="col-3 px-3">
+                                    
+
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-warning bg-opacity-10" id="txtFamilyPhys" placeholder="Family Physician">
+                                        <input class="btn btn-outline-primary form-control" type="button" name="btnChoosePhysician" value="Family Physician" data-bs-toggle="modal" data-bs-target="#popRefPhysician" id="btnEditPhn" tabindex="0" onclick="AddFamilyPhysician(); return;">
+                                                                                                            
+                                       
+                                    </div>
+
+
+                                </div>
+                                
+                                                           
+                                
+                                <div class="col-1">
+                                    <label class="col-form-label px-2"> RefPhys </label>
+                                </div>
+                               
+                                <div class="col-3">                                    
+                                  
+
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-warning bg-opacity-10" id="txtRefPhys" placeholder="Refering Physician">
+                                        <input class="btn btn-outline-primary form-control" type="button" name="btnChoosePhysician" value="Refering Referring Physician" data-bs-toggle="modal" data-bs-target="#popRefPhysician" id="btnEditPhn" tabindex="0" onclick="AddRefPhysician(); return;">
+                                    </div>
+                                </div>
+                                
+                                                            
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-10">
+                            
+                            <div class="d-flex flex col-12">
+                                <div class="d-flex flex col-3">
+                                    <div class="d-flex flex col-2">
+                                        <label class="col-form-label">Address</label>
+
+                                    </div>
+                                    <div class="d-flex flex col-9">
+                                        <input class="form-control bg-warning bg-opacity-10" name="txtAddress" type="text" id="txtAddress" tabindex="0" />
+                                    </div>
+                                </div>                                 
+                                
+                                
+                                <div class="d-flex flex col-3">
+                                    <div class="d-flex flex col-2">
+                                        <label class="col-form-label">City</label>
+                                    </div>
+                                    <div class="d-flex flex col-10">
+                                        <input class="form-control bg-warning bg-opacity-10" name="txtCity" type="text" id="txtCity" tabindex="0" />
+                                        <div>
+                                            <select class="form-control" name="ddlProv" id="ddlProv">
+                                                <option value="" selected disabled>Select Prov</option>
+                                                @foreach (var item in health_region)
+                                                {
+                                                    <option value="@item.Key">@item.Value</option>
+                                                }
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                
+                                
+
+                               
+                                
+                                
+                                
+                                <div class="d-flex flex col-3">
+                                    <div class="d-flex flex col-3">
+                                        <label class="col-form-label">Postal/Zip</label>
+                                    </div>
+                                    <div class="d-flex flex col-9">
+                                        <input class="form-control bg-warning bg-opacity-10" name="txtPostal" type="text" id="txtPostal" tabindex="0" />
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex flex col-3">
+                                    <div class="d-flex flex col-3">
+                                        <label class="col-form-label">Type</label>
+
+                                    </div>
+                                    <div class="d-flex flex col-9">
+                                        <div>
+                                            <select class="form-control" name="ddlAddressType" id="ddlAddressType">
+                                                <option value="" selected disabled>Select Type</option>
+                                                @foreach (var item in address_type)
+                                                {
+                                                    <option value="@item.Key">@item.Value</option>
+                                                }
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                
+                                
+                               
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex col-12">
+                            <div class="d-flex flex col-3">
+                                <div class="d-flex flex col-3">
+                                    <label class="col-form-label">Phone Home</label>
+                                </div>
+                                <div class="d-flex flex col-9">
+                                    <input class="form-control bg-warning bg-opacity-10" name="txtPhoneHome" type="text" id="txtPhoneHome" tabindex="0" />
+                                </div>
+
+                                
+                                
+
+                            </div>
+                            <div class="d-flex flex col-3 px-2">
+                                <div class="d-flex flex col-3">
+                                    <label class="col-form-label"> Phone Work</label>
+                                </div>
+                                <div class="d-flex flex col-9">
+                                    <div class="d-flex flex col-10">
+
+                                        <input class="form-control bg-warning bg-opacity-10" name="txtPhoneWork" type="text" id="txtPhoneWork" tabindex="0" />
+
+                                    </div>
+                                    <div class="d-flex flex col-2">
+                                        <input class="form-control bg-warning bg-opacity-10" name="txtPhoneWorkExt" type="text" id="txtPhoneWorkExt" tabindex="0" size="3" />
+                                    </div>
+                                </div>
+                                                    
+                                
+
+                            </div>
+                            
+                            <div class="d-flex flex col-3 px-2">
+                                <div class="d-flex flex col-3">
+                                    <label class="col-form-label "> Phone Cell</label>
+                                </div>
+                                <div class="d-flex flex col-3">
+                                    <input class="form-control bg-warning bg-opacity-10" name="txtPhoneCell" type="text" id="txtPhoneCell" tabindex="0" />
+                                </div>
+                                
+                               
+
+                            </div>
+                            
+                           
+                           
+                        </div>                
+                    </div>
+                </div>       
+            </div>
+            <div class="tab-pane" id="tbProviders" role="tabpanel" aria-labelledby="ab-1">
+                <div class="col-12 px-2 py-2">
+                    <table id="tempTable" class="display" width="100%"></table>
+
+                </div>
+
+            </div>
+            <div class="tab-pane" id="tbSchadule" role="tabpanel" aria-labelledby="tbSchadule">
+                <div width="100%">
+                    <img src="~/images/calendar.png" />
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal popRefPhysician -->
+<div class="modal fade" id="popRefPhysician" tabindex="-1" role="dialog" aria-labelledby="popRefPhysician" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:800px">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Physician</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="width:20px">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="d-flex flex-column px-2 py-2">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                    </div>
+                    <section class="card-body" id="popRefPhysicianBody">
+                        <div> Search Parameters: </div>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-3">Physician ID: </label>
+                            <div class="col-9">
+                                <input class="col-9 form-control" name="txtPhysicianID" type="text" id="txtPhysicianID" style="width:190px;">
+                            </div>
+                        </div>
+                       
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-3">Last Name: </label>
+                            <div class="col-9">
+                                <input class="col-9 form-control" name="txtPhysicianLastName" type="text" id="txtPhysicianLastName" style="width:190px;">
+                            </div>
+                        </div>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-8"></label>
+                            <div class="col-2">
+                                <button class="btn btn-primary" name="btnSearch" onclick="ChoosePhysician(); return;" type="button" id="btnSearch"> Search </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-secondary" name="btnCancel" onclick="ClearPhysicianSearch(); return;" type="button" id="btnCancel"> Clear </button>
+                            </div>
+                        </div>
+
+                        <div class="mb-1">
+                            <label class="col-form-label">Select Physician</label>
+                            <div class="">
+                                <select class="form-control" size="25" name="PhysicianSearchResult" type="text" id="PhysicianSearchResult" style="width:755px; height:200px; ">
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnRefPhysicianCancel" onclick="CancelRefPhysician(); return false;">Cancel</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnRefPhysicianUpdate" onclick="SelectRefPhysician(); return false;">Select</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script type="text/javascript">
+
+        var APIUrl = '@_configuration["App:APIUrl"]';
+        var GenderList = @Json.Serialize(gender);
+        var RegionList = @Json.Serialize(health_region);
+
+        var AddressTypeList = @Json.Serialize(address_type);
+
+        console.log("API", APIUrl);
+
+        window.addEventListener("DOMContentLoaded", (event) => {
+
+            //LoadTempTable();
+        })
+
+        function GetPatient(){
+
+            let patientNumber = $('#txtHealthNumber').val();
+
+            GetThisPatient(patientNumber)
+
+        }        
+
+        async function GetThisPatient(pid) {
+
+            const response = await fetch(APIUrl + "GetDemographic/&pid=" + pid, {
+                method: 'GET',
+                headers: new Headers({                  
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    LoadPatientFormData(response, pid);            
+
+                })
+        }
+
+        function LoadPatientFormData(patient, id) {
+
+            SetDivElementText("txtFirstName", patient.first_name);
+            SetDivElementText("txtLastName", patient.last_name);
+            SetDivElementText("txtTitle", patient.title);
+            SetDivElementText("txtSuffix", "");
+            SetDivElementText("txtPatientStatus", "Active");
+            SetDivElementText("txtHealthNumber2", id);
+
+            let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
+            SetDivElementText("txtBirthDate", dob);
+
+            SetDivElementText("txtAddress", patient.address);
+            SetDivElementText("txtCity", patient.city);
+            SetDivElementText("txtPostal", patient.postal);
+
+
+            UpdateDropDown(patient.sex, "ddlGender", "Select Gender", GenderList);
+            UpdateDropDown("Ontario", "ddlHealthRegion", "Select Health Region", RegionList);
+            UpdateDropDown("Home", "ddlAddressType", "Select Type", AddressTypeList);          
+
+            UpdateDropDown("Ontario", "ddlProv", "Select Health Region", RegionList);
+            SetDivElementText("txtPhoneHome", patient.phone);
+            SetDivElementText("txtPhoneCell", patient.phone2);     
+
+        }
+
+        function UpdateDropDown(valueToSet, id, defaultValue, items) {
+
+            let currentElement = document.getElementById(id);            
+            currentElement.innerHTML = "";
+            const firtsItem = document.createElement("option");
+            firtsItem.setAttribute("value", "");
+            firtsItem.textContent = defaultValue; 
+            firtsItem.setAttribute("selected", "disabled");
+            currentElement.appendChild(firtsItem);
+            for (const [key, value] of Object.entries(items)) {
+                //console.log(key, value.systemEmail);
+                const item = document.createElement("option");
+                item.setAttribute("value", key);
+                if (value == valueToSet) {
+                    item.setAttribute("selected", "selected");
+                }
+                item.textContent = value;
+
+                currentElement.appendChild(item);
+            }
+        }
+
+        function SetDivElementText(id, value) {
+            let currentElement = document.getElementById(id);
+            currentElement.setAttribute("value", value);
+            currentElement.innerHTML = value;
+        }
+
+        function ApplyPhysicianData(pSearch) {
+
+            UpdatePhysicianSearchResult(pSearch, "PhysicianSearchResult");
+
+        }
+
+        function UpdatePhysicianSearchResult(items, id) {
+
+            let currentElement = document.getElementById(id);
+
+            for (const [key, value] of Object.entries(items)) {
+                //console.log(key, value.systemEmail);
+                const item = document.createElement("option");
+                item.setAttribute("value", value.PhysicianUID);
+                item.textContent = value.id + " " + value.lastName
+
+                currentElement.appendChild(item);
+            }
+
+        }
+               
+        function ClearPhysicianSearch() {
+            ClearInnerElement("PhysicianSearchResult");
+            ClearTextElement("txtPhysicianID");            
+            ClearTextElement("txtPhysicianLastName");
+        }
+
+        function AddRefPhysician() {
+            ClearPhysicianSearch();
+            SetDivElementValue("#targetId", "txtRefPhys");
+            SetDivElementValue("#targetCallback", "SetDivElementText");
+
+        }
+
+        function AddFamilyPhysician() {
+            ClearPhysicianSearch();
+            SetDivElementValue("#targetId", "txtFamilyPhys");
+            SetDivElementValue("#targetCallback", "SetDivElementText");
+        }
+
+        
+        async function ChoosePhysician() {
+            
+            let physicianID = $('#txtPhysicianID').val();
+            let lastName = $('#txtPhysicianLastName').val();
+
+
+            const response = await fetch(APIUrl + "PhysicianSearch", {
+                method: 'POST',
+                headers: new Headers({
+                    
+                    'Content-Type': 'application/json;charset=UTF-8',
+                }),
+                body: JSON.stringify({ "Number": physicianID, "LastName": lastName, })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log(response)
+
+                    ApplyPhysicianData(response);
+                })
+        }
+
+        function SelectRefPhysician() {
+
+            let value = GetElementAndSelectedInnerText('#PhysicianSearchResult');      
+            let idElement = document.getElementById("targetId");
+
+            let id = GetElementValueAtribute('targetId');
+            let callback = GetElementValueAtribute('targetCallback');          
+
+            if (value !== "") {
+
+                let splited = value.split('(')
+
+                if (callback === "AddItemToDropdownItems") {
+                    AddItemToDropdownItems(splited[0], id);
+                }
+
+                if (callback === "SetDivElementText") {
+                    SetDivElementText(id, splited[0])
+                }
+            }
+        }
+        
+
+        
+    </script>
+}

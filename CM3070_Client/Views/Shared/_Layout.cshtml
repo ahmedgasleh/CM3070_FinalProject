@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData ["Title"] - CM3070 EMR Client</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CM3070_Client.styles.css" asp-append-version="true" />
+    <link href="~/datatable/datatables.datatables.css" rel="stylesheet" />
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <link href="~/css/custom_css.css" rel="stylesheet" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="sb-nav-fixed" id="MainBody">
+    <div id="ContentContainer" class="flex-column">
+       
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <div class="px-4"></div>
+                <a class="navbar-brand px-4" asp-area="" asp-controller="Home" asp-action="Index">CM3070 EMR Client</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Demographic" asp-action="Index">Demographic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ProviderDetail" asp-action="Index">Provider Detail</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div id="layoutSidenav" class="h-100">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="side_nav_accordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <a class="nav-link" href="/Demographic">
+                                <i class="fas fa-pie-chart sb-nav-link-icon px-2 py-2" style="font-size:22px" data-bs-toggle="tooltip" data-bs-placement="right" title="Demographics"></i>
+                            </a>
+                            <a class="nav-link" href="/ProviderDetail">
+                                <i class="fas fa-briefcase sb-nav-link-icon px-2 py-2" style="font-size:22px" data-bs-toggle="tooltip" data-bs-placement="right" title="ProviderDetails"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>     
+            <div id="content-wrapper">
+                <main role="main">
+                    @RenderBody()
+                </main>
+            </div>           
+
+        </div>
+      
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - CM3070 EMR Client - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/datafetchandmapto.js"></script>
+    <script src="~/datatable/datatables.buttons.js"></script>
+    <script src="~/datatable/datatables.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

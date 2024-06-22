@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CM3070_Client.props" />
+</Project>

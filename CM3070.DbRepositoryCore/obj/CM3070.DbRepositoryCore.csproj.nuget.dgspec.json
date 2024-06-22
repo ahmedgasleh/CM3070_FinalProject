@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbRepositoryCore\\CM3070.DbRepositoryCore.csproj": {}
+  },
+  "projects": {
+    "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbContextCore\\CM3070.DbContextCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbContextCore\\CM3070.DbContextCore.csproj",
+        "projectName": "CM3070.DbContextCore",
+        "projectPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbContextCore\\CM3070.DbContextCore.csproj",
+        "packagesPath": "C:\\Users\\Dellal\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbContextCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dellal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbModelCore\\CM3070.DbModelCore.csproj": {
+                "projectPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbModelCore\\CM3070.DbModelCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbModelCore\\CM3070.DbModelCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbModelCore\\CM3070.DbModelCore.csproj",
+        "projectName": "CM3070.DbModelCore",
+        "projectPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbModelCore\\CM3070.DbModelCore.csproj",
+        "packagesPath": "C:\\Users\\Dellal\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbModelCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dellal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbRepositoryCore\\CM3070.DbRepositoryCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbRepositoryCore\\CM3070.DbRepositoryCore.csproj",
+        "projectName": "CM3070.DbRepositoryCore",
+        "projectPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbRepositoryCore\\CM3070.DbRepositoryCore.csproj",
+        "packagesPath": "C:\\Users\\Dellal\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbRepositoryCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dellal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbContextCore\\CM3070.DbContextCore.csproj": {
+                "projectPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070.DbContextCore\\CM3070.DbContextCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

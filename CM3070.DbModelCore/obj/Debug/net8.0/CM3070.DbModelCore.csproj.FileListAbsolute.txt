@@ -1,0 +1,13 @@
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\bin\Debug\net8.0\CM3070.DbModelCore.deps.json
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\bin\Debug\net8.0\CM3070.DbModelCore.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\bin\Debug\net8.0\CM3070.DbModelCore.pdb
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.csproj.AssemblyReference.cache
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.AssemblyInfoInputs.cache
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.AssemblyInfo.cs
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.csproj.CoreCompileInputs.cache
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.sourcelink.json
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\refint\CM3070.DbModelCore.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\CM3070.DbModelCore.pdb
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070.DbModelCore\obj\Debug\net8.0\ref\CM3070.DbModelCore.dll

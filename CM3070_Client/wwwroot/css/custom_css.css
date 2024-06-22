@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+/* logo img */
+.logo_telemed {
+	border-width:0px;
+	max-height: 51px; 
+	max-width: 140px;
+}
+/* custom colour */
+.color-white {
+	background-color: #ffffff;
+}
+.color-min {
+	background-color:#FFFFE0;
+}
+.color-max {
+	background-color:#F1DCDB;
+}
+.color-avg {
+	background-color:#ADD8E6;
+}
+.color-value {
+	background-color:#90EE90;
+}
+.color-indicator {
+	height:30px;
+	width:30px;
+}
+/* custom colour */
+.text-bold {
+	font-size: 1.5rem
+}
+/* height container */
+.h-container {
+	height: 100%;
+}
+.h-90 {
+	height: 90%
+}
+.h-85 {
+	height: 85%
+}
+.report_content {
+	height: 70%;
+}
+.review_content {
+	height: 30%;
+	position: relative;
+	bottom: 0;
+}
+/* side menu */
+.side-active {
+	background-color: #869ddf;
+}
+/* review info */
+.odd {
+	background-color:#DAF0FF;
+}
+.info-left {
+	width: 45%;
+}
+.info-right {
+	width: 45%;
+}
