@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CM3070_Client.styles.css" asp-append-version="true" />
-    <link href="~/datatable/datatables.datatables.css" rel="stylesheet" />
+   @*  <link href="~/datatable/datatables.datatables.css" rel="stylesheet" /> *@
     <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="~/css/styles.css" rel="stylesheet" />
     <link href="~/css/custom_css.css" rel="stylesheet" />
@@ -31,6 +31,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="ProviderDetail" asp-action="Index">Provider Detail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Calendar" asp-action="Index">Calender</a>
                         </li>
                     </ul>
                 </div>
@@ -71,8 +74,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/datafetchandmapto.js"></script>
-    <script src="~/datatable/datatables.buttons.js"></script>
-    <script src="~/datatable/datatables.js"></script>
+@*     <script src="~/datatable/datatables.buttons.js"></script>
+    <script src="~/datatable/datatables.js"></script> *@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

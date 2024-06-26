@@ -10951,6 +10951,37 @@ body {
 #layoutError #layoutError_footer {
   min-width: 0;
 }
+#calendar {
+    margin: 0 auto;
+}
+
+    #calendar .fc-view-container {
+        background-color: #fff;
+        -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #calendar .fc-toolbar.fc-header-toolbar .fc-center {
+        display: block;
+    }
+
+#calendar-container {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.fc-header-toolbar {
+    /*
+    the calendar will be butting up against the edges,
+    but let's scoot in the header's buttons
+    */
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
 .img-error {
   max-width: 20rem;

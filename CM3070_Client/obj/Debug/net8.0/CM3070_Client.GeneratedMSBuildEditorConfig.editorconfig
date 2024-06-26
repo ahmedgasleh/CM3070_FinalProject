@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Development/University Of London/Final Project and CW2 of CM2020/Program Final Project CM3070/CM3070_FinalProject/CM3070_Client/Views/Calendar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Development/University Of London/Final Project and CW2 of CM2020/Program Final Project CM3070/CM3070_FinalProject/CM3070_Client/Views/Demographic/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb2dyYXBoaWNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

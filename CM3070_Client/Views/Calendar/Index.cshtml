@@ -1,0 +1,81 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container-fluid px-5 py-5" id='calendar-container'>
+    <div class="mb-4" id='calendar'></div>
+    <div class="px-4"></div>
+</div>
+
+<link href='~/fullcalendar/packages/core/main.css' rel='stylesheet' />
+<link href='~/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
+<script src="~/fullcalendar/packages/core/main.js"></script>
+<script src="~/fullcalendar/packages/interaction/main.js"></script>
+<script src="~/fullcalendar/packages/daygrid/main.js"></script>
+<script src="~/fullcalendar/packages/timegrid/main.js"></script>
+<script src="~/fullcalendar/packages/list/main.js"></script>
+
+
+
+@section Scripts{
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () { 
+
+            LoadCalendar();
+        
+        
+        });
+
+        function LoadCalendar() {
+
+            console.log("calender is loaded");
+
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+                height: 'parent',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                defaultView: 'dayGridMonth',
+                defaultDate: '2020-02-12',
+                height: 'parent',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+               
+
+                events: [
+                    {
+                        title: 'All Day Event',
+                        start: '2020-02-01',
+                        url: 'LoadEventDetail()',
+                    }
+                ],
+                eventClick: function (info) {
+                    info.jsEvent.preventDefault(); // don't let the browser navigate
+
+                    if (info.event.url) {
+                        const functionName = info.event.url;
+                        eval(functionName);
+                    }
+                }
+            });
+
+            calendar.render();
+
+        }
+
+        function LoadEventDetail() {
+            console.log("Load Event Detail");           
+        }
+
+     </script>
+}

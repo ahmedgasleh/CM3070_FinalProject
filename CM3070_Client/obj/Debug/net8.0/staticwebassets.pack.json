@@ -57,6 +57,458 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\index.global.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\index.global.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\index.global.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\index.global.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\index.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\index.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\index.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\index.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\README.md"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales-all.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales-all.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales-all.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales-all.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\af.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\af.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ar-dz.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ar-dz.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ar-kw.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ar-kw.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ar-ly.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ar-ly.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ar-ma.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ar-ma.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ar-sa.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ar-sa.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ar-tn.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ar-tn.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ar.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ar.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\bg.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\bg.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\bs.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\bs.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ca.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ca.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\cs.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\cs.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\da.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\da.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\de.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\de.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\el.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\el.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\en-au.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\en-au.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\en-gb.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\en-gb.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\en-nz.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\en-nz.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\es-us.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\es-us.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\es.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\es.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\et.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\et.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\eu.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\eu.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\fa.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\fa.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\fi.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\fi.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\fr-ca.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\fr-ca.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\fr-ch.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\fr-ch.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\fr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\fr.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\gl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\gl.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\he.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\he.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\hi.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\hi.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\hr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\hr.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\hu.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\hu.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\id.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\id.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\is.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\is.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\it.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\it.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ja.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ja.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ka.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ka.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\kk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\kk.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ko.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ko.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\lb.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\lb.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\lt.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\lt.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\lv.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\lv.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\mk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\mk.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ms.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ms.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\nb.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\nb.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\nl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\nl.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\nn.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\nn.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\pl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\pl.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\pt-br.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\pt-br.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\pt.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\pt.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ro.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ro.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\ru.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\ru.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\sk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\sk.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\sl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\sl.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\sq.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\sq.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\sr-cyrl.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\sr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\sr.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\sv.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\sv.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\th.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\th.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\tr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\tr.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\uk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\uk.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\vi.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\vi.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\zh-cn.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\locales\\zh-tw.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\locales\\zh-tw.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\main.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\main.d.ts"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\main.esm.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\main.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\main.min.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\main.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\core\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\core\\package.json"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\README.md"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\main.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\main.d.ts"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\main.esm.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\main.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\main.min.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\main.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\daygrid\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\daygrid\\package.json"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\interaction\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\interaction\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\interaction\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\interaction\\README.md"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\interaction\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\interaction\\main.d.ts"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\interaction\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\interaction\\main.esm.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\interaction\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\interaction\\main.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\interaction\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\interaction\\main.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\interaction\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\interaction\\package.json"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\README.md"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\main.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\main.d.ts"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\main.esm.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\main.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\main.min.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\main.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\list\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\list\\package.json"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\README.md"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\main.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\main.d.ts"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\main.esm.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\main.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\main.min.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\main.min.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\fullcalendar\\packages\\timegrid\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\packages\\timegrid\\package.json"
+    },
+    {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\images\\Calendar.png",
       "PackagePath": "staticwebassets\\images\\Calendar.png"
     },
