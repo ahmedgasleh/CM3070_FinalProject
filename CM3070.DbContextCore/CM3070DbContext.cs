@@ -19,6 +19,12 @@ namespace CM3070.DbContextCore
         public virtual DbSet<Provider> Provider { get; set; }
         public virtual DbSet<ProviderFacility> ProviderFacility { get; set; }
         public virtual DbSet<ScheduleDate> ScheduleDate { get; set; }
+        public virtual DbSet<Document> Document { get; set; }
+        public virtual DbSet<LabPatientPhysicianInfo> LabPatientPhysicianInfo { get; set; }
+        public virtual DbSet<LabRequestReportLink> LabRequestReportLink { get; set; }
+        public virtual DbSet<LabTestResults> LabTestResult { get; set; }
+        public virtual DbSet<Tickler> Tickler { get; set; }
+        public virtual DbSet<Tickler_Category> Tickler_Categories { get; set; }
 
         protected override void OnModelCreating ( ModelBuilder modelBuilder )
         {
@@ -56,6 +62,44 @@ namespace CM3070.DbContextCore
                 entity.HasKey(e => e.id);
 
             });
+
+            modelBuilder.Entity<Document>(entity =>
+            {
+                entity.HasKey(e => e.document_no);
+
+            });
+
+            modelBuilder.Entity<LabPatientPhysicianInfo>(entity =>
+            {
+                entity.HasKey(e => e.id);
+
+            });
+
+            modelBuilder.Entity<LabRequestReportLink>(entity =>
+            {
+                entity.HasKey(e => e.id);
+
+            });
+
+            modelBuilder.Entity<LabTestResults>(entity =>
+            {
+                entity.HasKey(e => e.id);
+
+            });
+
+            modelBuilder.Entity<Tickler>(entity =>
+            {
+                entity.HasKey(e => e.tickler_no);
+
+            });
+
+            modelBuilder.Entity<Tickler_Category>(entity =>
+            {
+                entity.HasKey(e => e.id);
+
+            });
+
+
         }
     }
 
