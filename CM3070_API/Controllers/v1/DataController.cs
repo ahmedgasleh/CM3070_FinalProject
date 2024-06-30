@@ -32,6 +32,20 @@ namespace CM3070_API.Controllers.v1
             return Ok(_repositoryCore.PhysicianSearch(psearch.Id, psearch.LastName));
         }
 
-        
+        [HttpPost(ApiRoutes.Posts.GetSchedule)]
+        public async Task<IActionResult> GetSchedule ( )
+        {
+
+            return Ok(_repositoryCore.GetSchedule());
+        }
+
+        [HttpPost(ApiRoutes.Posts.GetScheduleByDate)]
+        public async Task<IActionResult> GetScheduleByDate (DateTime dateTime)
+        {
+
+            return Ok(_repositoryCore.GetSchedule(dateTime));
+        }
+
+
     }
 }

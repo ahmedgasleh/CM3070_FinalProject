@@ -3,6 +3,7 @@ using CM3070.DbModelCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,16 +85,65 @@ namespace CM3070.DbRepositoryCore
             foreach (var p in result) {
 
                 physicianSearchParams.Add(new PhysicianSearchParams { Id = p.provider_no, LastName = p.last_name });
-
-
             }
 
-            //physicianSearchParams.Add(new PhysicianSearchParams { Id = "1001", LastName = "Moo (13 Huf Rd)" });
-            //physicianSearchParams.Add(new PhysicianSearchParams { Id = "1002", LastName = "Klien (MakelJackson)" });
-            //physicianSearchParams.Add(new PhysicianSearchParams { Id = "1003", LastName = "Kavin (19 MakelJackson)" });
-            //physicianSearchParams.Add(new PhysicianSearchParams { Id = "1004", LastName = "Lady (13 HokeyRd)" });
-
             return physicianSearchParams;
+        }
+
+        public List<SchaduleEvents> GetSchedule ()
+        {
+            List<SchaduleEvents> schaduleEvents  = new List<SchaduleEvents>();
+
+            var scheduleDates = _cm3070DbContext.ScheduleDate.Where(s => s.id > 0).ToArray();
+
+            foreach (var p in scheduleDates)
+            {
+                schaduleEvents.Add(new SchaduleEvents { title = p.reason + "|" + p.id.ToString() + "|" + p.provider_no, start = p.sdate.ToString("yyyy-MM-ddThh:mm:ss"), end = CalculateEnd(p.sdate, p.hour), color = GetEventColor(p.reason), url = "LoadEventDetail(" + p.id + ")" });
+            }
+
+            return schaduleEvents;
+        }
+
+        
+
+        public List<SchaduleEvents> GetSchedule ( DateTime dateTime )
+        {
+            List<SchaduleEvents> schaduleEvents = new List<SchaduleEvents>();
+
+            var scheduleDates = _cm3070DbContext.ScheduleDate.Where(s => s.sdate >=  dateTime).ToArray();
+
+            foreach (var p in scheduleDates)
+            {
+                schaduleEvents.Add(new SchaduleEvents { title = p.reason + "|" + p.id.ToString() + "|" + p.provider_no, start = p.sdate.ToString("yyyy-MM-ddThh:mm:ss"), end = CalculateEnd(p.sdate, p.hour), color = GetEventColor(p.reason), url = "LoadEventDetail(" + p.id +")" });
+            }
+
+            return schaduleEvents;
+        }
+
+        private string GetEventColor ( string reason )
+        {
+            var eventColor = new Dictionary<string, string>() { { "#378006", "Visit" }, { "#86D1FC", "Follow" }, { "#EBE134", "Unknown" } };
+            
+            foreach(var item in eventColor)
+            {
+                if (reason.ToLower().Contains(item.Value.ToLower()))
+                {
+                    return item.Key;
+                }
+            }
+
+            return "#EBE134";
+        }
+
+        private string CalculateEnd ( DateTime sdate, string hour )
+        {
+            string result = string.Empty;
+
+            var ddate = sdate.AddMinutes(Convert.ToInt32(hour));
+
+            result = ddate.ToString("yyyy-MM-ddThh:mm:ss");
+
+            return result;
         }
     }
 }

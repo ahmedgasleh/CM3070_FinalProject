@@ -25,6 +25,7 @@ namespace CM3070_Client
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            
 
             app.UseRouting();
 

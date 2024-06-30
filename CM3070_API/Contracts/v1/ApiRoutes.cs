@@ -16,7 +16,9 @@ namespace CM3070_API.Contracts.v1
         {
             public const string GetDemographic = "/GetDemographic/{pid}";
             public const string PhysicianSearch = "/PhysicianSearch";
-      
+            public const string GetSchedule = "/GetSchedule";
+            public const string GetScheduleByDate = "/GetScheduleByDate/{dte}";
+
             //public const string GetPhysician = Base + "/Physician/{search}/&uuid={uuid}";
 
         }

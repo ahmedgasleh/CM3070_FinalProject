@@ -1,7 +1,10 @@
-﻿@*
+﻿@inject IConfiguration _configuration;
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    var eventColor = new Dictionary<string, string>() { { "#378006", "Visit" }, { "#86D1FC", "Follow" }, { "#EBE134", "Unknown" } };
 }
 
 <div class="container-fluid px-5 py-5" id='calendar-container'>
@@ -23,16 +26,37 @@
 @section Scripts{
     <script type="text/javascript">
 
-        document.addEventListener('DOMContentLoaded', function () { 
+        var APIUrl = '@_configuration["App:APIUrl"]';
 
-            LoadCalendar();
-        
+        document.addEventListener('DOMContentLoaded', function () {
+
+            GetCalenderEvents();        
         
         });
 
-        function LoadCalendar() {
+        async function GetCalenderEvents() {
 
-            console.log("calender is loaded");
+            console.log("API", APIUrl);
+
+            const response = await fetch(APIUrl + "GetSchedule", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    LoadCalendar(response);
+
+                })
+        }
+
+        function LoadCalendar(data) {
+
+            console.log("calender is loaded", data);
 
             var calendarEl = document.getElementById('calendar');
 
@@ -45,20 +69,21 @@
                     right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
                 },
                 defaultView: 'dayGridMonth',
-                defaultDate: '2020-02-12',
+                defaultDate: Date.now(),
                 height: 'parent',
                 navLinks: true, // can click day/week names to navigate views
                 editable: true,
                 eventLimit: true, // allow "more" link when too many events
-               
+                events: data,
+                //eventColor: '#378006',
 
-                events: [
-                    {
-                        title: 'All Day Event',
-                        start: '2020-02-01',
-                        url: 'LoadEventDetail()',
-                    }
-                ],
+                // events: [
+                //     {
+                //         title: 'All Day Event',
+                //         start: '2020-02-01',
+                //         url: 'LoadEventDetail()',
+                //     }
+                // ],
                 eventClick: function (info) {
                     info.jsEvent.preventDefault(); // don't let the browser navigate
 
@@ -73,8 +98,8 @@
 
         }
 
-        function LoadEventDetail() {
-            console.log("Load Event Detail");           
+        function LoadEventDetail(id) {
+            console.log("Load Event Detail", id);           
         }
 
      </script>

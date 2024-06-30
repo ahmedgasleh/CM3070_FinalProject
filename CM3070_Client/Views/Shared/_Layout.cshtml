@@ -26,7 +26,7 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">                        
-                        <li class="nav-item">
+                        @* <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Demographic" asp-action="Index">Demographic</a>
                         </li>
                         <li class="nav-item">
@@ -34,42 +34,45 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Calendar" asp-action="Index">Calender</a>
-                        </li>
+                        </li> *@
                     </ul>
                 </div>
             </div>
         </nav>
     
-        <div id="layoutSidenav" class="h-100">
+        <div id="layoutSidenav" class="container-fluid px-5">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="side_nav_accordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <a class="nav-link" href="/Demographic">
-                                <i class="fas fa-pie-chart sb-nav-link-icon px-2 py-2" style="font-size:22px" data-bs-toggle="tooltip" data-bs-placement="right" title="Demographics"></i>
+                                <i class="fas fa-pie-chart sb-nav-link-icon px-2 py-2" style="font-size:25px" data-bs-toggle="tooltip" data-bs-placement="right" title="Demographics"></i>
                             </a>
                             <a class="nav-link" href="/ProviderDetail">
-                                <i class="fas fa-briefcase sb-nav-link-icon px-2 py-2" style="font-size:22px" data-bs-toggle="tooltip" data-bs-placement="right" title="ProviderDetails"></i>
+                                <i class="fas fa-briefcase sb-nav-link-icon px-2 py-2" style="font-size:25px" data-bs-toggle="tooltip" data-bs-placement="right" title="ProviderDetails"></i>
+                            </a>
+                            <a class="nav-link" href="/Calendar">
+                                <i class="fas fa-calendar sb-nav-link-icon px-2 py-2" style="font-size:25px" data-bs-toggle="tooltip" data-bs-placement="right" title="Calendar"></i>
                             </a>
                         </div>
                     </div>
                 </nav>
             </div>     
-            <div id="content-wrapper">
-                <main role="main">
+            @* <div id="content-wrapper"> *@
+            <main role="main" class="pb-3 container-fluid">
                     @RenderBody()
                 </main>
-            </div>           
+            @* </div>   *@         
 
         </div>
       
     </div>
 
-    <footer class="border-top footer text-muted">
+    @* <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - CM3070 EMR Client - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

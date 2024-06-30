@@ -19,5 +19,9 @@ namespace CM3070.DbRepositoryCore
         public Facility GetFacility ( int Id );
 
         public List<PhysicianSearchParams> PhysicianSearch ( string id, string last_name );
+
+        public List<SchaduleEvents> GetSchedule ();
+
+        public List<SchaduleEvents> GetSchedule (DateTime dateTime);
     }
 }
