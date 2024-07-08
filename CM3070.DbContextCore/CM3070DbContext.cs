@@ -27,6 +27,12 @@ namespace CM3070.DbContextCore
         public virtual DbSet<Tickler_Category> Tickler_Categories { get; set; }
         protected override void OnModelCreating ( ModelBuilder modelBuilder )
         {
+
+            modelBuilder.Entity<ScheduleDate>(entity =>
+            {
+                entity.HasKey(e => e.id);
+
+            });
             modelBuilder.Entity<Demographic>(entity =>
             {
                 entity.HasKey(e => e.demographic_no);
@@ -56,11 +62,7 @@ namespace CM3070.DbContextCore
 
             });
 
-            modelBuilder.Entity<ScheduleDate>(entity =>
-            {
-                entity.HasKey(e => e.id);
-
-            });
+           
 
             modelBuilder.Entity<Document>(entity =>
             {

@@ -34,30 +34,7 @@ namespace CM3070.DbRepositoryCore
 
            return result = _cm3070DbContext.Demographic.Where(d => d.demographic_no == Id).FirstOrDefault();
 
-            //result.demographic_no = 1;
-            //result.hin = "1234567897";
-            //result.ver = "HC";
-            //result.first_name = "Bram";
-            //result.last_name = "Toron";
-            //result.year_of_birth = "1977";
-            //result.month_of_birth = "01";
-            //result.date_of_birth = "13";
-            //result.sex = "Male";
-            //result.address = "1110 Finch";
-            //result.city = "North York";
-            //result.province = "ON";
-            //result.postal = "L6R";
-            //result.phone = "4165556666";
-            //result.phone2 = "4165551111";
-            //result.lastUpdateDate = DateTime.Now.AddDays(-100);
-
-
-
-
-
-            //return result;
-
-           
+                
         }
 
         public Facility GetFacility ( int Id )
@@ -98,7 +75,8 @@ namespace CM3070.DbRepositoryCore
 
             foreach (var p in scheduleDates)
             {
-                schaduleEvents.Add(new SchaduleEvents { title = p.reason + "|" + p.id.ToString() + "|" + p.provider_no, start = p.sdate.ToString("yyyy-MM-ddThh:mm:ss"), end = CalculateEnd(p.sdate, p.hour), color = GetEventColor(p.reason), url = "LoadEventDetail(" + p.id + ")" });
+                schaduleEvents.Add(new SchaduleEvents { title = p.reason + "|" + p.id.ToString() + "|" + p.provider_no, start = p.sdate.ToString("yyyy-MM-ddThh:mm:ss"), end = CalculateEnd(p.sdate, p.hour), 
+                    color = GetEventColor(p.reason), url = "LoadEventDetail(" + p.id + ")" });
             }
 
             return schaduleEvents;
