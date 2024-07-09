@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CM3070.DbRepositoryCore", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CM3070_Client", "CM3070_Client\CM3070_Client.csproj", "{C4F03B50-F557-4900-B600-F7B3A3EC082B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM3070_Client_API_Test", "CM3070_Client_API_Test\CM3070_Client_API_Test.csproj", "{918DF981-07E0-45D0-B5E5-25CDE2F601B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CM3070_Client_API_Test", "CM3070_Client_API_Test\CM3070_Client_API_Test.csproj", "{918DF981-07E0-45D0-B5E5-25CDE2F601B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CM3070_Client_IDP", "CM3070_Client_IDP\CM3070_Client_IDP.csproj", "{40191A9A-1061-45A1-86C6-44793C2C8BC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{918DF981-07E0-45D0-B5E5-25CDE2F601B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{918DF981-07E0-45D0-B5E5-25CDE2F601B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{918DF981-07E0-45D0-B5E5-25CDE2F601B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40191A9A-1061-45A1-86C6-44793C2C8BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40191A9A-1061-45A1-86C6-44793C2C8BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40191A9A-1061-45A1-86C6-44793C2C8BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40191A9A-1061-45A1-86C6-44793C2C8BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
