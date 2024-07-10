@@ -23,8 +23,14 @@ builder.Services.AddDbContext<AspNetIdentityDbContext>(options =>
     options.UseSqlServer(defaultConnString,
         b => b.MigrationsAssembly(assembly)));
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<AspNetIdentityDbContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>( opt =>
+{
+    opt.Password.RequiredLength = 8;
+    opt.Password.RequireDigit = true;   
+    opt.Password.RequireUppercase = true;
+
+})
+ .AddEntityFrameworkStores<AspNetIdentityDbContext>();
 
 builder.Services.AddIdentityServer()
     .AddAspNetIdentity<IdentityUser>()

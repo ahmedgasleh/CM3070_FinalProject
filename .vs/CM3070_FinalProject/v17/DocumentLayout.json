@@ -3,8 +3,100 @@
   "WorkspaceRootPath": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\api\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\api\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\views\\shared\\_nav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\views\\shared\\_nav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\home\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\home\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\account\\redirectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\account\\redirectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\account\\accountoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\account\\accountoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\securityheadersattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\securityheadersattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\grants\\grantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\grants\\grantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\models\\userforregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\models\\userforregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\data\\aspnetidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\data\\aspnetidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|solutionrelative:cm3070_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|solutionrelative:cm3070_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\views\\account\\loggedout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\views\\account\\loggedout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F03B50-F557-4900-B600-F7B3A3EC082B}|CM3070_Client\\CM3070_Client.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4F03B50-F557-4900-B600-F7B3A3EC082B}|CM3070_Client\\CM3070_Client.csproj|solutionrelative:cm3070_client\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F03B50-F557-4900-B600-F7B3A3EC082B}|CM3070_Client\\CM3070_Client.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F03B50-F557-4900-B600-F7B3A3EC082B}|CM3070_Client\\CM3070_Client.csproj|solutionrelative:cm3070_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F03B50-F557-4900-B600-F7B3A3EC082B}|CM3070_Client\\CM3070_Client.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F03B50-F557-4900-B600-F7B3A3EC082B}|CM3070_Client\\CM3070_Client.csproj|solutionrelative:cm3070_client\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -19,10 +111,6 @@
       "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\migrations\\aspnetidentitydb\\20220105071113_initialaspnetidentitymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|solutionrelative:cm3070_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\account\\externalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\account\\externalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\consent\\consentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\consent\\consentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\quickstart\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\quickstart\\account\\externalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\migrations\\aspnetidentitydb\\20220105071113_initialaspnetidentitymigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,16 +163,8 @@
       "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\migrations\\configurationdb\\20220105064353_initialidentityservermigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_client_idp\\data\\aspnetidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40191A9A-1061-45A1-86C6-44793C2C8BC5}|CM3070_Client_IDP\\CM3070_Client_IDP.csproj|solutionrelative:cm3070_client_idp\\data\\aspnetidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|solutionrelative:cm3070_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|d:\\development\\university of london\\final project and cw2 of cm2020\\program final project cm3070\\cm3070_finalproject\\cm3070_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{832F1B4F-B5CD-47A3-8C1D-DE3B96BA0C7C}|CM3070_API\\CM3070_API.csproj|solutionrelative:cm3070_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,259 +173,195 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 283,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Program.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Program.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Program.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:54:53.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20220105071113_InitialAspNetIdentityMigration.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:53:28.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20220105064338_InitialIdentityServerMigration.Designer.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:57:01.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ExternalController.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAowCIAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:57:20.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\appsettings.json",
-              "RelativeDocumentMoniker": "CM3070_API\\appsettings.json",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\appsettings.json",
-              "RelativeToolTip": "CM3070_API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-08T22:56:11.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CM3070_Client_IDP\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-09T00:53:22.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AspNetIdentityDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:53:41.783Z",
+              "Title": "_Nav.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Shared\\_Nav.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Views\\Shared\\_Nav.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Shared\\_Nav.cshtml",
+              "RelativeToolTip": "CM3070_Client_IDP\\Views\\Shared\\_Nav.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T22:27:59.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.json",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\appsettings.json",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.json",
-              "RelativeToolTip": "CM3070_Client_IDP\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-09T00:56:06.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20220105071113_InitialAspNetIdentityMigration.Designer.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Api\\RegisterController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Api\\RegisterController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Api\\RegisterController.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Api\\RegisterController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwCsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:56:44.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ConsentController.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
-              "ViewState": "AQIAAIwAAAAAAAAAAAAowKMAAABtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:57:27.301Z",
+              "WhenOpened": "2024-07-09T22:09:56.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "DeviceController.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAowJEAAACEAAAA",
+              "Title": "RedirectViewModel.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\RedirectViewModel.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Account\\RedirectViewModel.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\RedirectViewModel.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Account\\RedirectViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:57:35.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T22:15:08.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CM3070_Client_IDP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T22:27:48.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Extensions.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Extensions.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Extensions.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Extensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T22:04:19.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SecurityHeadersAttribute.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\SecurityHeadersAttribute.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\SecurityHeadersAttribute.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\SecurityHeadersAttribute.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\SecurityHeadersAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T22:04:16.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GrantsController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Grants\\GrantsController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Grants\\GrantsController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Grants\\GrantsController.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Grants\\GrantsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T22:01:26.974Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ExternalProvider.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Home\\HomeController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Home\\HomeController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Home\\HomeController.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Home\\HomeController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:58:13.048Z",
+              "WhenOpened": "2024-07-09T22:00:42.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\AccountController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Account\\AccountController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\AccountController.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Account\\AccountController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAxwFgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T20:18:34.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\appsettings.Development.json",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.Development.json",
-              "RelativeToolTip": "CM3070_Client_IDP\\appsettings.Development.json",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CM3070_Client_IDP\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:45:51.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserForRegistration.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Models\\UserForRegistration.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Models\\UserForRegistration.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Models\\UserForRegistration.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Models\\UserForRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T21:10:31.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountOptions.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\AccountOptions.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Account\\AccountOptions.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\AccountOptions.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Account\\AccountOptions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-09T00:56:08.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Config.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Config.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Config.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Config.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Config.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:55:54.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\SeedData.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\SeedData.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\SeedData.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\SeedData.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAowAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:55:28.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PersistedGrantDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAowAYAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:54:34.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20220105064338_InitialIdentityServerMigration.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAowAUAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:54:16.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T20:18:30.176Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ConfigurationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:54:03.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20220105064353_InitialIdentityServerMigration.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
-              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
-              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Views\\Account\\Logout.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\Logout.cshtml",
+              "RelativeToolTip": "CM3070_Client_IDP\\Views\\Account\\Logout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:53:57.858Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:47:07.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Program.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Program.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Program.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Program.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwB0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:54:53.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExternalController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalController.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAQwCIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:57:20.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "AspNetIdentityDbContext.cs",
               "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Data\\AspNetIdentityDbContext.cs",
               "RelativeDocumentMoniker": "CM3070_Client_IDP\\Data\\AspNetIdentityDbContext.cs",
@@ -357,12 +369,299 @@
               "RelativeToolTip": "CM3070_Client_IDP\\Data\\AspNetIdentityDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T00:52:40.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T00:52:40.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CM3070_Client\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T18:56:48.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CM3070_Client\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:45:14.788Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CM3070_Client_IDP\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:45:30.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoggedOut.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\LoggedOut.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Views\\Account\\LoggedOut.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\LoggedOut.cshtml",
+              "RelativeToolTip": "CM3070_Client_IDP\\Views\\Account\\LoggedOut.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:46:52.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\Program.cs",
+              "RelativeDocumentMoniker": "CM3070_Client\\Program.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\Program.cs",
+              "RelativeToolTip": "CM3070_Client\\Program.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAowAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T18:36:29.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\Program.cs",
+              "RelativeDocumentMoniker": "CM3070_API\\Program.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\Program.cs",
+              "RelativeToolTip": "CM3070_API\\Program.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAowEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T22:48:58.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\appsettings.json",
+              "RelativeDocumentMoniker": "CM3070_API\\appsettings.json",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\appsettings.json",
+              "RelativeToolTip": "CM3070_API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-08T22:56:11.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "CM3070_Client_IDP\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:46:56.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.json",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\appsettings.json",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.json",
+              "RelativeToolTip": "CM3070_Client_IDP\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-09T00:56:06.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20220105071113_InitialAspNetIdentityMigration.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:53:28.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20220105064338_InitialIdentityServerMigration.Designer.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:57:01.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CM3070_Client_IDP\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-09T00:53:22.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AspNetIdentityDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\AspNetIdentityDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBMwAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:53:41.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20220105071113_InitialAspNetIdentityMigration.Designer.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\AspNetIdentityDb\\20220105071113_InitialAspNetIdentityMigration.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:56:44.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ConsentController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Consent\\ConsentController.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAowKMAAABtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:57:27.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Device\\DeviceController.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAowJEAAACEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:57:35.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ExternalProvider.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Quickstart\\Account\\ExternalProvider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:58:13.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\appsettings.Development.json",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\appsettings.Development.json",
+              "RelativeToolTip": "CM3070_Client_IDP\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-09T00:56:08.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Config.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Config.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Config.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Config.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Config.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBMwAYAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:55:54.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\SeedData.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\SeedData.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\SeedData.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\SeedData.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAowAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:55:28.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PersistedGrantDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\PersistedGrantDbContextModelSnapshot.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowAYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:54:34.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20220105064338_InitialIdentityServerMigration.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\20220105064338_InitialIdentityServerMigration.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:54:16.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ConfigurationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\ConfigurationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:54:03.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20220105064353_InitialIdentityServerMigration.cs",
+              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
+              "RelativeDocumentMoniker": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
+              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
+              "RelativeToolTip": "CM3070_Client_IDP\\Migrations\\ConfigurationDb\\20220105064353_InitialIdentityServerMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:53:57.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "CM3070_API\\Properties\\launchSettings.json",
@@ -371,18 +670,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-08T22:56:07.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\Program.cs",
-              "RelativeDocumentMoniker": "CM3070_API\\Program.cs",
-              "ToolTip": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_API\\Program.cs",
-              "RelativeToolTip": "CM3070_API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T22:48:58.613Z"
             }
           ]
         }

@@ -1,3 +1,11 @@
+
+using System.IdentityModel.Tokens.Jwt;
+using IdentityModel;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+
+
 namespace CM3070_Client
 {
     public class Program
@@ -12,6 +20,40 @@ namespace CM3070_Client
             var test = builder.Configuration ["App:APIUrl"];            
             
             builder.Services.AddHttpContextAccessor();
+
+            builder.Services.AddHttpClient();
+            JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                //options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+                //JwtBearerDefaults.AuthenticationScheme;
+                //options.DefaultChallengeScheme = "oidc";
+            }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+            {
+                options.AccessDeniedPath = "/Authorization/AccessDenied";
+            }).AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
+            {
+                options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.SignOutScheme = OpenIdConnectDefaults.AuthenticationScheme;
+                options.Authority = builder.Configuration ["App:IDPUri"];   //IDP
+                options.ClientId = builder.Configuration ["App:ClientId"];
+                options.RequireHttpsMetadata = false;
+                options.ResponseType = OpenIdConnectResponseType.Code;
+                options.AuthenticationMethod = OpenIdConnectRedirectBehavior.RedirectGet;
+                options.Scope.Add("openid");   //these are in defualt no needed here
+                options.Scope.Add("profile");
+                options.Scope.Add("email");  //adding to scope and deleting from claim down below
+                options.Scope.Add("role");                
+                options.UsePkce = true;
+               
+                options.SaveTokens = true;
+                options.ClientSecret = builder.Configuration ["App:ClientSecret"];
+                options.GetClaimsFromUserInfoEndpoint = true;
+               
+            });
 
             var app = builder.Build();
 
@@ -29,6 +71,7 @@ namespace CM3070_Client
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

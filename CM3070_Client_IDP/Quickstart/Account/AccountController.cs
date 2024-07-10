@@ -2,6 +2,8 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using AutoMapper;
+using CM3070_Client_IDP.Models;
 using IdentityModel;
 using IdentityServer4;
 using IdentityServer4.Events;
@@ -35,12 +37,14 @@ namespace IdentityServerHost.Quickstart.UI
         private readonly IAuthenticationSchemeProvider _schemeProvider;
         private readonly IEventService _events;
 		private readonly SignInManager<IdentityUser> _signInManager;
+       
+        //private readonly IUserManager _userManager;
 
 		public AccountController(
             IIdentityServerInteractionService interaction,
             IClientStore clientStore,
             IAuthenticationSchemeProvider schemeProvider,
-            IEventService events,
+            IEventService events,          
             SignInManager<IdentityUser> signInManager)
         {
 
@@ -49,7 +53,33 @@ namespace IdentityServerHost.Quickstart.UI
             _schemeProvider = schemeProvider;
             _events = events;
 			_signInManager = signInManager;
+           
+
 		}
+
+        //[HttpPost("register")]
+        //public async Task<IActionResult> RegisterUser ( [FromBody] UserForRegistration userForRegistration )
+        //{
+        //    if (userForRegistration is null) return BadRequest();
+
+        //    var user = new IdentityUser();
+
+        //    user.UserName = userForRegistration.Email;
+        //    user.Email = userForRegistration.Email;
+           
+
+        //    var result = await _signInManager.UserManager.CreateAsync(user, userForRegistration.Password);
+
+        //    if (!result.Succeeded)
+        //    {
+        //        var errors = result.Errors.Select(e => e.Description);
+
+        //        return BadRequest(new RegistrationResponse { Errors = errors});
+        //    }
+
+        //    return StatusCode(201);
+           
+        //}
 
         /// <summary>
         /// Entry point into the login workflow

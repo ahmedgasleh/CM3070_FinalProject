@@ -30,3 +30,14 @@ D:\Development\University Of London\Final Project and CW2 of CM2020\Program Fina
 D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\obj\Debug\net8.0\CM3070_Client.genruntimeconfig.cache
 D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\obj\Debug\net8.0\ref\CM3070_Client.dll
 D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\libman.json
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\IdentityModel.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\obj\Debug\net8.0\CM3070_Client.csproj.AssemblyReference.cache
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_Client\obj\Debug\net8.0\CM3070_C.2BF6C7CA.Up2Date

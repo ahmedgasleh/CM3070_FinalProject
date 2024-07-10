@@ -16,6 +16,12 @@
             IdentityServer4
         </a>
 
+        <a class="btn-outline-info text-white" asp-action="Register" asp-controller="Register">Register</a>
+
+        
+
+    
+
         @if (!string.IsNullOrWhiteSpace(name))
         {
             <ul class="navbar-nav mr-auto">
@@ -24,6 +30,7 @@
                     
                     <div class="dropdown-menu">
                         <a class="dropdown-item" asp-action="Logout" asp-controller="Account">Logout</a>
+                       
                     </div>
               </li>
             </ul>
