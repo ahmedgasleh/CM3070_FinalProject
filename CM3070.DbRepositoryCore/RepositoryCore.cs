@@ -1,12 +1,10 @@
 ﻿using CM3070.DbContextCore;
 using CM3070.DbModelCore;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
+
 
 namespace CM3070.DbRepositoryCore
 {
@@ -122,6 +120,31 @@ namespace CM3070.DbRepositoryCore
             result = ddate.ToString("yyyy-MM-ddThh:mm:ss");
 
             return result;
+        }
+
+        public SchaduleEventDetail GetScheduleEvent ( int id )
+        {
+           
+            try
+            {
+                SqlParameter [] sqlParameters =
+                {
+                    ExtensionMethods.SetSqlParameter("@id", false, id, SqlDbType.Int)
+                };
+
+                var rawSQL = "dbo.GetSchadule @id";
+
+                var result = _cm3070DbContext.SchaduleEventDetails.FromSqlRaw(rawSQL, sqlParameters).AsEnumerable().FirstOrDefault();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                return new SchaduleEventDetail();
+            } 
+
+
         }
     }
 }

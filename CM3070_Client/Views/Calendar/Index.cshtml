@@ -75,15 +75,7 @@
                 editable: true,
                 eventLimit: true, // allow "more" link when too many events
                 events: data,
-                //eventColor: '#378006',
-
-                // events: [
-                //     {
-                //         title: 'All Day Event',
-                //         start: '2020-02-01',
-                //         url: 'LoadEventDetail()',
-                //     }
-                // ],
+               
                 eventClick: function (info) {
                     info.jsEvent.preventDefault(); // don't let the browser navigate
 
@@ -98,8 +90,29 @@
 
         }
 
-        function LoadEventDetail(id) {
-            console.log("Load Event Detail", id);           
+        async function LoadEventDetail(id) {
+            console.log("Load Event Detail", id);
+
+            const response = await fetch(APIUrl + "GetScheduleEvent/" + id, {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    LoadSchaduleEventPopUp(response);
+
+                })
+
+           
+        }
+
+        function LoadSchaduleEventPopUp(data) {
+            console.log("data", data);
         }
 
      </script>

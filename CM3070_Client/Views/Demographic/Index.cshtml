@@ -473,7 +473,9 @@
 
         async function GetThisPatient(pid) {
 
-            const response = await fetch(APIUrl + "GetDemographic/&pid=" + pid, {
+            console.log("GetPatient", APIUrl, pid);
+
+            const response = await fetch(APIUrl + "GetDemographic/" + pid, {
                 method: 'GET',
                 headers: new Headers({                  
                     "Content-Type": "application/x-www-form-urlencoded",

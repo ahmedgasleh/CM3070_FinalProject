@@ -46,6 +46,13 @@ namespace CM3070_API.Controllers.v1
             return Ok(_repositoryCore.GetSchedule(dateTime));
         }
 
+        [HttpGet(ApiRoutes.Posts.GetScheduleEvent)]
+        public async Task<IActionResult> GetScheduleEvent ( [FromRoute] int id )
+        {
+
+            return Ok(_repositoryCore.GetScheduleEvent(id));
+        }
+
 
     }
 }

@@ -75,3 +75,8 @@ D:\Development\University Of London\Final Project and CW2 of CM2020\Program Fina
 D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\obj\Debug\net8.0\ref\CM3070_API.dll
 D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\bin\Debug\net8.0\CM3070.DbRepositoryCore.dll
 D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\bin\Debug\net8.0\CM3070.DbRepositoryCore.pdb
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\bin\Debug\net8.0\IdentityModel.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\bin\Debug\net8.0\IdentityModel.AspNetCore.OAuth2Introspection.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\bin\Debug\net8.0\IdentityServer4.AccessTokenValidation.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Development\University Of London\Final Project and CW2 of CM2020\Program Final Project CM3070\CM3070_FinalProject\CM3070_API\bin\Debug\net8.0\Newtonsoft.Json.dll

@@ -23,5 +23,7 @@ namespace CM3070.DbRepositoryCore
         public List<SchaduleEvents> GetSchedule ();
 
         public List<SchaduleEvents> GetSchedule (DateTime dateTime);
+
+        public SchaduleEventDetail GetScheduleEvent ( int id );
     }
 }

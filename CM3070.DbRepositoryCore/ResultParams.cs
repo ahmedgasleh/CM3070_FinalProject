@@ -15,4 +15,6 @@ namespace CM3070.DbRepositoryCore
        public string? color { get; set; } = "#378006";
         public string? url { get; set; }
     }
+
+   
 }

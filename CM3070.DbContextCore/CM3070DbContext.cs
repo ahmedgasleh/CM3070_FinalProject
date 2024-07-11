@@ -25,6 +25,11 @@ namespace CM3070.DbContextCore
         public virtual DbSet<LabTestResults> LabTestResult { get; set; }
         public virtual DbSet<Tickler> Tickler { get; set; }
         public virtual DbSet<Tickler_Category> Tickler_Categories { get; set; }
+
+        //SP calls
+
+        public virtual DbSet<SchaduleEventDetail> SchaduleEventDetails { get; set; }
+
         protected override void OnModelCreating ( ModelBuilder modelBuilder )
         {
 

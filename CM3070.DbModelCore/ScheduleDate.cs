@@ -9,6 +9,7 @@
 
 namespace CM3070.DbModelCore
 {
+    using Microsoft.EntityFrameworkCore;
     using System;
     using System.Collections.Generic;
     
@@ -23,5 +24,20 @@ namespace CM3070.DbModelCore
         public string hour { get; set; }
         public string creator { get; set; }
         public string status { get; set; }
+    }
+
+    [Keyless]
+    public class SchaduleEventDetail
+    {
+        public DateTime date { get; set; }
+        public char available { get; set; }
+        public char priority { get; set; }
+        public string? reason { get; set; }
+        public string? hour { get; set; }
+        public string? creator { get; set; }
+        public char status { get; set; }
+        public string? provider_lname { get; set; }
+        public string? provider_fname { get; set; }
+        public string? specialty { get; set; }
     }
 }

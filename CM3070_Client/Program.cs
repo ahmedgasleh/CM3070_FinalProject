@@ -17,7 +17,7 @@ namespace CM3070_Client
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            var test = builder.Configuration ["App:APIUrl"];            
+                     
             
             builder.Services.AddHttpContextAccessor();
 
@@ -74,9 +74,18 @@ namespace CM3070_Client
             app.UseAuthentication();
             app.UseAuthorization();
 
+            //app.MapDefaultControllerRoute();
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapDefaultControllerRoute()
+            //    .RequireAuthorization().RequireAuthorization();
+            //});
+
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}"
+            );
 
             app.Run();
         }
