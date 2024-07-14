@@ -14,7 +14,7 @@ namespace CM3070.DbRepositoryCore
 
         public ScheduleDate GetSchedule ( int Id );
 
-        public Provider GetProvider ( int Id );
+        public Provider GetProvider ( string Id );
 
         public Facility GetFacility ( int Id );
 
@@ -25,5 +25,9 @@ namespace CM3070.DbRepositoryCore
         public List<SchaduleEvents> GetSchedule (DateTime dateTime);
 
         public SchaduleEventDetail GetScheduleEvent ( int id );
+
+        public List<Provider> GetProviders ();
+
+        public int UpdateProvider(Provider provider );
     }
 }

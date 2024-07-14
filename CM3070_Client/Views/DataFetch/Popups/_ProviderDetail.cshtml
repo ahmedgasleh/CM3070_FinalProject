@@ -1,0 +1,196 @@
+﻿@using CM3070.DbModelCore
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Provider
+
+<div id="wrap" class="px-1">
+
+    <div ID="Content3">
+        <form>
+            <div class="row g-2">
+                @if (Model != null)
+                {
+                    <!-- Left column -->
+                    <div class="col-md">
+                        <div class="mb-1">
+                            <label for="firt-name" class="col-form-label">Provider #:</label>
+                            <input type="text" class="form-control" id="txtProviderNumber" value="@Model.provider_no" disabled/>                            
+                        </div>
+                        <div class="mb-1">
+                            <label for="last-name" class="col-form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="txProviderLastName" value="@Model.last_name">
+                        </div>
+                        <div class="mb-1">
+                            <label for="middle-name" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="txtProviderFirstName" value="@Model.first_name">
+                        </div>
+                        <div class="mb-1">
+                            <label for="sex-name" class="col-form-label">DOB:</label>
+                            <input type="text" class="form-control" id="txtProviderDob" value="@Model.dob">
+                        </div>
+                        <div class="mb-1">
+                            <label for="sex-name" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="txtProviderSex" value="@Model.sex">
+                        </div>
+                        <div class="mb-1">
+                            <label for="title" class="col-form-label">Title:</label>
+                            <input type="text" class="form-control" id="txtUserTitle" value="@Model.title">
+                        </div>
+                        <div class="mb-1">
+                            <label for="email" class="col-form-label">Specialty:</label>
+                            <input type="text" class="form-control" id="txtSpecialty" value="@Model.specialty">
+                        </div>
+                        <div class="mb-1">
+                            <label for="system-email" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="txtEmail" value="@Model.email">
+                        </div>
+                        <div class="mb-1">
+                            <label for="system-init" class="col-form-label">Init:</label>
+                            <input type="text" class="form-control" id="txtInit" value="@Model.init">
+                        </div>
+                        <div class="mb-1">
+                            <label for="system-init" class="col-form-label">Job Title:</label>
+                            <input type="text" class="form-control" id="txtJobTitle" value="@Model.job_title">
+                        </div>
+                       
+
+
+                    </div>
+
+                    <!-- Middle column -->
+                    <div class="col-md">
+
+                        <div class="mb-1">
+                            <label for="phone1" class="col-form-label">Work Phone:</label>
+                            <input type="text" class="form-control" id="txtWorkPhone" value="@Model.work_phone">
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="phone2" class="col-form-label">Phone:</label>
+                            <input type="text" class="form-control" id="txtProviderPhone" value="@Model.phone">
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="Status" class="col-form-label">Status:</label>
+                            <input type="text" class="form-control" id="txtStatus" value="@Model.status">
+                        </div>
+
+                        <div class="mb-1 ">
+                            <label for="OhipNumber" class="col-form-label">Ohip Number:</label>
+                            <input type="text" class="form-control" id="txtOhipNumber" value="@Model.ohip_no">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="PractitionerNumber" class="col-form-label">Practitioner Number:</label>
+                            <input type="text" class="form-control" id="txtPractitionerNumber" value="@Model.practitionerNo">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="physician-link" class="col-form-label">RMA Number:</label>
+                            <input type="text" class="form-control" id="txtRMANumber" value="@Model.rma_no">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="physician-link" class="col-form-label">Last Updated Date:</label>
+                            <input type="text" class="form-control" id="txtLastUpdateDate" value="@Model.lastUpdateDate">
+                        </div>
+
+                        <div class="mb-1 ">
+                            <label for="physician-link" class="col-form-label">Last Updated User:</label>
+                            <input type="text" class="form-control" id="txtLastUpdateUser" value="@Model.lastUpdateUser">
+                        </div>
+
+
+
+                    </div>
+                    <!-- Left column -->
+                    <div class="col-md">
+
+                        
+                        <div class="mb-1 ">
+                            <label for="physician-link" class="col-form-label">HSO Number:</label>
+                            <input type="text" class="form-control" id="txtHSONumber" value="@Model.hso_no">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="physician-link" class="col-form-label">Billing Number:</label>
+                            <input type="text" class="form-control" id="txtBillingNumber" value="@Model.billing_no">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="physician-link" class="col-form-label">Provider Type:</label>
+                            <input type="text" class="form-control" id="txtProviderType" value="@Model.provider_type">
+                        </div>                        
+                        <div class="mb-1 ">
+                            <label for="login" class="col-form-label">Supervisor:</label>
+                            <input type="text" class="form-control" id="txtSupervisor" value="@Model.supervisor">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="expiry-date" class="col-form-label">Team:</label>
+                            <input type="text" class="form-control" id="txtTeam" value="@Model.team">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="expiry-period" class="col-form-label">Address:</label>
+                            <input type="text" class="form-control" id="txtAddress" value="@Model.address">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="expiry-period" class="col-form-label">Activity:</label>
+                            <input type="text" class="form-control" id="txtActivity" value="@Model.provider_activity">
+                        </div>
+                        <div class="mb-1 ">
+                            <label for="expiry-period" class="col-form-label">Comments:</label>
+                            <input type="text" class="form-control" id="txtComments" value="@Model.comments">
+                        </div>                        
+
+                    </div>
+                }
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+   @*  <form>
+        <div class="row g-1">
+            <div class="col-md" id="ProviderDetails">
+                <div class="d-flex flex justify-content-between">
+                    <div class="px-2">
+                        <label class="col-form-label px-2"> Last Name</label>
+                        <input class="px-2" name="txtBirthDate" type="text" id="txtBirthDate" tabindex="0" />
+                    </div>
+                    <div class="px-2">
+                        <label class="col-form-label px-2">First Name</label>
+                        <input class="px-2" name="txtFirstName" type="text" id="txtFirstName" tabindex="0" />
+                    </div>
+
+                    <div class="px-2">
+                        <label class="col-form-label px-2">Provider Type</label>
+                        <input class="px-2" name="txtProviderType" type="text" id="txtProviderType" tabindex="0" />
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex justify-content-between">
+                    <div class="px-2">
+                        <label class="col-form-label px-2">Address</label>
+                        <input class="px-2" name="txtAddress" type="text" id="txtAddress" tabindex="0" />
+                    </div>
+                    <div class="px-2">
+                        <label class="col-form-label px-2">Phone</label>
+                        <input class="px-2" name="txtPhone" type="text" id="txtPhone" tabindex="0" />
+                    </div>
+
+                    <div class="px-2">
+                        <label class="col-form-label px-2">Work</label>
+                        <input class="px-2" name="txtWork" type="text" id="txtWork" tabindex="0" />
+                    </div>
+
+                </div>
+                
+
+            </div>
+        </div>
+    </form> *@
+</div>

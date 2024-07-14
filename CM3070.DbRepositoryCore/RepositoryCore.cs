@@ -40,11 +40,7 @@ namespace CM3070.DbRepositoryCore
             throw new NotImplementedException();
         }
 
-        public Provider GetProvider ( int Id )
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public ScheduleDate GetSchedule ( int Id )
         {
             throw new NotImplementedException();
@@ -79,6 +75,8 @@ namespace CM3070.DbRepositoryCore
 
             return schaduleEvents;
         }
+
+        
 
         
 
@@ -145,6 +143,26 @@ namespace CM3070.DbRepositoryCore
             } 
 
 
+        }
+
+        public Provider GetProvider ( string Id )
+        {
+            var result = _cm3070DbContext.Provider.Where(p => p.provider_no == Id).FirstOrDefault();
+
+            return result;
+        }
+
+
+        public List<Provider> GetProviders ()
+        {
+            var result = _cm3070DbContext.Provider.ToList();
+
+            return result;
+        }
+
+        public int UpdateProvider ( Provider provider )
+        {
+            throw new NotImplementedException();
         }
     }
 }

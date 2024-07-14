@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CM3070_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+627e2f28d09466eb815a3fd3d3dec231afecf8bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+679f968d8c91b3bb48acb41cea50f7f326283fd6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CM3070_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CM3070_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

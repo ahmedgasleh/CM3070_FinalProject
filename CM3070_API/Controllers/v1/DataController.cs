@@ -1,4 +1,5 @@
-﻿using CM3070.DbRepositoryCore;
+﻿using CM3070.DbModelCore;
+using CM3070.DbRepositoryCore;
 using CM3070_API.Contracts.v1;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,6 +40,20 @@ namespace CM3070_API.Controllers.v1
             return Ok(_repositoryCore.GetSchedule());
         }
 
+        [HttpGet(ApiRoutes.Posts.GetProviders)]
+        public async Task<IActionResult> GetProviders ()
+        {
+
+            return Ok(_repositoryCore.GetProviders());
+        }
+
+        [HttpGet(ApiRoutes.Posts.GetProvider)]
+        public async Task<IActionResult> GetProvider ( [FromRoute] string id )
+        {
+
+            return Ok(_repositoryCore.GetProvider(id));
+        }
+
         [HttpPost(ApiRoutes.Posts.GetScheduleByDate)]
         public async Task<IActionResult> GetScheduleByDate (DateTime dateTime)
         {
@@ -52,6 +67,16 @@ namespace CM3070_API.Controllers.v1
 
             return Ok(_repositoryCore.GetScheduleEvent(id));
         }
+
+
+        [HttpGet(ApiRoutes.Posts.UpdateProvider)]
+        public async Task<IActionResult> UpdateProvider ( [FromBody] Provider provider )
+        {
+
+            return Ok(_repositoryCore.UpdateProvider(provider));
+        }
+
+        
 
 
     }

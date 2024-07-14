@@ -96,7 +96,7 @@
                 <a class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tbDemographic" role="tab" aria-controls="tbDemographic" aria-selected="true">Demographic</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tbProviders" role="tab" aria-controls="tbProviders" aria-selected="false" onclick="LoadTempTable(); return;">Providers</a>
+                <a class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tbProviders" role="tab" aria-controls="tbProviders" aria-selected="false" onclick="LoadProvidersTable(); return;">Providers</a>
             </li>
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#tbSchadule" role="tab" aria-controls="tbSchadule" aria-selected="false"> Schadule </a>
@@ -367,11 +367,21 @@
                 </div>       
             </div>
             <div class="tab-pane" id="tbProviders" role="tabpanel" aria-labelledby="ab-1">
-                <div class="col-12 px-2 py-2">
-                    <table id="tempTable" class="display" width="100%"></table>
-
+                 <div class="input-group">
+                    <input type="text" class="form-control bg-warning bg-opacity-10" id="txtProviderNumnber" placeholder="Provider Number">
+                    <input class="btn btn-outline-primary form-control" type="button" name="btnCreateProvider" value="Create or Update" id="btnProviderId" tabindex="0" onclick="CreateNewProvider(); return;">
                 </div>
-
+      
+                <div id="tableHide" class="table-responsive overflow-hidden">
+                    <table id="providersTable" class="table table-hover table-bordered" width="100%"
+                           cellspacing="0">
+                        <thead>
+                            <tr id="PendingHeadings">
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
             </div>
             <div class="tab-pane" id="tbSchadule" role="tabpanel" aria-labelledby="tbSchadule">
                 <div width="100%">
@@ -446,6 +456,32 @@
     </div>
 </div>
 
+<!-- Modal popRefPhysician -->
+<div class="modal fade" id="popProvider" tabindex="-1" role="dialog" aria-labelledby="popProvider" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:800px">
+            <div class="modal-header">
+                <h5> Update or Create </h5>
+            </div>
+            <div class="d-flex flex-column px-2 py-2">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                    </div>
+                    <section class="card-body" id="popProviderBody">
+
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnProviderCancel" onclick="CancelProviderUpdate(); return false;">Cancel</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnProviderUpdate" onclick="ProviderUpdate(); return false;">Update</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
 @section Scripts{
 
     <script type="text/javascript">
@@ -469,7 +505,25 @@
 
             GetThisPatient(patientNumber)
 
-        }        
+        }
+
+        async function LoadProvidersTable() {
+
+            const response = await fetch(APIUrl + "GetProviders", {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    //console.log("result:", response)
+
+                    loadProviderable(response, document.getElementById("providersTable"));
+
+                })
+        }
 
         async function GetThisPatient(pid) {
 
@@ -490,6 +544,12 @@
 
                 })
         }
+
+        function CancelProviderUpdate(){
+
+        }
+
+       
 
         function LoadPatientFormData(patient, id) {
 
@@ -586,6 +646,100 @@
             SetDivElementValue("#targetCallback", "SetDivElementText");
         }
 
+        async function ProviderUpdate() {
+
+            var providerNumber = $('#txtProviderNumnber').val();
+            var providerLastName = $('#txProviderLastName').val();
+            var providerFirstName = $('#txtProviderFirstName').val();
+            var providerDob = $('#txtProviderDob').val();
+            var providerSex = $('#txtProviderSex').val();
+
+            var txtTitle = $('#txtTitle').val();
+            var specialty = $('#txtSpecialty').val();
+            var email = $('#txtEmail').val();
+            var workPhone = $('#txtWorkPhone').val();
+
+            var providerPhone = $('#txtProviderPhone').val();
+            var status = $('#txtStatus').val();
+            var ohipNumber = $('#txtOhipNumber').val();
+            var providerPhone = $('#txtProviderPhone').val();
+
+            var status = $('#txtStatus').val();
+            var ohipNumber = $('#txtOhipNumber').val();
+            var practitionerNumber = $('#txtPractitionerNumber').val();
+            var rmaNumber = $('#txtRMANumber').val();
+
+            var hsoNumberus = $('#txtHSONumber').val();
+            var billingNumber = $('#txtBillingNumber').val();
+            var providerType = $('#txtProviderType').val();
+            var supervisor = $('#txtSupervisor').val();
+
+            var team = $('#txtTeam').val();
+            var address = $('#txtAddress').val();
+            var activity = $('#txtActivity').val();
+            var comment = $('#txtComments').val();
+
+            var init = $('#txtInit').val();
+            var jobTitle = $('#txtJobTitle').val();
+
+            var userTitle = $('#txtUserTitle').val();
+            var lastUpdateUser = $('#txtLastUpdateUser').val();
+            var lastUpdateDate = $('#lastUpdateDate').val();            
+
+            console.log("Update is called") /*,  */
+
+            const response = await fetch(APIUrl + "UpdateProvider", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/json;charset=UTF-8",
+                }),
+                body: JSON.stringify({
+                    "provider_no": providerNumber, "last_name": providerLastName, "first_name": providerFirstName, "provider_type": providerType,
+                    "supervisor": txtSupervisor, "specialty": txtSpecialty, "team": team, "sex": providerSex, "dob": providerDob, "address": address, "phone": providerPhone,
+                    "work_phone": workPhone, "ohip_no": ohipNumber, "rma_no": rmaNumber, "billing_no": billingNumber, "hso_no": hsoNumberus, "status": status, "comments": comment,
+                    "provider_activity": activity, "practitionerNo": practitionerNumber, "init": init, "job_title": jobTitle, "email": email, "title": userTitle, "lastUpdateUser": lastUpdateUser,
+                    "lastUpdateDate": lastUpdateDate, "signed_confidentiality": null, "thirdPartyOnly": false, "practitionerNoType": ""
+                        })
+            })
+                .then(response => response.text())
+                .then(response => {                   
+
+                })
+
+        }
+
+        async function CreateNewProvider(){
+
+            var id = $('#txtProviderNumnber').val();
+
+            console.log('id', id);
+            const response = await fetch("/Api/DataFetch/GetProvider", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/json;charset=UTF-8",
+                }),
+                body: JSON.stringify({"id": id})
+            })
+            .then(response => response.text())
+            .then(response => {
+
+                console.log("result:", response);
+
+                LoadProviderPopup(response);
+
+            })
+
+        }
+
+        function LoadProviderPopup(result) {
+
+            $('#popProviderBody').html(result);
+
+            var schaduleEvent = new bootstrap.Modal(document.getElementById("popProvider"), {});
+            schaduleEvent.show();
+
+        }
+
         
         async function ChoosePhysician() {
             
@@ -630,6 +784,44 @@
                     SetDivElementText(id, splited[0])
                 }
             }
+        }
+
+        function loadProviderable(result, table) {
+
+            const tableHead = table.querySelector("thead");
+            const tableBody = table.querySelector("tbody");
+
+            let data = result;
+            console.log("ldTable", result)
+
+            //clear table
+            tableHead.innerHTML = "<tr></tr>"
+            tableBody.innerHTML = "";
+
+            tableHead.querySelector("tr").appendChild(createHeaders("ID", "ColId", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Name", "ColName", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Type", "ColType", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Specialty", "ColSpecialty", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Address", "ColAddress", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Work Phone", "ColWorkPhone", ["tblColumn"]))
+
+            for (let i = 0; i < data.length; i++) {
+
+                const rowElement = document.createElement("tr");
+
+                rowElement.setAttribute("id", "Id" + data[i].provider_no);
+                rowElement.classList.add("Row");
+                rowElement.appendChild(createCell(data[i].provider_no));
+                rowElement.appendChild(createCell(data[i].last_name + "," + data[i].first_name));
+                rowElement.appendChild(createCell(data[i].provider_type));
+                rowElement.appendChild(createCell(data[i].specialty));
+                rowElement.appendChild(createCell(data[i].address));
+                rowElement.appendChild(createCell(data[i].work_phone));
+                tableBody.appendChild(rowElement);
+                
+
+            }
+        
         }
         
 

@@ -1,4 +1,68 @@
-﻿function UpdateRegionDropdown(items, id) {
+﻿
+function createHeaders(headerText, id, cls) {
+    const headerElement = document.createElement("th");
+    headerElement.textContent = headerText;
+    for (let i = 0; i < cls.length; i++) {
+        headerElement.classList.add(cls[i]);
+    }
+    headerElement.setAttribute('id', id)
+    headerElement.setAttribute('scope', 'col')
+
+    return headerElement;
+}
+
+/*  
+Create button in cell with function to load popup
+*/
+function createButtonCell(cellData, id, popId) {
+    const cellElement = document.createElement("td");
+
+    cellElement.setAttribute("align", "center");
+    const buttonElement = document.createElement("button");
+
+    buttonElement.setAttribute("data-bs-toggle", "modal");
+    buttonElement.setAttribute("data-bs-target", popId);
+    buttonElement.setAttribute("onclick", "UserFormUpdate(" + id + " );")
+
+    buttonElement.type = 'button';
+    buttonElement.textContent = cellData;
+    buttonElement.classList.add('btn');
+    buttonElement.classList.add('btn-outline-success');
+    buttonElement.classList.add('btn-edit');
+
+    cellElement.appendChild(buttonElement);
+
+    return cellElement;
+}
+
+/**
+ * Create Icon Cell 
+ * @param {any} cellData
+ * @returns
+ */
+function createIconCell(cellData) {
+    const cellElement = document.createElement("td");
+    cellElement.setAttribute("align", "center");
+    const divElement = document.createElement("div");
+
+    divElement.classList.add("ico" + iconName(cellData))
+
+
+    cellElement.appendChild(divElement);
+
+    return cellElement;
+
+}
+
+function createCell(cellData) {
+    const cellElement = document.createElement("td");
+
+    cellElement.textContent = cellData;
+
+    return cellElement;
+}
+
+function UpdateRegionDropdown(items, id) {
     let currentElement = document.getElementById(id);
 
     currentElement.innerHTML = "";
@@ -177,38 +241,44 @@ function UpdateDropdownItemsSelectByIndex(items, id, selectedIndex) {
 
 }
 
-function LoadTempTable() {
+//function LoadTempTable(id) {
 
-    const dataSet = [
-        ['1001', 'Moo, Mu', 'physician', 'family', '13 Huf Rd', '41655551111'],
-        ['1002', 'Klien, Mo', 'physician', 'cardiology', '19 MakelJackson', '4160001113'],
-        ['1003', 'Kavin, Kafi', 'physician', 'cardiology', '19 MakelJackson', '41655551515'],
-        ['1004', 'Lady Helper', 'physician', 'family', '23 Kokspr', '4165552313'],
+//    console.log("Load Data Table")
 
-    ];
+//    const dataSet = [
+//        ['1001', 'Moo, Mu', 'physician', 'family', '13 Huf Rd', '41655551111'],
+//        ['1002', 'Klien, Mo', 'physician', 'cardiology', '19 MakelJackson', '4160001113'],
+//        ['1003', 'Kavin, Kafi', 'physician', 'cardiology', '19 MakelJackson', '41655551515'],
+//        ['1004', 'Lady Helper', 'physician', 'family', '23 Kokspr', '4165552313'],
 
-    dataSet.forEach(r => {
-        var div1 = document.createElement('div');
-        div1.innerHTML = r[1];
-        r[1] = div1;
+//    ];
 
-        var div3 = document.createElement('div');
-        div3.innerHTML = r[3];
-        r[3] = div3;
-    })
+//    dataSet.forEach(r => {
+//        var div1 = document.createElement('div');
+//        div1.innerHTML = r[1];
+//        r[1] = div1;
 
-    new DataTable('#tempTable', {
-        columns: [
-            { title: 'Id' },
-            { title: 'Name' },
-            { title: 'Type' },
-            { title: 'Specialty.' },
-            { title: 'Address' },
-            { title: 'Work Phone' }
-        ],
-        data: dataSet
-    });
-}
+//        var div3 = document.createElement('div');
+//        div3.innerHTML = r[3];
+//        r[3] = div3;
+//    })
+
+//    console.log(dataSet);
+
+//    var table = $(id).DataTable({
+//        columns: [
+//            { title: 'Id' },
+//            { title: 'Name' },
+//            { title: 'Type' },
+//            { title: 'Specialty.' },
+//            { title: 'Address' },
+//            { title: 'Work Phone' }
+//        ],
+//        data: dataSet
+//    });
+
+
+//}
 
 //function AddItemToDropdownItems(item, id) {
 //    let currnetElement = document.getElementById(id);

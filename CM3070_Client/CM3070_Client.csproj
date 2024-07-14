@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Shared\Popups\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
@@ -14,6 +15,11 @@
     <PackageReference Include="IdentityModel" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.32" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CM3070.DbModelCore\CM3070.DbModelCore.csproj" />
+    <ProjectReference Include="..\CM3070.DbRepositoryCore\CM3070.DbRepositoryCore.csproj" />
   </ItemGroup>
 
 </Project>

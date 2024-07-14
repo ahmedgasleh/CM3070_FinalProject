@@ -12,6 +12,103 @@
     <div class="px-4"></div>
 </div>
 
+<!-- Modal popSchaduleEvent -->
+<div class="modal fade" id="popSchaduleEvent" tabindex="-1" role="dialog" aria-labelledby="popSchaduleEvent" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:800px">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">A Mikel</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="width:20px">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="d-flex flex-column px-2 py-2">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                    </div>
+                    <section class="card-body" id="popSchaduleEventBody">
+                        <h3 class="py-4"> Event Detial </h3>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2"> Available </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtAvailable" type="text" id="txtAvailable" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Status</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtStatus" type="text" id="txtStatus" style="width:190px;">
+                            </div>
+                        </div>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2"> Reason </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtReason" type="text" id="txtReason" style="width:190px;">
+                            </div>
+                           
+                        </div>
+
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2">Creator </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtCreator" type="text" id="txtCreator" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Date</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtDate" type="text" id="txtDate" style="width:190px;">
+                            </div>
+                        </div>
+
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2">Hour </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtHour" type="text" id="txtHour" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Priority</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtPriority" type="text" id="txtPriority" style="width:190px;">
+                            </div>
+                        </div>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2">Provider Name</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtProName" type="text" id="txtProName" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Specialty</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtSpecialty" type="text" id="txtSpecialty" style="width:190px;">
+                            </div>
+                        </div>
+
+                        @* <div class="mb-1 row">
+                            <label class="col-form-label col-8"></label>
+                            <div class="col-2">
+                                <button class="btn btn-primary" name="btnSearch" onclick="ChoosePhysician(); return;" type="button" id="btnSearch"> Search </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-secondary" name="btnCancel" onclick="ClearPhysicianSearch(); return;" type="button" id="btnCancel"> Clear </button>
+                            </div>
+                        </div> *@
+@* 
+                        <div class="mb-1">
+                            <label class="col-form-label">Select Physician</label>
+                            <div class="">
+                                <select class="form-control" size="25" name="PhysicianSearchResult" type="text" id="PhysicianSearchResult" style="width:755px; height:200px; ">
+                                </select>
+                            </div>
+                        </div> *@
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnRefPhysicianCancel">Cancel</button>
+                       @*  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnRefPhysicianUpdate" onclick="SelectRefPhysician(); return false;">Select</button> *@
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <link href='~/fullcalendar/packages/core/main.css' rel='stylesheet' />
 <link href='~/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
 
@@ -113,6 +210,20 @@
 
         function LoadSchaduleEventPopUp(data) {
             console.log("data", data);
+
+            var schaduleEvent = new bootstrap.Modal(document.getElementById("popSchaduleEvent"), {});
+            schaduleEvent.show();
+
+            SetDivElementText("txtAvailable", (data.available === "1" ? "True" : "False"));
+            SetDivElementText("txtStatus", (data.status === "1" ? "True" : "False") );
+            SetDivElementText("txtCreator", data.creator);
+            SetDivElementText("txtDate", data.date);
+            SetDivElementText("txtHour", data.hour);
+            SetDivElementText("txtPriority",  (data.priority === "1" ? "True" : "False") );
+            SetDivElementText("txtProName", data.provider_lname + ", " + data.provider_fname);
+            SetDivElementText("txtSpecialty", data.priority);
+            SetDivElementText("txtReason", data.reason);
+
         }
 
      </script>

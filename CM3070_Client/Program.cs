@@ -1,8 +1,12 @@
 
+using System.Data.Common;
 using System.IdentityModel.Tokens.Jwt;
+using CM3070.DbContextCore;
+using CM3070.DbRepositoryCore;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 
@@ -52,8 +56,12 @@ namespace CM3070_Client
                 options.SaveTokens = true;
                 options.ClientSecret = builder.Configuration ["App:ClientSecret"];
                 options.GetClaimsFromUserInfoEndpoint = true;
-               
             });
+
+            var dbConnection = builder.Configuration.GetConnectionString("CM3070DbConnection");
+
+            builder.Services.AddDbContext<CM3070DbContext>(options => options.UseSqlServer(dbConnection));
+            builder.Services.AddTransient<IRepositoryCore, RepositoryCore>();
 
             var app = builder.Build();
 
