@@ -29,7 +29,7 @@ namespace CM3070.DbRepositoryCore
             Demographic result = new Demographic();
 
            
-
+          
            return result = _cm3070DbContext.Demographic.Where(d => d.demographic_no == Id).FirstOrDefault();
 
                 
@@ -162,7 +162,95 @@ namespace CM3070.DbRepositoryCore
 
         public int UpdateProvider ( Provider provider )
         {
-            throw new NotImplementedException();
+            try
+            {
+                SqlParameter [] dataParameters = {
+                    ExtensionMethods.SetSqlParameter("@provider_no",false,provider.provider_no, SqlDbType.Int),
+                    ExtensionMethods.SetSqlParameter("@last_name",false,provider.last_name, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@first_name",false,provider.first_name, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@provider_type",false,provider.provider_type, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@supervisor",false,provider.supervisor, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@specialty",false,provider.supervisor, SqlDbType.NVarChar),
+
+                    ExtensionMethods.SetSqlParameter("@team",false,provider.status, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@sex",false,provider.sex, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@dob",false,provider.dob, SqlDbType.Date),
+                    ExtensionMethods.SetSqlParameter("@address",false,provider.address, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@phone",false,provider.phone, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@work_phone",false,provider.work_phone, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@ohip_no",false,provider.ohip_no, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@rma_no",false,provider.rma_no, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@billing_no",false,provider.billing_no, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@hso_no",false,provider.hso_no, SqlDbType.NVarChar),
+
+                    ExtensionMethods.SetSqlParameter("@status",false,provider.status, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@comments",false,provider.comments, SqlDbType.Text),
+                    ExtensionMethods.SetSqlParameter("@provider_activity",false,provider.@provider_activity, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@practitionerNo",false,provider.practitionerNo, SqlDbType.NVarChar),
+                    ExtensionMethods.SetSqlParameter("@init",false,provider.init, SqlDbType.NVarChar),
+
+                     ExtensionMethods.SetSqlParameter("@job_title",false,provider.job_title, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@email",false,provider.email, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@title",false,provider.title, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@lastUpdateUser",false,provider.lastUpdateUser, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@lastUpdateDate",false,provider.lastUpdateDate, SqlDbType.Date),
+                     ExtensionMethods.SetSqlParameter("@signed_confidentiality",false,provider.signed_confidentiality, SqlDbType.Date),
+                     ExtensionMethods.SetSqlParameter("@thirdPartyOnly",false,provider.thirdPartyOnly, SqlDbType.Bit),
+                     ExtensionMethods.SetSqlParameter("@practitionerNoType",false,provider.@practitionerNoType, SqlDbType.NVarChar),
+                };
+
+                var sqlRaw = "dbo.UpdateProvider @provider_no,@last_name,@first_name,@provider_type,@supervisor,@specialty,@team,@sex,@dob,@address,@phone,@work_phone,@ohip_no,@rma_no," +
+                    "@billing_no,@hso_no,@status,@comments,@provider_activity,@practitionerNo,@init,@job_title,@email,@title,@lastUpdateUser,@lastUpdateDate,@signed_confidentiality,@thirdPartyOnly,@practitionerNoType";
+
+                var result = _cm3070DbContext.Provider.FromSqlRaw(sqlRaw, dataParameters).AsEnumerable().FirstOrDefault();
+                
+                return 1;
+            }
+            catch (Exception ex)
+            {
+
+                return 0;
+            }
+        }
+
+        public int UpdateDemographic ( DemographicUpdate demographic )
+        {
+            try
+            {
+                SqlParameter [] dataParameters = {
+                  ExtensionMethods.SetSqlParameter("@demographic_no",false,demographic.demographic_no, SqlDbType.Int),
+                  ExtensionMethods.SetSqlParameter("@patient_id",false,demographic.patient_id, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@title",false,demographic.title, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@last_name",false,demographic.last_name, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@first_name",false,demographic.first_name, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@sex",false,demographic.sex, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@address",false,demographic.address, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@province",false,demographic.province, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@city",false,demographic.city, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@postal",false,demographic.postal, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@phone",false,demographic.phone, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@phone2",false,demographic.phone2, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@ver",false,demographic.ver, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@email",false,demographic.email, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@hin",false,demographic.hin, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@year_of_birth",false,demographic.year_of_birth, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@month_of_birth",false,demographic.month_of_birth, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@date_of_birth",false,demographic.date_of_birth, SqlDbType.NVarChar),
+                  ExtensionMethods.SetSqlParameter("@provider_no",false,demographic.provider_no, SqlDbType.NVarChar),
+             };
+
+                var rawSQL = "dbo.UpdateDemographic @patient_id,@title,@last_name,@first_name,@sex,@address,@province,@city,@postal,@phone, @phone2,@ver,@email,@hin,@year_of_birth,@month_of_birth,@date_of_birth,@provider_no";
+
+                var result = _cm3070DbContext.DemographicUpdates.FromSqlRaw(rawSQL, dataParameters).FirstOrDefault();
+
+                return 1;
+            
+            }
+            catch (Exception)
+            {
+
+                return 0;
+            }
         }
     }
 }

@@ -9,6 +9,7 @@
 
 namespace CM3070.DbModelCore
 {
+    using Microsoft.EntityFrameworkCore;
     using System;
     using System.Collections.Generic;
     
@@ -68,5 +69,37 @@ namespace CM3070.DbModelCore
         public Nullable<byte> consentToUseEmailForCare { get; set; }
     
        
+    }
+    [Keyless]
+    public class DemographicUpdate
+    {
+
+
+        public int demographic_no { get; set; }
+        public string patient_id { get; set; }
+        public string title { get; set; }
+        public string last_name { get; set; }
+        public string first_name { get; set; }
+        public string sex { get; set; }
+        public string address { get; set; }
+        public string city { get; set; }
+        public string province { get; set; }
+        public string postal { get; set; }
+        public string phone { get; set; }
+        public string phone2 { get; set; } 
+        
+        public string ver { get; set; }  //Health region
+        public string email { get; set; } 
+        public string hin { get; set; }
+        
+        public string year_of_birth { get; set; }
+        public string month_of_birth { get; set; }
+        public string date_of_birth { get; set; }
+       
+            
+        public string provider_no { get; set; }         
+        
+        
+
     }
 }

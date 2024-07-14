@@ -22,8 +22,13 @@ namespace CM3070_API.Controllers.v1
         [HttpGet(ApiRoutes.Posts.GetDemographic)]
         public async Task<IActionResult> GetDemographic ( [FromRoute] int pid )
         {
-
-            return Ok(await _repositoryCore.GetDemographic(pid));
+            var result = await _repositoryCore.GetDemographic(pid);
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else return Ok(new Demographic());
+                
         }
 
         [HttpPost(ApiRoutes.Posts.PhysicianSearch)]
@@ -69,14 +74,23 @@ namespace CM3070_API.Controllers.v1
         }
 
 
-        [HttpGet(ApiRoutes.Posts.UpdateProvider)]
+        [HttpPost(ApiRoutes.Posts.UpdateProvider)]
         public async Task<IActionResult> UpdateProvider ( [FromBody] Provider provider )
         {
 
             return Ok(_repositoryCore.UpdateProvider(provider));
         }
 
-        
+        [HttpPost(ApiRoutes.Posts.UpdateDemographic)]
+        public async Task<IActionResult> UpdateDemographic ( [FromBody] DemographicUpdate demographic )
+        {
+
+            return Ok(_repositoryCore.UpdateDemographic(demographic));
+        }
+
+        //UpdateDemographic
+
+
 
 
     }

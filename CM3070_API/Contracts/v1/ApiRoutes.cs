@@ -21,7 +21,9 @@ namespace CM3070_API.Contracts.v1
             public const string GetScheduleEvent = "/GetScheduleEvent/{id}";
             public const string GetProviders = "/GetProviders";
             public const string GetProvider = "/GetProvider/{id}";
-            public const string UpdateProvider = "UpdateProvider";
+            public const string UpdateProvider = "/UpdateProvider";
+
+            public const string UpdateDemographic = "/UpdateDemographic";
 
             //public const string GetPhysician = Base + "/Physician/{search}/&uuid={uuid}";
 

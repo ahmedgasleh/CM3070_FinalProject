@@ -147,6 +147,10 @@
                                             <button type="button" class="form-control btn btn-outline-dark"> File </button>
                                         </div>
                                     </div>
+
+                                    <div class="px-2">
+                                        <button class="btn btn-success" onclick="UpdateOrCreateDemographics(); return;"> Update or Create </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -507,6 +511,63 @@
 
         }
 
+        async function UpdateOrCreateDemographics(){
+
+            var demographic_no = $('#txtHealthNumber2').val();
+
+            var healthRegion = GetElementAndSelectedValue("#ddlHealthRegion")
+            //ddlHealthRegion
+            
+
+            var end_date = $('#txtExpiry').val();
+            var first_name = $('#txtFirstName').val();
+            var last_name = $('#txtLastName').val();
+            var title = $('#txtTitle').val();
+
+            var patient_status = $('#txtPatientStatus').val();
+            var dob = $('#txtBirthDate').val();
+
+            var sex = GetElementAndSelectedValue("#ddlGender");
+
+            var family_doctor = $('#txtFamilyPhys').val();
+
+            var alias = $('#txtRefPhys').val();
+
+            var address = $('#txtAddress').val();
+
+            var city = $('#txtCity').val();
+
+            var postal = $('#txtPostal').val();
+
+            var phone = $('#txtPhoneHome').val();
+            var phone2 = $('#txtPhoneWork').val();
+
+            
+
+            
+            
+            var data = JSON.stringify({ "demographic_no": demographic_no, "title": title, "first_name": first_name, "last_name": last_name,"sex": sex,  "dob": dob,  "address": address,
+                                   "city": city, "postal": postal, "phone": phone, "phone2": phone2, "ver": healthRegion, "end_date": end_date, 
+                                   "patient_status": patient_status,
+                                   "family_doctor": family_doctor, "alias": alias,   
+            });
+
+            console.log("pdata", data);
+
+            const response = await fetch(APIUrl + "UpdateDemographic", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/json",
+                }),
+                body: data
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                })
+
+        }
+
         async function LoadProvidersTable() {
 
             const response = await fetch(APIUrl + "GetProviders", {
@@ -540,12 +601,45 @@
 
                     console.log("result:", response)
 
-                    LoadPatientFormData(response, pid);            
-
+                    if (response.demographic_no === 0){
+                        ClearPatientFormData();
+                    }
+                    else{
+                        LoadPatientFormData(response, pid);    
+                    }                   
                 })
         }
 
+        function ClearPatientFormData(){
+            console.log("form is clearing");
+
+            SetDivElementText("txtFirstName", "");
+            SetDivElementText("txtLastName", "");
+            SetDivElementText("txtTitle", "");
+            SetDivElementText("txtSuffix", "");
+            SetDivElementText("txtPatientStatus", "");
+            SetDivElementText("txtHealthNumber2", "");
+
+            //let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
+            SetDivElementText("txtBirthDate", "");
+
+            SetDivElementText("txtAddress", "");
+            SetDivElementText("txtCity", "");
+            SetDivElementText("txtPostal", "");
+
+
+            UpdateDropDown("Select Gender", "ddlGender", "Select Gender", GenderList);
+            UpdateDropDown("Select Health Region", "ddlHealthRegion", "Select Health Region", RegionList);
+            UpdateDropDown("Select Type", "ddlAddressType", "Select Type", AddressTypeList);
+            UpdateDropDown("Select Health Region", "ddlProv", "Select Health Region", RegionList);
+
+            SetDivElementText("txtPhoneHome", "");
+            SetDivElementText("txtPhoneCell", "");
+        }
+
         function CancelProviderUpdate(){
+
+            
 
         }
 
@@ -684,24 +778,28 @@
 
             var userTitle = $('#txtUserTitle').val();
             var lastUpdateUser = $('#txtLastUpdateUser').val();
-            var lastUpdateDate = $('#lastUpdateDate').val();            
+            var lastUpdateDate = "2023-01-01"//$('#lastUpdateDate').val();            
 
             console.log("Update is called") /*,  */
+
+            let data = JSON.stringify({
+                "provider_no": providerNumber, "last_name": providerLastName, "first_name": providerFirstName, "provider_type": providerType,
+                "supervisor": supervisor, "specialty": specialty, "team": team, "sex": providerSex, "dob": providerDob, "address": address, "phone": providerPhone,
+                "work_phone": workPhone, "ohip_no": ohipNumber, "rma_no": rmaNumber, "billing_no": billingNumber, "hso_no": hsoNumberus, "status": status, "comments": comment,
+                "provider_activity": activity, "practitionerNo": practitionerNumber, "init": init, "job_title": jobTitle, "email": email, "title": userTitle, "lastUpdateUser": lastUpdateUser,
+                "lastUpdateDate": lastUpdateDate, "signed_confidentiality": "2023-01-01", "thirdPartyOnly": false, "practitionerNoType": ""
+            });
+
+            console.log("data13", data);
 
             const response = await fetch(APIUrl + "UpdateProvider", {
                 method: 'POST',
                 headers: new Headers({
-                    "Content-Type": "application/json;charset=UTF-8",
+                    "Content-Type": "application/json",
                 }),
-                body: JSON.stringify({
-                    "provider_no": providerNumber, "last_name": providerLastName, "first_name": providerFirstName, "provider_type": providerType,
-                    "supervisor": txtSupervisor, "specialty": txtSpecialty, "team": team, "sex": providerSex, "dob": providerDob, "address": address, "phone": providerPhone,
-                    "work_phone": workPhone, "ohip_no": ohipNumber, "rma_no": rmaNumber, "billing_no": billingNumber, "hso_no": hsoNumberus, "status": status, "comments": comment,
-                    "provider_activity": activity, "practitionerNo": practitionerNumber, "init": init, "job_title": jobTitle, "email": email, "title": userTitle, "lastUpdateUser": lastUpdateUser,
-                    "lastUpdateDate": lastUpdateDate, "signed_confidentiality": null, "thirdPartyOnly": false, "practitionerNoType": ""
-                        })
-            })
-                .then(response => response.text())
+                body: data
+                })
+                .then(response => response.json())
                 .then(response => {                   
 
                 })
@@ -721,12 +819,8 @@
                 body: JSON.stringify({"id": id})
             })
             .then(response => response.text())
-            .then(response => {
-
-                console.log("result:", response);
-
+            .then(response => {     
                 LoadProviderPopup(response);
-
             })
 
         }

@@ -29,5 +29,6 @@ namespace CM3070.DbRepositoryCore
         public List<Provider> GetProviders ();
 
         public int UpdateProvider(Provider provider );
+        public int UpdateDemographic ( DemographicUpdate demographic );
     }
 }
