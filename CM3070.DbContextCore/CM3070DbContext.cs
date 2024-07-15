@@ -29,6 +29,7 @@ namespace CM3070.DbContextCore
         //SP calls
 
         public virtual DbSet<SchaduleEventDetail> SchaduleEventDetails { get; set; }
+        public virtual DbSet<DemographicUpdate> DemographicUpdates { get; set; }
 
         protected override void OnModelCreating ( ModelBuilder modelBuilder )
         {

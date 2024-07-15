@@ -99,7 +99,7 @@
                 <a class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tbProviders" role="tab" aria-controls="tbProviders" aria-selected="false" onclick="LoadProvidersTable(); return;">Providers</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#tbSchadule" role="tab" aria-controls="tbSchadule" aria-selected="false"> Schadule </a>
+                <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#tbSchadule" role="tab" aria-controls="tbSchadule" aria-selected="false" onclick="LoadCalender(); return;"> Schadule </a>
             </li>
         </ul>
         <div class="tab-content pt-5" id="tab-content">
@@ -380,8 +380,7 @@
                     <table id="providersTable" class="table table-hover table-bordered" width="100%"
                            cellspacing="0">
                         <thead>
-                            <tr id="PendingHeadings">
-                            </tr>
+                            <tr id="PendingHeadings"> </tr>
                         </thead>
                         <tbody></tbody>
                     </table>
@@ -389,7 +388,8 @@
             </div>
             <div class="tab-pane" id="tbSchadule" role="tabpanel" aria-labelledby="tbSchadule">
                 <div width="100%">
-                    <img src="~/images/calendar.png" />
+                    @* <img src="~/images/calendar.png" /> *@
+                    <div class="mb-4" id='calendar'></div>
                 </div>
                 
 
@@ -486,6 +486,114 @@
     </div>
 </div>
 
+
+<!-- Modal popSchaduleEvent -->
+<div class="modal fade" id="popSchaduleEvent" tabindex="-1" role="dialog" aria-labelledby="popSchaduleEvent" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:800px">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">A Mikel</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="width:20px">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="d-flex flex-column px-2 py-2">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                    </div>
+                    <section class="card-body" id="popSchaduleEventBody">
+                        <h3 class="py-4"> Event Detial </h3>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2"> Available </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtAvailable" type="text" id="txtAvailable" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Status</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtStatus" type="text" id="txtStatus" style="width:190px;">
+                            </div>
+                        </div>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2"> Reason </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtReason" type="text" id="txtReason" style="width:190px;">
+                            </div>
+
+                        </div>
+
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2">Creator </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtCreator" type="text" id="txtCreator" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Date</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtDate" type="text" id="txtDate" style="width:190px;">
+                            </div>
+                        </div>
+
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2">Hour </label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtHour" type="text" id="txtHour" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Priority</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtPriority" type="text" id="txtPriority" style="width:190px;">
+                            </div>
+                        </div>
+                        <div class="mb-1 row">
+                            <label class="col-form-label col-2">Provider Name</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtProName" type="text" id="txtProName" style="width:190px;">
+                            </div>
+                            <label class="col-form-label col-2 px-4">Specialty</label>
+                            <div class="col-3">
+                                <input class="form-control" name="txtSpecialty" type="text" id="txtSpecialty" style="width:190px;">
+                            </div>
+                        </div>
+
+                        @* <div class="mb-1 row">
+                        <label class="col-form-label col-8"></label>
+                        <div class="col-2">
+                        <button class="btn btn-primary" name="btnSearch" onclick="ChoosePhysician(); return;" type="button" id="btnSearch"> Search </button>
+                        </div>
+                        <div class="col-2">
+                        <button class="btn btn-secondary" name="btnCancel" onclick="ClearPhysicianSearch(); return;" type="button" id="btnCancel"> Clear </button>
+                        </div>
+                        </div> *@
+                        @*
+                        <div class="mb-1">
+                        <label class="col-form-label">Select Physician</label>
+                        <div class="">
+                        <select class="form-control" size="25" name="PhysicianSearchResult" type="text" id="PhysicianSearchResult" style="width:755px; height:200px; ">
+                        </select>
+                        </div>
+                        </div> *@
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnRefPhysicianCancel">Cancel</button>
+                        @*  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnRefPhysicianUpdate" onclick="SelectRefPhysician(); return false;">Select</button> *@
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<link href='~/fullcalendar/packages/core/main.css' rel='stylesheet' />
+<link href='~/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
+<script src="~/fullcalendar/packages/core/main.js"></script>
+<script src="~/fullcalendar/packages/interaction/main.js"></script>
+<script src="~/fullcalendar/packages/daygrid/main.js"></script>
+<script src="~/fullcalendar/packages/timegrid/main.js"></script>
+<script src="~/fullcalendar/packages/list/main.js"></script>
+
 @section Scripts{
 
     <script type="text/javascript">
@@ -513,7 +621,7 @@
 
         async function UpdateOrCreateDemographics(){
 
-            var demographic_no = $('#txtHealthNumber2').val();
+            var hin = $('#txtHealthNumber2').val();
 
             var healthRegion = GetElementAndSelectedValue("#ddlHealthRegion")
             //ddlHealthRegion
@@ -540,16 +648,13 @@
             var postal = $('#txtPostal').val();
 
             var phone = $('#txtPhoneHome').val();
-            var phone2 = $('#txtPhoneWork').val();
+            var phone2 = $('#txtPhoneWork').val();        
 
             
-
             
-            
-            var data = JSON.stringify({ "demographic_no": demographic_no, "title": title, "first_name": first_name, "last_name": last_name,"sex": sex,  "dob": dob,  "address": address,
+            var data = JSON.stringify({ "demographic_no": 0, "hin": hin, "title": title, "first_name": first_name, "last_name": last_name,"sex": sex,  "dob": dob,  "address": address,
                                    "city": city, "postal": postal, "phone": phone, "phone2": phone2, "ver": healthRegion, "end_date": end_date, 
-                                   "patient_status": patient_status,
-                                   "family_doctor": family_doctor, "alias": alias,   
+                                   "patient_status": patient_status, "family_doctor": family_doctor, "alias": alias   
             });
 
             console.log("pdata", data);
@@ -904,7 +1009,7 @@
                 const rowElement = document.createElement("tr");
 
                 rowElement.setAttribute("id", "Id" + data[i].provider_no);
-                rowElement.classList.add("Row");
+                //rowElement.classList.add("Row");
                 rowElement.appendChild(createCell(data[i].provider_no));
                 rowElement.appendChild(createCell(data[i].last_name + "," + data[i].first_name));
                 rowElement.appendChild(createCell(data[i].provider_type));
@@ -916,6 +1021,102 @@
 
             }
         
+        }
+
+        async function LoadCalender() {
+
+            const response = await fetch(APIUrl + "GetSchedule", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    ShowCalanderInLine(response);
+
+                })
+
+           
+        }
+
+        function ShowCalanderInLine(data) {
+
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+                height: 'parent',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                defaultView: 'dayGridMonth',
+                defaultDate: Date.now(),
+                height: 'parent',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: data,
+
+                eventClick: function (info) {
+                    info.jsEvent.preventDefault(); // don't let the browser navigate
+
+                    if (info.event.url) {
+                        const functionName = info.event.url;
+                        eval(functionName);
+                    }
+                }
+            });
+
+            calendar.render();
+
+        }
+        //TDO move next functions make to shared location
+
+  
+
+        async function LoadEventDetail(id) {
+            console.log("Load Event Detail", id);
+
+            const response = await fetch(APIUrl + "GetScheduleEvent/" + id, {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    LoadSchaduleEventPopUp(response);
+
+                })
+
+
+        }
+
+        function LoadSchaduleEventPopUp(data) {
+            console.log("data", data);
+
+            var schaduleEvent = new bootstrap.Modal(document.getElementById("popSchaduleEvent"), {});
+            schaduleEvent.show();
+
+            SetDivElementText("txtAvailable", (data.available === "1" ? "True" : "False"));
+            SetDivElementText("txtStatus", (data.status === "1" ? "True" : "False"));
+            SetDivElementText("txtCreator", data.creator);
+            SetDivElementText("txtDate", data.date);
+            SetDivElementText("txtHour", data.hour);
+            SetDivElementText("txtPriority", (data.priority === "1" ? "True" : "False"));
+            SetDivElementText("txtProName", data.provider_lname + ", " + data.provider_fname);
+            SetDivElementText("txtSpecialty", data.priority);
+            SetDivElementText("txtReason", data.reason);
+
         }
         
 

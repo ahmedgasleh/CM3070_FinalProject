@@ -241,6 +241,45 @@ function UpdateDropdownItemsSelectByIndex(items, id, selectedIndex) {
 
 }
 
+async function LoadEventDetail(id) {
+    console.log("Load Event Detail", id);
+
+    const response = await fetch(APIUrl + "GetScheduleEvent/" + id, {
+        method: 'GET',
+        headers: new Headers({
+            "Content-Type": "application/x-www-form-urlencoded",
+        })
+    })
+        .then(response => response.json())
+        .then(response => {
+
+            console.log("result:", response)
+
+            LoadSchaduleEventPopUp(response);
+
+        })
+
+
+}
+
+function LoadSchaduleEventPopUp(data) {
+    console.log("data", data);
+
+    var schaduleEvent = new bootstrap.Modal(document.getElementById("popSchaduleEvent"), {});
+    schaduleEvent.show();
+
+    SetDivElementText("txtAvailable", (data.available === "1" ? "True" : "False"));
+    SetDivElementText("txtStatus", (data.status === "1" ? "True" : "False"));
+    SetDivElementText("txtCreator", data.creator);
+    SetDivElementText("txtDate", data.date);
+    SetDivElementText("txtHour", data.hour);
+    SetDivElementText("txtPriority", (data.priority === "1" ? "True" : "False"));
+    SetDivElementText("txtProName", data.provider_lname + ", " + data.provider_fname);
+    SetDivElementText("txtSpecialty", data.priority);
+    SetDivElementText("txtReason", data.reason);
+
+}
+
 //function LoadTempTable(id) {
 
 //    console.log("Load Data Table")
