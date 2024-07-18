@@ -20,7 +20,7 @@ namespace CM3070_API.Controllers.v1
 
 
         [HttpGet(ApiRoutes.Posts.GetDemographic)]
-        public async Task<IActionResult> GetDemographic ( [FromRoute] int pid )
+        public async Task<IActionResult> GetDemographic ( [FromRoute] string pid )
         {
             var result = await _repositoryCore.GetDemographic(pid);
             if (result != null)
@@ -86,6 +86,46 @@ namespace CM3070_API.Controllers.v1
         {
 
             return Ok(_repositoryCore.UpdateDemographic(demographic));
+        }
+
+        
+
+        [HttpGet(ApiRoutes.Posts.GetHomeTask)]
+        public async Task<IActionResult> GetHomeTask ( [FromQuery] int id)
+        {
+            return Ok(_repositoryCore.GetTask(id));
+        }
+
+        [HttpGet(ApiRoutes.Posts.GetHomeTree)]
+        public async Task<IActionResult> GetHomeTree ( )
+        {
+            
+            List<TreeNode> treeNodes = new List<TreeNode>();
+
+            for(int i = 0; i < 5; i++)
+            {
+                List<Node> nodes = new List<Node>();
+                TreeNode treeNode = new TreeNode(); 
+                for (int j = 0; j< 5; j++)
+                {
+                    Node node = new Node();
+                    node .text = "Child"+j.ToString();
+                    node.id = j.ToString();
+                    node.icon = "";
+                    node.href = "";
+                    node.onclick = "loadItem(" + i * j + ")";
+
+                    nodes.Add(node);
+
+                }
+
+                treeNode.text = "parent"+ i.ToString();
+                treeNode.nodes = nodes;
+
+                treeNodes.Add(treeNode);
+            } 
+            
+            return Ok(treeNodes);
         }
 
         //UpdateDemographic

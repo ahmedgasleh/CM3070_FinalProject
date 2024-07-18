@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CM3070.DbRepositoryCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e638be8b4e0c9f1359c369968a1f2a26c627b5ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45f42ef2821348b4d4162d7ed7dc83cece36e247")]
 [assembly: System.Reflection.AssemblyProductAttribute("CM3070.DbRepositoryCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CM3070.DbRepositoryCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

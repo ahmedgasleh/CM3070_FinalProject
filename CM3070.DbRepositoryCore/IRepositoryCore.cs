@@ -10,7 +10,7 @@ namespace CM3070.DbRepositoryCore
     public interface IRepositoryCore
     {
         public int DemographicCreatedOrUpdate(Demographic demographic);
-        public Task<Demographic> GetDemographic ( int Id );
+        public Task<Demographic> GetDemographic ( string Id );
 
         public ScheduleDate GetSchedule ( int Id );
 
@@ -30,5 +30,7 @@ namespace CM3070.DbRepositoryCore
 
         public int UpdateProvider(Provider provider );
         public int UpdateDemographic ( DemographicUpdate demographic );
+
+        public List<DbModelCore.Task> GetTask (int id);
     }
 }

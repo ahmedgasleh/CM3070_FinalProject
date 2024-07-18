@@ -35,6 +35,25 @@ function createButtonCell(cellData, id, popId) {
     return cellElement;
 }
 
+function createButtonCellFunc(cellData, func) {
+    const cellElement = document.createElement("td");
+
+    cellElement.setAttribute("align", "center");
+    const buttonElement = document.createElement("button");
+
+    
+    buttonElement.setAttribute("onclick", func)
+
+    buttonElement.type = 'button';
+    buttonElement.textContent = cellData;
+    buttonElement.classList.add('btn');
+    buttonElement.classList.add('btn-outline-success');
+    buttonElement.classList.add('btn-edit');
+
+    cellElement.appendChild(buttonElement);
+
+    return cellElement;
+}
 /**
  * Create Icon Cell 
  * @param {any} cellData
@@ -261,6 +280,10 @@ async function LoadEventDetail(id) {
 
 
 }
+
+const getAbsolutePixelDistance = (a, b) => {
+    return Math.abs(a - b);
+};
 
 function LoadSchaduleEventPopUp(data) {
     console.log("data", data);

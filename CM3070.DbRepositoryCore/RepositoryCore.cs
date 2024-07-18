@@ -24,13 +24,13 @@ namespace CM3070.DbRepositoryCore
             throw new NotImplementedException();
         }
 
-        public async Task<Demographic> GetDemographic ( int Id )
+        public async Task<Demographic> GetDemographic ( string Id )
         {
             Demographic result = new Demographic();
 
            
           
-           return result = _cm3070DbContext.Demographic.Where(d => d.demographic_no == Id).FirstOrDefault();
+           return result = _cm3070DbContext.Demographic.Where(d => d.hin == Id).FirstOrDefault();
 
                 
         }
@@ -160,6 +160,13 @@ namespace CM3070.DbRepositoryCore
             return result;
         }
 
+        public List<DbModelCore.Task> GetTask (int id)
+        {
+            var result = _cm3070DbContext.Tasks.Where(t => t.id >= id).ToList();
+
+            return result;
+        }
+
         public int UpdateProvider ( Provider provider )
         {
             try
@@ -252,5 +259,7 @@ namespace CM3070.DbRepositoryCore
                 return 0;
             }
         }
+
+       
     }
 }

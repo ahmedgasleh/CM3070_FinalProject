@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SUSJ4rGCNtmuKaJ8ZtXjsEvJK7h25xXgZVc8pUMmZKg=",
+  "Hash": "zM/Vgf8mL75ga1R/jVGsv4yXWWISbAcuUg8TzpcRICw=",
   "Source": "CM3070_Client",
   "BasePath": "_content/CM3070_Client",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CM3070_Client.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\css\\bs5treeview.css",
+      "SourceId": "CM3070_Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\",
+      "BasePath": "_content/CM3070_Client",
+      "RelativePath": "css/bs5treeview.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bs5treeview.css"
     },
     {
       "Identity": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\css\\custom_css.css",
@@ -2485,6 +2504,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\head_man-silhouette.jpg"
+    },
+    {
+      "Identity": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\bs5treeview.js",
+      "SourceId": "CM3070_Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\",
+      "BasePath": "_content/CM3070_Client",
+      "RelativePath": "js/bs5treeview.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bs5treeview.js"
     },
     {
       "Identity": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\DataFetchAndMapTo.js",

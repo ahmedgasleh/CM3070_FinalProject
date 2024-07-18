@@ -7,10 +7,13 @@
     var eventColor = new Dictionary<string, string>() { { "#378006", "Visit" }, { "#86D1FC", "Follow" }, { "#EBE134", "Unknown" } };
 }
 
-<div class="container-fluid px-5 py-5" id='calendar-container'>
-    <div class="mb-4" id='calendar'></div>
-    <div class="px-4"></div>
+<div width="100%" class="px-5">
+    <div class="container-fluid px-5 py-5" id='calendar-container'>
+        <div class="px-4"></div>
+        <div class="mb-4" id='calendar'></div>       
+    </div>
 </div>
+
 
 <!-- Modal popSchaduleEvent -->
 <div class="modal fade" id="popSchaduleEvent" tabindex="-1" role="dialog" aria-labelledby="popSchaduleEvent" aria-hidden="true">
@@ -158,8 +161,10 @@
             var calendarEl = document.getElementById('calendar');
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
+                contentHeight: 800,
+                aspectRatio: 1.8,
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
-                height: 'parent',
+                //height: 'parent',
                 header: {
                     left: 'prev,next today',
                     center: 'title',

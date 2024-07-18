@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CM3070.DbModelCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fc200e6d4314f8a8c7c3f7995fe6120e133b717")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45f42ef2821348b4d4162d7ed7dc83cece36e247")]
 [assembly: System.Reflection.AssemblyProductAttribute("CM3070.DbModelCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CM3070.DbModelCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

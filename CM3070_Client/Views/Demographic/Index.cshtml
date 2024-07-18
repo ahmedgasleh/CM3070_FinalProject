@@ -108,15 +108,15 @@
                     <div class="card-body">
                         <div class="row g-1 py-2">
                             <div class="col-12">
-                                <div class="d-flex flex col-10">
+                                <div class="d-flex flex col-12">
                                     <div class="d-flex flex col-4">
                                         <div class="col-2">
                                             <label class="col-form-label">Health #</label>
                                         </div>
-                                        <div class="col-5">
+                                        <div class="col-4">
                                             <input class="form-control bg-warning bg-opacity-10" name="txtHealthNumber2" type="text" id="txtHealthNumber2" tabindex="0" />
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-4">
                                             <div>
                                                 <select class="form-control" name="ddlHealthRegion" id="ddlHealthRegion">
                                                     <option value="" selected disabled>Select Health Region</option>
@@ -132,23 +132,23 @@
                                         <div class="col-2">
                                             <label class="col-form-label">Expiry</label>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-8">
                                             <input class="form-control" name="txtExpiry" type="text" id="txtExpiry" tabindex="0" />
                                         </div>                                       
                                     </div>
-                                    <div class="px-2 d-flex flex col-3">
+                                    <div class="px-2 d-flex flex col-4">
                                         <div class="col-3">
-                                            <label class="col-form-label">File Number</label>
+                                            <label class="col-form-label px-2">File Number</label>
                                         </div>
-                                        <div class="col-5">
+                                        <div class="col-4">
                                             <input class="form-control" name="txtFileNumber" type="text" id="txtFileNumber" tabindex="0" />
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-2">
                                             <button type="button" class="form-control btn btn-outline-dark"> File </button>
                                         </div>
                                     </div>
 
-                                    <div class="px-2">
+                                    <div class="col-2">
                                         <button class="btn btn-success" onclick="UpdateOrCreateDemographics(); return;"> Update or Create </button>
                                     </div>
                                 </div>
@@ -169,8 +169,8 @@
                                     </div>                             
                                 </div>
                                 <div class="d-flex flex col-3">
-                                    <div class="col-2">
-                                        <label class="col-form-label"> Gender </label>
+                                    <div class="col-3">
+                                        <label class="col-form-label px-2"> Gender </label>
                                     </div>
                                     <div class="col-8">
                                         <div>
@@ -182,65 +182,46 @@
                                                 }
                                             </select>
                                         </div>
-                                    </div>
-                                    
+                                    </div>                                    
                                 </div>
-                                <div class="d-flex flex col-4">
+                                <div class="d-flex flex col-6">
                                     <div class="col-2">
                                         <label class="col-form-label px-2"> Deceased </label>
                                     </div>
-                                    <div class="col-1 py-1">
+                                    <div class="col-1 py-2">
                                         <input class=" form-control form-check-input px-2" type="checkbox" value="" id="isDeceased" >
                                     </div>
                                     <div class="col-4">
                                         <input class="form-control px-2" name="txtDeceasedDate" type="text" id="txtDeceasedDate" tabindex="0" disabled />
                                     </div>                        
-                                </div>
-                                
+                                </div>                                
                             </div>
                             <div class="d-flex flex col-8 py-2">
                                 <div class="col-1">
                                     <label class="col-form-label"> FamilyPhys </label>
                                 </div>  
-                                
-                                <div class="col-3 px-3">
-                                    
-
+                                 <div class="col-3 px-2">                           
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-warning bg-opacity-10" id="txtFamilyPhys" placeholder="Family Physician">
                                         <input class="btn btn-outline-primary form-control" type="button" name="btnChoosePhysician" value="Family Physician" data-bs-toggle="modal" data-bs-target="#popRefPhysician" id="btnEditPhn" tabindex="0" onclick="AddFamilyPhysician(); return;">
-                                                                                                            
-                                       
                                     </div>
-
-
                                 </div>
-                                
-                                                           
-                                
-                                <div class="col-1">
+                                <div class="col-1 px-4">
                                     <label class="col-form-label px-2"> RefPhys </label>
                                 </div>
-                               
-                                <div class="col-3">                                    
-                                  
-
+                                <div class="col-5">                                    
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-warning bg-opacity-10" id="txtRefPhys" placeholder="Refering Physician">
                                         <input class="btn btn-outline-primary form-control" type="button" name="btnChoosePhysician" value="Refering Referring Physician" data-bs-toggle="modal" data-bs-target="#popRefPhysician" id="btnEditPhn" tabindex="0" onclick="AddRefPhysician(); return;">
                                     </div>
                                 </div>
-                                
-                                                            
-                                
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <div class="col-10">
-                            
+                        <div class="col-12">                            
                             <div class="d-flex flex col-12">
                                 <div class="d-flex flex col-3">
                                     <div class="d-flex flex col-2">
@@ -250,16 +231,15 @@
                                     <div class="d-flex flex col-9">
                                         <input class="form-control bg-warning bg-opacity-10" name="txtAddress" type="text" id="txtAddress" tabindex="0" />
                                     </div>
-                                </div>                                 
-                                
-                                
+                                </div>                                
+
                                 <div class="d-flex flex col-3">
-                                    <div class="d-flex flex col-2">
+                                    <div class="d-flex flex col-1">
                                         <label class="col-form-label">City</label>
                                     </div>
                                     <div class="d-flex flex col-10">
                                         <input class="form-control bg-warning bg-opacity-10" name="txtCity" type="text" id="txtCity" tabindex="0" />
-                                        <div>
+                                        <div class="col-5">
                                             <select class="form-control" name="ddlProv" id="ddlProv">
                                                 <option value="" selected disabled>Select Prov</option>
                                                 @foreach (var item in health_region)
@@ -273,13 +253,7 @@
                                     </div>
 
                                 </div>
-                                
-                                
 
-                               
-                                
-                                
-                                
                                 <div class="d-flex flex col-3">
                                     <div class="d-flex flex col-3">
                                         <label class="col-form-label">Postal/Zip</label>
@@ -290,12 +264,11 @@
 
                                 </div>
 
-                                <div class="d-flex flex col-3">
-                                    <div class="d-flex flex col-3">
+                                <div class="d-flex flex col-2">
+                                    <div class="d-flex flex col-4 px-4">
                                         <label class="col-form-label">Type</label>
-
                                     </div>
-                                    <div class="d-flex flex col-9">
+                                    <div class="d-flex flex col-6">
                                         <div>
                                             <select class="form-control" name="ddlAddressType" id="ddlAddressType">
                                                 <option value="" selected disabled>Select Type</option>
@@ -309,11 +282,7 @@
                                     </div>
 
                                 </div>
-                                
-                                
-                               
 
-                                
                             </div>
                         </div>
                     </div>
@@ -609,6 +578,8 @@
         window.addEventListener("DOMContentLoaded", (event) => {
 
             //LoadTempTable();
+
+            console.log(getAbsolutePixelDistance(13, 23));
         })
 
         function GetPatient(){
@@ -750,8 +721,14 @@
 
        
 
-        function LoadPatientFormData(patient, id) {
+        function LoadPatientFormData(patient, id) { 
+            
+            let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
 
+
+
+            SetDivElementText("textCurrentSubject", patient.last_name + ", " + patient.first_name + " " + dob);
+            //SetDivElementText("textCurrentSubject", "ahmed");
             SetDivElementText("txtFirstName", patient.first_name);
             SetDivElementText("txtLastName", patient.last_name);
             SetDivElementText("txtTitle", patient.title);
@@ -759,7 +736,7 @@
             SetDivElementText("txtPatientStatus", "Active");
             SetDivElementText("txtHealthNumber2", id);
 
-            let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
+           
             SetDivElementText("txtBirthDate", dob);
 
             SetDivElementText("txtAddress", patient.address);

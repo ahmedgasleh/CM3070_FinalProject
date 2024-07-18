@@ -25,6 +25,9 @@ namespace CM3070.DbContextCore
         public virtual DbSet<LabTestResults> LabTestResult { get; set; }
         public virtual DbSet<Tickler> Tickler { get; set; }
         public virtual DbSet<Tickler_Category> Tickler_Categories { get; set; }
+        public virtual DbSet<DbModelCore.Task> Tasks { get; set; }
+
+
 
         //SP calls
 
@@ -101,6 +104,12 @@ namespace CM3070.DbContextCore
             });
 
             modelBuilder.Entity<Tickler_Category>(entity =>
+            {
+                entity.HasKey(e => e.id);
+
+            });
+
+            modelBuilder.Entity<DbModelCore.Task>(entity =>
             {
                 entity.HasKey(e => e.id);
 

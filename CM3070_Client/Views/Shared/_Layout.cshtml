@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Authentication
 
-{
+@{
 
 }
 
@@ -16,13 +16,12 @@
     <link href="~/datatable/datatables.datatables.css" rel="stylesheet" />
     <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="~/css/styles.css" rel="stylesheet" />
+    <link href="~/css/bs5treeview.css" rel="stylesheet" />
     <link href="~/css/custom_css.css" rel="stylesheet" />
     @await RenderSectionAsync("Styles", required: false)
 </head>
 <body class="sb-nav-fixed" id="MainBody">
     <div id="ContentContainer" class="flex-column">
-
-
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <div class="px-4"></div>
@@ -33,13 +32,13 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 justify-content-between">
+                        <li>
+                            <div class="text-nowrap bd-highlight py-2" style="width: 8rem;" id="textCurrentSubject" > - </div>
+                        </li>                        
                         <li class="nav-item">
                             <a class="btn btn-secondary text-white" asp-area="" asp-controller="Home" asp-action="Index">Refresh</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="btn btn-secondary text-white" asp-area="" asp-controller="Home" asp-action="Logout">Logout</a>
-                        </li>
-                      
+                        </li>                                
                     </ul>
                 </div>
             </div>
@@ -50,6 +49,9 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="side_nav_accordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
+                            <a class="nav-link" href="/SubjectHome">
+                                <i class="fas fa-home sb-nav-link-icon px-2 py-2" style="font-size:25px" data-bs-toggle="tooltip" data-bs-placement="right" title="Home"></i>
+                            </a>
                             <a class="nav-link" href="/Demographic">
                                 <i class="fas fa-pie-chart sb-nav-link-icon px-2 py-2" style="font-size:25px" data-bs-toggle="tooltip" data-bs-placement="right" title="Demographics"></i>
                             </a>
@@ -81,6 +83,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/bs5treeview.js"></script>
    
     <script src="~/datatable/datatables.js"></script>
     <script src="~/js/DataFetchAndMapTo.js"></script>

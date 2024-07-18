@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\DataTable\\vfs_fonts.js"
     },
     {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\css\\bs5treeview.css",
+      "PackagePath": "staticwebassets\\css\\bs5treeview.css"
+    },
+    {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\css\\custom_css.css",
       "PackagePath": "staticwebassets\\css\\custom_css.css"
     },
@@ -519,6 +523,10 @@
     {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\DataFetchAndMapTo.js",
       "PackagePath": "staticwebassets\\js\\DataFetchAndMapTo.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\bs5treeview.js",
+      "PackagePath": "staticwebassets\\js\\bs5treeview.js"
     },
     {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\site.js",
