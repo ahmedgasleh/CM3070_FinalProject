@@ -216,14 +216,14 @@ function RemoveItemFromDropdownList(id) {
 function SetDivElementValue(id, value) {
     let currentElement = document.querySelector(id);
 
-   // console.log("Div", currentElement);
+   console.log("Div", currentElement);
 
     currentElement.setAttribute("value", value)
 }
 function SetDivElementText(id, value) {
     let currentElement = document.getElementById(id);
 
-   // console.log("Div", currentElement);
+   console.log("Div", currentElement);
 
     currentElement.setAttribute("value", value);
     currentElement.innerHTML = value;

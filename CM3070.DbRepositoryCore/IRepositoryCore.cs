@@ -32,5 +32,11 @@ namespace CM3070.DbRepositoryCore
         public int UpdateDemographic ( DemographicUpdate demographic );
 
         public List<DbModelCore.Task> GetTask (int id);
+
+        public List<Document> GetHomeDocuments ( int id );
+
+        public List<Mail> GetMail( int id );
+
+
     }
 }

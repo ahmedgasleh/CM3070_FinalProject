@@ -20,11 +20,30 @@ namespace CM3070_Client.Controllers.Api
 
         [HttpPost]
         [Route("GetProvider")]
-        public async Task<IActionResult> GetProvider ( [FromBody] object id )
-        {
-            var result = _repositoryCore.GetProvider("1001");
+        public async Task<IActionResult> GetProvider ( [FromBody] Row data )
+        {         
+            
+            var result = _repositoryCore.GetProvider(data?.Id);
 
             return PartialView("Popups/_ProviderDetail", result );
+        }
+
+        [HttpPost]
+        [Route("GetTaskDetail")]
+        public async Task<IActionResult> GetTaskDetail ( [FromBody] Row data )
+        {
+            var result = _repositoryCore.GetTask(Convert.ToInt32(data.Id));
+
+            return PartialView("Sections/_taskDetail", result[0]);
+        }
+
+        [HttpPost]
+        [Route("GetDecumentDetail")]
+        public async Task<IActionResult> GetDecumentDetail ( [FromBody] Row data )
+        {
+            var result = _repositoryCore.GetHomeDocuments(Convert.ToInt32(data.Id));
+
+            return PartialView("Sections/_documentDetail", result[0]);
         }
     }
 }

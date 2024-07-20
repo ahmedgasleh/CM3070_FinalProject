@@ -12,7 +12,13 @@
         <div class="col-2">
             <div class="card">
                 <div class="card-body" >
-                    <div id="homeTree"></div>
+                    @* <div id="homeTree"></div> *@
+                    <div class="py-2">
+                        <button class="btn btn-success w-100" onclick="GetHomeTask(); return;" id="btnTasks"> Tasks </button>
+                    </div>
+                    <div class="py-2">
+                        <button class="btn btn-success w-100" onclick="GetHomeDocuments(); return;"> Documents </button>
+                    </div>
                 </div>
 
             </div>
@@ -33,22 +39,9 @@
                     <div class="card py-2">
                         <div class="card-body">
                             <div id="taskStatus"> </div>
-                            <div class="d-flex flex-row"> 
-                                
-                                <label class="col-form-label"> Patient </label>
-                                <label class="col-form-label" id="name"></label>
-                                <label class="col-form-label" id="createdBy"></label>
-                            </div>
 
-                            <div class="d-flex flex-row">
-                                <label class="col-form-label"> Due Date </label>
-                                <label class="col-form-label" id="dueDate"></label>
-                                <label class="col-form-label"> Priority </label>
-                                <label class="col-form-label" id="priority"></label>
-                            </div>
-                            <label class="col-form-label"> Notes </label>
-                            <textarea class="form-control" id="notes" rows="10"></textarea>
-
+                            <div id="taskDetail"> </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -66,7 +59,7 @@
         window.addEventListener("DOMContentLoaded", (event) => {
 
             console.log("Doc Loaded");
-            GetHomeTree();
+            //GetHomeTree();
             GetHomeTask();
         })
 
@@ -105,6 +98,25 @@
                 })
         }
 
+        async function GetHomeDocuments(){
+
+            console.log("GetHomeDocuments");
+
+            const response = await fetch(APIUrl + "GetHomeDocuments", {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+
+                    loadHomeDocuments(response, document.getElementById("homeListDetail"));
+                })
+
+        }
+
         function loadHomeTask(data, table) {
 
             const tableHead = table.querySelector("thead");
@@ -130,7 +142,7 @@
 
                 const rowElement = document.createElement("tr");
 
-                rowElement.setAttribute("id", "Id" + data[i].id);
+                rowElement.setAttribute("id", "Id" + data[i].demographic_no);
                 //rowElement.classList.add("Row");
                 rowElement.appendChild(createCell(data[i].id));
                 rowElement.appendChild(createCell(data[i].demographic_no));
@@ -146,33 +158,114 @@
             }
         }
 
+        function loadHomeDocuments(data, table){
+
+            const tableHead = table.querySelector("thead");
+            const tableBody = table.querySelector("tbody");
+
+
+            console.log("ldTable", data)
+
+            //clear table
+            tableHead.innerHTML = "<tr></tr>"
+            tableBody.innerHTML = "";
+
+            tableHead.innerHTML = "<tr></tr>"
+            tableBody.innerHTML = "";
+
+            tableHead.querySelector("tr").appendChild(createHeaders("ID", "ColId", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Type", "ColType", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("File Name", "ColFileName", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Created By", "ColCreated", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Responsible", "ColResponsible", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Status", "ColStatus", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Content", "ColPriority", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Updtaded Date", "ColUDate", ["tblColumn"]))
+
+            for (let i = 0; i < data.length; i++) {
+
+                const rowElement = document.createElement("tr");
+
+                rowElement.setAttribute("id", "Id" + data[i].document_no);
+                //rowElement.classList.add("Row");
+                rowElement.appendChild(createCell(data[i].document_no));
+                rowElement.appendChild(createCell(data[i].doctype));
+                rowElement.appendChild(createCell(data[i].docfilename));
+                rowElement.appendChild(createCell(data[i].doccreator));
+                rowElement.appendChild(createCell(data[i].responsible));
+                rowElement.appendChild(createCell(data[i].status));
+                rowElement.appendChild(createCell(data[i].contenttype));
+                rowElement.appendChild(createCell(data[i].updatedatetime));
+                rowElement.appendChild(createButtonCellFunc("Load", "LoadDocumentDetail(" + data[i].document_no + ")"));
+
+                tableBody.appendChild(rowElement);
+            }
+
+
+        }
+        async function LoadDocumentDetail(id) {
+            console.log("loadDocDetail", id);
+
+            console.log("GetHomeTask");
+            const response = await fetch("/Api/DataFetch/GetDocumentDetail", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                }),
+                body: JSON.stringify({ "id": id })
+            })
+                .then(response => response.text())
+                .then(response => {
+
+
+                    loadDocumentDetail(response);
+                })
+        }
+
+        function loadDocumentDetail(data) {
+
+            console.log("docDetail", data)
+
+            // SetDivElementText("pname", data[0].demographic_no);
+            // SetDivElementText("createdBy", data[0].created_by);
+            // SetDivElementText("dueDate", data[0].due_date);
+            // SetDivElementText("priory", data[0].priority_id);
+            // SetDivElementText("notes", data[0].notes);
+
+            $('taskDetail').html(data);
+
+        }
+
         async function LoadTaskDetail(id) {
             console.log("loadTaskDetail", id);
 
             console.log("GetHomeTask");
-            const response = await fetch(APIUrl + "GetHomeTask/" + id , {
-                method: 'GET',
+            const response = await fetch("/Api/DataFetch/GetTaskDetail", {
+                method: 'POST',
                 headers: new Headers({
-                    "Content-Type": "application/x-www-form-urlencoded",
-                })
+                    "Content-Type": "application/json;charset=UTF-8",
+                }),
+                body: JSON.stringify({ "id": id })
             })
-                .then(response => response.json())
-                .then(response => {
+            .then(response => response.text())
+            .then(response => {
 
 
-                    loadHomeTaskDetail(response);
-                })
+                loadHomeTaskDetail(response);
+            })
         }
 
         function loadHomeTaskDetail(data) {
 
-            console.log("taskDetail", data)
+            // console.log("taskDetail", data)
 
-            SetDivElementText("name", data.demographic_no);
-            SetDivElementText("createdBy", data.created_by);
-            SetDivElementText("dueDate", data.due_date);
-            SetDivElementText("priory", data.priority_id);
-            SetDivElementText("notes", data.notes);
+            // SetDivElementText("pname", data[0].demographic_no);
+            // SetDivElementText("createdBy", data[0].created_by);
+            // SetDivElementText("dueDate", data[0].due_date);
+            // SetDivElementText("priory", data[0].priority_id);
+            // SetDivElementText("notes", data[0].notes);
+
+            $('taskDetail').html(data);
 
         }
 
@@ -191,5 +284,7 @@
 
 
         }
+
+    
     </script>
 }

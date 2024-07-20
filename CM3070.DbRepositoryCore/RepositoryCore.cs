@@ -162,7 +162,31 @@ namespace CM3070.DbRepositoryCore
 
         public List<DbModelCore.Task> GetTask (int id)
         {
+
             var result = _cm3070DbContext.Tasks.Where(t => t.id >= id).ToList();
+
+            return result;
+        }
+
+        public List<Document> GetHomeDocuments ( int id )
+        {
+            try
+            {
+                var result = _cm3070DbContext.Document.Where(t => t.document_no >= id).ToList();
+
+                 return result;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
+        }
+
+        public List<Mail> GetMail( int id )
+        {
+            var result = _cm3070DbContext.Mail.Where(t => t.priority_id == id).ToList();
 
             return result;
         }

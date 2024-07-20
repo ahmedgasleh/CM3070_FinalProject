@@ -1,4 +1,5 @@
-﻿using CM3070.DbModelCore;
+﻿using Azure.Identity;
+using CM3070.DbModelCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CM3070.DbContextCore
@@ -26,6 +27,8 @@ namespace CM3070.DbContextCore
         public virtual DbSet<Tickler> Tickler { get; set; }
         public virtual DbSet<Tickler_Category> Tickler_Categories { get; set; }
         public virtual DbSet<DbModelCore.Task> Tasks { get; set; }
+
+        public virtual DbSet<Mail> Mail { get; set; }   
 
 
 
@@ -110,6 +113,12 @@ namespace CM3070.DbContextCore
             });
 
             modelBuilder.Entity<DbModelCore.Task>(entity =>
+            {
+                entity.HasKey(e => e.id);
+
+            });
+
+            modelBuilder.Entity<Mail>(entity =>
             {
                 entity.HasKey(e => e.id);
 

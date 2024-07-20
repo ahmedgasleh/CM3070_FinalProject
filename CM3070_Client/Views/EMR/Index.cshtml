@@ -1,0 +1,138 @@
+﻿@inject IConfiguration _configuration;
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@* <div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-emr-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-emr-char-tab" data-bs-toggle="pill" data-bs-target="#v-emr-chart" type="button" role="tab" aria-controls="v-emr-chart" aria-selected="true">Chart</button>
+        <button class="nav-link" id="v-emr-prescription-tab" data-bs-toggle="pill" data-bs-target="#v-emr-prescription" type="button" role="tab" aria-controls="v-emr-prescription" aria-selected="false">Prescription</button>
+    </div>
+    <div class="tab-content" id="v-emr-tabContent">
+        <div class="tab-pane fade show active" id="v-emr-chart" role="tabpanel" aria-labelledby="v-emr-char-tab">
+            <div class="h-100">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-12">
+                            Chart
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   
+        </div>
+        <div class="tab-pane fade show" id="v-emr-prescription" role="tabpanel" aria-labelledby="v-emr-prescription-tab">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row g-1 py-2">
+                        <div class="col-12" style="width:100%; height:100%">
+                            Prescription
+                        </div>
+                    </div>       
+                   
+                </div>
+            </div>           
+        </div>
+    </div>
+</div> *@
+
+<div class="row g-1 py-2 px-2">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tbInbox" role="tab" aria-controls="tbInbox" aria-selected="true">Inbox</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link " id="tab-1" data-bs-toggle="tab" href="#tbChart" role="tab" aria-controls="tbChart" aria-selected="true">Chart</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tbPrescription" role="tab" aria-controls="tbPrescription" aria-selected="true">Prescription</a>
+        </li>
+        
+
+    </ul>
+    <div class="tab-content pt-5" id="tab-content">
+
+        <div class="tab-pane px-2 active" id="tbInbox" role="tabpanel" aria-labelledby="tbInbox">
+            <div class="card">
+                <div class="card-body bg-success bg-opacity-10">
+                    <div class="row g-1 py-2">
+                        <div class="col-12 h-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane px-2" id="tbChart" role="tabpanel" aria-labelledby="tab-0">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="row g-1 py-2">
+                        <div class="col-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane px-2" id="tbPrescription" role="tabpanel" aria-labelledby="tbPrescription">
+            <div class="card bg-warning bg-opacity-10">
+                <div class="card-body">
+                    <div class="row g-1 py-2">
+                        <div class="col-12">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+</div>
+
+@section Scripts{
+
+    <script type="text/javascript">
+
+        var APIUrl = '@_configuration ["App:APIUrl"]';
+
+        window.addEventListener("DOMContentLoaded", (event) => {
+            console.log("loaded")
+
+            getMailTapContent();
+        })
+
+        async function getMailTapContent(){
+
+            console.log("getMailTapContent");
+
+            const response = await fetch(APIUrl + "GetMail", {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    if (response.demographic_no === 0) {
+                        ClearPatientFormData();
+                    }
+                    else {
+                        loadMailItems(response, pid);
+                    }
+                })
+
+        }
+
+        function loadMailItems(response, pid){
+            console.log(response);
+        }
+        
+    </script>
+}
+

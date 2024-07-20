@@ -96,6 +96,21 @@ namespace CM3070_API.Controllers.v1
             return Ok(_repositoryCore.GetTask(id));
         }
 
+        [HttpGet(ApiRoutes.Posts.GetHomeDocuments)]
+        public async Task<IActionResult> GetHomeDocuments ( [FromQuery] int id )
+        {
+            return Ok(_repositoryCore.GetHomeDocuments(id));
+        }
+
+        [HttpGet(ApiRoutes.Posts.GetMail)]
+        public async Task<IActionResult> GetMail ( [FromQuery] int id )
+        {
+            
+            return Ok(_repositoryCore.GetMail(id));
+        }
+
+        
+
         [HttpGet(ApiRoutes.Posts.GetHomeTree)]
         public async Task<IActionResult> GetHomeTree ( )
         {

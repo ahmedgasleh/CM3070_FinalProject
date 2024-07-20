@@ -11,4 +11,9 @@ namespace CM3070.DbRepositoryCore
         public string Id {  get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
     }
+
+    public class Row
+    {
+        public string? Id { get; set; }
+    }
 }

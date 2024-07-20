@@ -33,8 +33,6 @@ bld/
 [Ll]ogs/
 bin/
 obj/
-/bin/
-/obj/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
