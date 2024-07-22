@@ -16,4 +16,8 @@ namespace CM3070.DbRepositoryCore
     {
         public string? Id { get; set; }
     }
+    public class RowId
+    {
+        public int Id { get; set; }
+    }
 }

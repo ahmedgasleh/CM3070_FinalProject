@@ -6,6 +6,7 @@
 @{
 }
 
+
 <div width="100%" class="px-5">
     
     <div class="container-fluid d-flex flex col-12 px-1 py-1" id='subjectHomeContainer'>
@@ -38,9 +39,26 @@
                     </div>
                     <div class="card py-2">
                         <div class="card-body">
-                            <div id="taskStatus"> </div>
+                            
 
-                            <div id="taskDetail"> </div>
+                            <div id="taskDetail"> 
+                                @* <div class="d-flex flex-row">
+
+                                    <label class="col-form-label"> Patient </label>
+                                    <label class="col-form-label px-5" type="text" id="pname"> A Omer </label>
+                                    <label class="col-form-label px-2" > Created </label>
+                                    <label class="col-form-label" type="text" id="createdBy"> BD</label>
+                                </div>
+
+                                <div class="d-flex flex-row">
+                                    <label class="col-form-label"> Due Date </label>
+                                    <label class="col-form-label px-5" id="dueDate"> 2024-07-08T09:13:00</label>
+                                    <label class="col-form-label"> Priority </label>
+                                    <label class="col-form-label" id="priority"> Normal</label>
+                                </div>
+                                <label class="col-form-label"> Notes </label>
+                                <textarea class="form-control bg-warning bg-opacity-10" id="notes" rows="10"> Lab result arrived call for visit</textarea> *@
+                            </div>
                             
                         </div>
                     </div>
@@ -50,11 +68,141 @@
     </div>
 </div>
 
+<script src="~/pdf.js/pdf.mjs" type="module" asp-append-version="true"></script>
+
 @section Scripts{
     <script type="text/javascript">
         var APIUrl = '@_configuration["App:APIUrl"]';
 
         console.log("Api", APIUrl);
+
+        function LoadPdfDocument(fileName) {
+
+            let url = "data/" + fileName;
+            console.log(url);
+
+            pdfjs_load(url)
+        }
+
+        function pdfjs_load(url) {
+
+
+            //var url = 'data/1_b7efc663-cd5c-4d28-a134-aab7b7646601_Falzata-Michael-(04-March-2022).pdf';
+
+
+
+            console.log("Workerload: ", url)
+
+            // Loaded via <script> tag, create shortcut to access PDF.js exports.
+            var { pdfjsLib } = globalThis;
+
+            // The workerSrc property shall be specified.
+
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.js/pdf.worker.mjs';
+
+            // if (AfterSlash === "" || AfterSlash === null || AfterSlash === undefined) {
+            //     pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.js/pdf.worker.mjs';
+            // }
+            // else {
+            //     let moduleFolder = AfterSlash.concat('/', 'pdf.js/pdf.worker.mjs');
+            //     console.log("module folder", moduleFolder);
+            //     pdfjsLib.GlobalWorkerOptions.workerSrc = moduleFolder;
+            //     //url = AfterSlash.concat("/", url);
+
+            // }
+
+
+            var pdfDoc = null,
+                pageNum = 1,
+                pageRendering = false,
+                pageNumPending = null,
+                scale = 2,
+                canvas = document.getElementById('pdf-canvas'),
+                ctx = canvas.getContext('2d');
+
+            /**
+             * Get page info from document, resize canvas accordingly, and render page.
+             * param num Page number.
+             */
+            function renderPage(num) {
+                pageRendering = true;
+                // Using promise to fetch the page
+                pdfDoc.getPage(num).then(function (page) {
+                    var viewport = page.getViewport({ scale: scale });
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    // Render PDF page into canvas context
+                    var renderContext = {
+                        canvasContext: ctx,
+                        viewport: viewport
+                    };
+                    var renderTask = page.render(renderContext);
+
+                    // Wait for rendering to finish
+                    renderTask.promise.then(function () {
+                        pageRendering = false;
+                        if (pageNumPending !== null) {
+                            // New page rendering is pending
+                            renderPage(pageNumPending);
+                            pageNumPending = null;
+                        }
+                    });
+                });
+
+                // Update page counters
+                document.getElementById('page_num').textContent = num;
+            }
+
+            /**
+             * If another page rendering in progress, waits until the rendering is
+             * finised. Otherwise, executes rendering immediately.
+             */
+            function queueRenderPage(num) {
+                if (pageRendering) {
+                    pageNumPending = num;
+                } else {
+                    renderPage(num);
+                }
+            }
+
+            /**
+             * Displays previous page.
+             */
+            function onPrevPage() {
+                if (pageNum <= 1) {
+                    return;
+                }
+                pageNum--;
+                queueRenderPage(pageNum);
+            }
+            document.getElementById('prev').addEventListener('click', onPrevPage);
+
+            /**
+             * Displays next page.
+             */
+            function onNextPage() {
+                if (pageNum >= pdfDoc.numPages) {
+                    return;
+                }
+                pageNum++;
+                queueRenderPage(pageNum);
+            }
+            document.getElementById('next').addEventListener('click', onNextPage);
+
+            /**
+             * Asynchronously downloads PDF.
+             */
+
+            pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+                pdfDoc = pdfDoc_;
+                document.getElementById('page_count').textContent = pdfDoc.numPages;
+
+                // Initial/first page rendering
+                renderPage(pageNum);
+            });
+
+        }
 
         window.addEventListener("DOMContentLoaded", (event) => {
 
@@ -156,6 +304,8 @@
 
                 tableBody.appendChild(rowElement);
             }
+
+            $('#taskDetail').html("");
         }
 
         function loadHomeDocuments(data, table){
@@ -202,15 +352,19 @@
             }
 
 
+            $('#taskDetail').html("");
+
+           
+
         }
         async function LoadDocumentDetail(id) {
             console.log("loadDocDetail", id);
 
             console.log("GetHomeTask");
-            const response = await fetch("/Api/DataFetch/GetDocumentDetail", {
+            const response = await fetch("/Api/DataFetch/GetDecumentDetails", {
                 method: 'POST',
                 headers: new Headers({
-                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Content-Type": "application/json;charset=UTF-8",
                 }),
                 body: JSON.stringify({ "id": id })
             })
@@ -232,7 +386,7 @@
             // SetDivElementText("priory", data[0].priority_id);
             // SetDivElementText("notes", data[0].notes);
 
-            $('taskDetail').html(data);
+            $('#taskDetail').html(data);
 
         }
 
@@ -240,24 +394,22 @@
             console.log("loadTaskDetail", id);
 
             console.log("GetHomeTask");
-            const response = await fetch("/Api/DataFetch/GetTaskDetail", {
+            const response = await fetch("/Api/DataFetch/GetTaskDetails", {
                 method: 'POST',
                 headers: new Headers({
                     "Content-Type": "application/json;charset=UTF-8",
                 }),
-                body: JSON.stringify({ "id": id })
+                body: JSON.stringify({"id": id})
             })
             .then(response => response.text())
             .then(response => {
-
-
                 loadHomeTaskDetail(response);
             })
         }
 
         function loadHomeTaskDetail(data) {
 
-            // console.log("taskDetail", data)
+             console.log("taskDetail", data)
 
             // SetDivElementText("pname", data[0].demographic_no);
             // SetDivElementText("createdBy", data[0].created_by);
@@ -265,7 +417,7 @@
             // SetDivElementText("priory", data[0].priority_id);
             // SetDivElementText("notes", data[0].notes);
 
-            $('taskDetail').html(data);
+            $('#taskDetail').html(data);
 
         }
 

@@ -10,6 +10,7 @@
     <Folder Include="Views\Shared\Popups\" />
     <Folder Include="Views\Shared\Section\" />
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\data\" />
   </ItemGroup>
 
   <ItemGroup>

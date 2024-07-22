@@ -6,9 +6,7 @@ namespace CM3070.DbContextCore
 {
     public partial class CM3070DbContext : DbContext
     {
-        public CM3070DbContext ()
-        {
-        }
+        public CM3070DbContext () { }
 
         public CM3070DbContext ( DbContextOptions<CM3070DbContext> options )
             : base ( options )

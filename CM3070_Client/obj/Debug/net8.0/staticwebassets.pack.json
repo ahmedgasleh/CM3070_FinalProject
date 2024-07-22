@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\data\\report13.pdf",
+      "PackagePath": "staticwebassets\\data\\report13.pdf"
+    },
+    {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -759,6 +763,142 @@
     {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\altText_add.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\altText_add.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\altText_done.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\altText_done.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-check.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-check.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-comment.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-comment.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-help.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-help.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-insert.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-insert.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-key.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-key.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-newparagraph.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-newparagraph.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-noicon.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-noicon.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-note.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-note.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-paperclip.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-paperclip.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-paragraph.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-paragraph.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\annotation-pushpin.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\annotation-pushpin.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\cursor-editorFreeHighlight.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\cursor-editorFreeHighlight.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\cursor-editorFreeText.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\cursor-editorFreeText.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\cursor-editorInk.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\cursor-editorInk.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\cursor-editorTextHighlight.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\cursor-editorTextHighlight.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\editor-toolbar-delete.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\editor-toolbar-delete.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\loading-icon.gif",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\loading-icon.gif"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\toolbarButton-editorHighlight.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\toolbarButton-editorHighlight.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\images\\toolbarButton-menuArrow.svg",
+      "PackagePath": "staticwebassets\\pdf.js\\images\\toolbarButton-menuArrow.svg"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.min.mjs",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.min.mjs"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.mjs",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.mjs"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.mjs.map",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.mjs.map"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.sandbox.min.mjs",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.sandbox.min.mjs"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.sandbox.mjs",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.sandbox.mjs"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.sandbox.mjs.map",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.sandbox.mjs.map"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.worker.min.mjs",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.worker.min.mjs"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.worker.mjs",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.worker.mjs"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf.worker.mjs.map",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf.worker.mjs.map"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf_viewer.css",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf_viewer.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf_viewer.min.css",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf_viewer.min.css"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf_viewer.mjs",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf_viewer.mjs"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\pdf.js\\pdf_viewer.mjs.map",
+      "PackagePath": "staticwebassets\\pdf.js\\pdf_viewer.mjs.map"
     },
     {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\vendor\\fontawesome-free\\LICENSE.txt",

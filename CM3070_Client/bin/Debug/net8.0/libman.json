@@ -5,6 +5,10 @@
     {
       "library": "fullcalendar@6.1.14",
       "destination": "wwwroot/fullcalendar/"
+    },
+    {
+      "library": "pdf.js@4.4.168",
+      "destination": "wwwroot/pdf.js/"
     }
   ]
 }

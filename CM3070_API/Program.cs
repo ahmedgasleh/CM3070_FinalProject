@@ -17,7 +17,6 @@ namespace CM3070_API
                             .SetBasePath(Directory.GetCurrentDirectory())
                             .AddJsonFile("appsettings.json")
                             .Build();
-
             // Add services to the container.
 
             var dbConnection = builder.Configuration.GetConnectionString("CM3070DbConnection");

@@ -19,11 +19,7 @@ namespace CM3070.DbRepositoryCore
             _cm3070DbContext = cm3070DbContext;
             _configuration = configuration;
         }
-        public int DemographicCreatedOrUpdate ( Demographic demographic )
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public async Task<Demographic> GetDemographic ( string Id )
         {
             Demographic result = new Demographic();
@@ -33,6 +29,11 @@ namespace CM3070.DbRepositoryCore
            return result = _cm3070DbContext.Demographic.Where(d => d.hin == Id).FirstOrDefault();
 
                 
+        }
+
+        public int DemographicCreatedOrUpdate ( Demographic demographic )
+        {
+            throw new NotImplementedException();
         }
 
         public Facility GetFacility ( int Id )

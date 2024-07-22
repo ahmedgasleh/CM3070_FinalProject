@@ -5,7 +5,52 @@
 *@
 @{
 }
-
-<div>
-    Document detial
+<div class="d-flex flex-row">
+    <label class="col-form-label"> Id </label>
+    <label class="col-form-label px-4"> @Model.document_no </label>
 </div>
+<div class="d-flex flex-row">
+    <label class="col-form-label"> Created By </label>
+    <label class="col-form-label px-4" id="created_by"> @Model.doccreator</label>
+    <label class="col-form-label"> Updated Date</label>
+    <label class="col-form-label px-4" id="updtaded_date"> @Model.updatedatetime</label>
+    <label class="col-form-label"> Source </label>
+    <label class="col-form-label px-4" id="source"> @Model.source </label>
+</div>
+<div class="d-flex flex-row">
+    <label class="col-form-label"> Review Date</label>
+    <label class="col-form-label px-4" id="review_date"> @Model.reviewdatetime</label>
+
+    <label class="col-form-label"> Review By</label>
+    <label class="col-form-label px-4" id="review_by"> @Model.reviewer</label>
+
+    <label class="col-form-label"> Appointment</label>
+    <label class="col-form-label px-4" id="review_date"> @Model.appointment_no</label>
+
+    <label class="col-form-label"> Priority </label>
+    <label class="col-form-label px-4" id="review_date"> @Model.status</label>
+</div>
+
+<div class="d-flex flex-row py-4">
+    @if(!string.IsNullOrEmpty(Model.docfilename) ){         
+        <div class="d-flex flex-row">
+            <div >
+                <div class="btn btn-warning opacity-10" onclick="LoadPdfDocument('@Model.docfilename'); return;"> Load File</div>
+            </div>
+            <div class="px-4">
+                <button class="btn btn-outline-primary " id="prev">Previous</button>
+            </div>
+            
+            <button class="btn btn-outline-primary" id="next">Next</button>
+            <div class="px-2">
+                <span> Page: <span id="page_num"></span> / <span id="page_count"></span> </span>
+            </div>
+            
+        </div>
+    }   
+   
+</div>
+<div class="py-2">
+    <canvas id="pdf-canvas"></canvas>
+</div>
+

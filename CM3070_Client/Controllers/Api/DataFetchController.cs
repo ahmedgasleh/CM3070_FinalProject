@@ -29,19 +29,19 @@ namespace CM3070_Client.Controllers.Api
         }
 
         [HttpPost]
-        [Route("GetTaskDetail")]
-        public async Task<IActionResult> GetTaskDetail ( [FromBody] Row data )
+        [Route("GetTaskDetails")]
+        public async Task<IActionResult> GetTaskDetail ( [FromBody] RowId data )
         {
-            var result = _repositoryCore.GetTask(Convert.ToInt32(data.Id));
+            var result = _repositoryCore.GetTask(data.Id);
 
             return PartialView("Sections/_taskDetail", result[0]);
         }
 
         [HttpPost]
-        [Route("GetDecumentDetail")]
-        public async Task<IActionResult> GetDecumentDetail ( [FromBody] Row data )
+        [Route("GetDecumentDetails")]
+        public async Task<IActionResult> GetDecumentDetail ( [FromBody] RowId data )
         {
-            var result = _repositoryCore.GetHomeDocuments(Convert.ToInt32(data.Id));
+            var result = _repositoryCore.GetHomeDocuments(data.Id);
 
             return PartialView("Sections/_documentDetail", result[0]);
         }
