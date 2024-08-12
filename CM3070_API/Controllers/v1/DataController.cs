@@ -73,6 +73,15 @@ namespace CM3070_API.Controllers.v1
             return Ok(_repositoryCore.GetScheduleEvent(id));
         }
 
+        [HttpPost(ApiRoutes.Posts.CreateScheduleEvent)]
+        public async Task<IActionResult> CreateScheduleEvent ( [FromRoute] DateTime dateTime )
+        {
+
+            //return Ok(_repositoryCore.CreateScheduleEvent(datetime));
+        }
+
+
+
 
         [HttpPost(ApiRoutes.Posts.UpdateProvider)]
         public async Task<IActionResult> UpdateProvider ( [FromBody] Provider provider )
