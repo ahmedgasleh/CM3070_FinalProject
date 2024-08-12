@@ -23,7 +23,8 @@ namespace CM3070_Client.Controllers
 
         public IActionResult Index ()
         {
-            return View();
+            
+            return RedirectToAction("Index", "SubjectHome");
         }
 
         public IActionResult Privacy ()

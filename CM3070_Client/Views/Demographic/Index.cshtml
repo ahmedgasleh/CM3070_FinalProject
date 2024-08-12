@@ -10,6 +10,8 @@
 
     var address_type = new Dictionary<int, string>() { { 1, "Home" }, { 2, "business" } };
 
+    var currentToken = "";
+
     
 }
 
@@ -595,37 +597,44 @@
             var hin = $('#txtHealthNumber2').val();
 
             var healthRegion = GetElementAndSelectedValue("#ddlHealthRegion")
-            //ddlHealthRegion
+           
+            var title = $('#txtTitle').val();  
             
+            var first_name = $('#txtFirstName').val();
+            var last_name = $('#txtLastName').val();  
+            
+            var sex = GetElementAndSelectedValue("#ddlGender"); 
+            
+            var address = $('#txtAddress').val();
+
+            var city = $('#txtCity').val();
+
+            var prov = GetElementAndSelectedValue("#ddlProv");
+
+            var postal = $('#txtPostal').val();
+
+            var phone = $('#txtPhoneHome').val();
+
+            var phone2 = $('#txtPhoneWork').val();
 
             var end_date = $('#txtExpiry').val();
-            var first_name = $('#txtFirstName').val();
-            var last_name = $('#txtLastName').val();
-            var title = $('#txtTitle').val();
+          
 
             var patient_status = $('#txtPatientStatus').val();
             var dob = $('#txtBirthDate').val();
 
-            var sex = GetElementAndSelectedValue("#ddlGender");
+          
 
             var family_doctor = $('#txtFamilyPhys').val();
 
             var alias = $('#txtRefPhys').val();
 
-            var address = $('#txtAddress').val();
 
-            var city = $('#txtCity').val();
 
-            var postal = $('#txtPostal').val();
-
-            var phone = $('#txtPhoneHome').val();
-            var phone2 = $('#txtPhoneWork').val();        
-
-            
-            
-            var data = JSON.stringify({ "demographic_no": 0, "hin": hin, "title": title, "first_name": first_name, "last_name": last_name,"sex": sex,  "dob": dob,  "address": address,
-                                   "city": city, "postal": postal, "phone": phone, "phone2": phone2, "ver": healthRegion, "end_date": end_date, 
-                                   "patient_status": patient_status, "family_doctor": family_doctor, "alias": alias   
+            var data = JSON.stringify({
+                "demographic_no": 0, "patient_id": 0, "title": title, "last_name": last_name, "first_name": first_name, "sex": sex, "address": address,
+                "city": city, "province": prov,"postal": postal,  "phone": phone, "phone2": phone2, "ver": healthRegion, "email": "", "hin": hin, "year_of_birth": "", "month_of_birth": "", "date_of_birth": "",
+                "provider_no": 0, "patient_status": patient_status, "family_doctor": family_doctor, "alias": alias   
             });
 
             console.log("pdata", data);
@@ -926,7 +935,7 @@
             const response = await fetch(APIUrl + "PhysicianSearch", {
                 method: 'POST',
                 headers: new Headers({
-                    
+                    Authorization: "Bearer " + '@currentToken',                    
                     'Content-Type': 'application/json;charset=UTF-8',
                 }),
                 body: JSON.stringify({ "Number": physicianID, "LastName": lastName, })

@@ -273,12 +273,12 @@ namespace CM3070.DbRepositoryCore
 
                 var rawSQL = "dbo.UpdateDemographic @patient_id,@title,@last_name,@first_name,@sex,@address,@province,@city,@postal,@phone, @phone2,@ver,@email,@hin,@year_of_birth,@month_of_birth,@date_of_birth,@provider_no";
 
-                var result = _cm3070DbContext.DemographicUpdates.FromSqlRaw(rawSQL, dataParameters).FirstOrDefault();
+                var result = _cm3070DbContext.DemographicUpdates.FromSqlRaw(rawSQL, dataParameters).AsEnumerable();
 
                 return 1;
             
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 return 0;

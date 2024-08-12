@@ -97,9 +97,14 @@ namespace CM3070.DbModelCore
         public string date_of_birth { get; set; }
        
             
-        public string provider_no { get; set; }         
-        
-        
+        public string provider_no { get; set; }
+        public string patient_status { get; set; }
+
+        public string family_doctor { get; set; }
+
+        public string alias { get; set; }
+
+
 
     }
 }

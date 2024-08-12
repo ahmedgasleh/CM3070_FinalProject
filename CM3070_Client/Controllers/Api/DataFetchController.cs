@@ -1,4 +1,5 @@
-﻿using CM3070.DbRepositoryCore;
+﻿using CM3070.DbModelCore;
+using CM3070.DbRepositoryCore;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CM3070_Client.Controllers.Api
@@ -21,9 +22,16 @@ namespace CM3070_Client.Controllers.Api
         [HttpPost]
         [Route("GetProvider")]
         public async Task<IActionResult> GetProvider ( [FromBody] Row data )
-        {         
-            
+        {
+            Provider provider = new Provider();
+            provider.provider_no = data.Id;
+
             var result = _repositoryCore.GetProvider(data?.Id);
+
+            if (result == null)
+            {
+                return PartialView("Popups/_ProviderDetail", provider);
+            }
 
             return PartialView("Popups/_ProviderDetail", result );
         }

@@ -5,6 +5,7 @@
 *@
 @{
     var eventColor = new Dictionary<string, string>() { { "#378006", "Visit" }, { "#86D1FC", "Follow" }, { "#EBE134", "Unknown" } };
+    var currentToken = "";
 }
 
 <div width="100%" class="px-5">
@@ -142,6 +143,7 @@
                 method: 'POST',
                 headers: new Headers({
                     "Content-Type": "application/x-www-form-urlencoded",
+                    Authorization: "Bearer " + '@currentToken'
                 })
             })
                 .then(response => response.json())
@@ -185,12 +187,35 @@
                         const functionName = info.event.url;
                         eval(functionName);
                     }
+                },
+                dateClick: function (info) {
+                    //alert('Date: ' + info.dateStr);
+                   
                 }
             });
 
             calendar.render();
 
         }
+
+        async function CreateScheduleEvent(date) {
+
+            const response = await fetch(APIUrl + "CreateScheduleEvent/" + date, {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    LoadSchaduleEventPopUp(response);
+
+                })
+
+        } 
 
         async function LoadEventDetail(id) {
             console.log("Load Event Detail", id);
