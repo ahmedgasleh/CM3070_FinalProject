@@ -74,10 +74,10 @@ namespace CM3070_API.Controllers.v1
         }
 
         [HttpPost(ApiRoutes.Posts.CreateScheduleEvent)]
-        public async Task<IActionResult> CreateScheduleEvent ( [FromRoute] DateTime dateTime )
+        public async Task<IActionResult> CreateScheduleEvent ( [FromRoute] ScheduleDate scheduleDate )
         {
 
-            //return Ok(_repositoryCore.CreateScheduleEvent(datetime));
+            return Ok(_repositoryCore.CreateScheduleEvent(scheduleDate));
         }
 
 

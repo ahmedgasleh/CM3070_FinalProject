@@ -1,0 +1,81 @@
+﻿@using CM3070.DbModelCore
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ScheduleDate
+
+<div id="wrap01" class="px-1">
+
+    <div ID="Content4">
+        <form>
+            <div class="row g-2">
+
+                <div class="mb-1">
+                    <label for="firt-name" class="col-form-label">Start Date:</label>
+                    <input type="text" class="form-control" id="txtStartDate" value="@Model.sdate"/>
+                </div>
+                <div class="mb-1">
+                    <label for="firt-name" class="col-form-label">Minutes:</label>
+                    <input type="text" class="form-control" id="txtMinutes" value="30" />
+                </div>
+
+                <div class="mb-1">
+                    <div class="d-flex flex col-6">
+                        <div class="col-2">
+                            <label class="col-form-label px-1"> Available </label>
+                        </div>
+                        <div class="col-1 py-2 px-4">
+                            <input class=" form-control form-check-input px-2" type="checkbox" value="" id="isAvailable">
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="mb-1">
+                    <div class="d-flex flex col-6">
+                        <div class="col-2">
+                            <label class="col-form-label px-1"> Priority </label>
+                        </div>
+                        <div class="col-1 py-2 px-4">
+                            <input class=" form-control form-check-input px-2" type="checkbox" value="" id="isPriority">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mb-1">
+                    <div class="d-flex flex col-6">
+                        <div class="col-2">
+                            <label class="col-form-label px-1"> Status </label>
+                        </div>
+                        <div class="col-1 py-2 px-4">
+                            <input class=" form-control form-check-input px-2" type="checkbox" value="false" id="isStatus">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mb-1">
+                    <label for="last-name" class="col-form-label">Reason:</label>
+                    <input type="text" class="form-control" id="txReason" value="">
+                </div>
+
+                <div class="mb-1">
+                    <label for="last-name" class="col-form-label">Creator:</label>
+                    <input type="text" class="form-control" id="txtCreator" value="">
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+

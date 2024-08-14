@@ -20,4 +20,9 @@ namespace CM3070.DbRepositoryCore
     {
         public int Id { get; set; }
     }
+
+    public class RowDate
+    {
+        public DateTime datetime { get; set; }
+    }
 }

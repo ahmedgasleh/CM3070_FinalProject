@@ -15,6 +15,34 @@
     </div>
 </div>
 
+<!-- Modal popCreateEvent -->
+
+<div class="modal fade" id="popCreateEvent" tabindex="-1" role="dialog" aria-labelledby="popCreateEvent" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:800px">
+            <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="width:20px">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+            <div class="d-flex flex-column px-2 py-2">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                    </div>
+                    <section class="card-body" id="popCreateEventBody">
+
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnCreateEventCancel">Cancel</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCreateEventUpdate" onclick="CreateEvent(); return false;">Select</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Modal popSchaduleEvent -->
 <div class="modal fade" id="popSchaduleEvent" tabindex="-1" role="dialog" aria-labelledby="popSchaduleEvent" aria-hidden="true">
@@ -189,8 +217,7 @@
                     }
                 },
                 dateClick: function (info) {
-                    //alert('Date: ' + info.dateStr);
-                   
+                    CreateScheduleEvent(info.dateStr);                   
                 }
             });
 
@@ -200,22 +227,26 @@
 
         async function CreateScheduleEvent(date) {
 
-            const response = await fetch(APIUrl + "CreateScheduleEvent/" + date, {
-                method: 'GET',
+            const response = await fetch("/Api/DataFetch/CreateScheduleEvent", {
+                method: 'POST',
                 headers: new Headers({
-                    "Content-Type": "application/x-www-form-urlencoded",
-                })
+                    "Content-Type": "application/json;charset=UTF-8",
+                }),
+                body: JSON.stringify({ "datetime": date })
             })
-                .then(response => response.json())
+                .then(response => response.text())
                 .then(response => {
-
                     console.log("result:", response)
-
-                    LoadSchaduleEventPopUp(response);
-
+                    LoadNewSchaduleEventPopUp(response);
                 })
+        }
 
-        } 
+        function LoadNewSchaduleEventPopUp(result) {
+            $('#popCreateEventBody').html(result);
+
+            var newSchaduleEvent = new bootstrap.Modal(document.getElementById("popCreateEvent"), {});
+            newSchaduleEvent.show();
+        }
 
         async function LoadEventDetail(id) {
             console.log("Load Event Detail", id);
@@ -229,7 +260,7 @@
                 .then(response => response.json())
                 .then(response => {
 
-                    console.log("result:", response)
+                    //console.log("result:", response)
 
                     LoadSchaduleEventPopUp(response);
 
@@ -253,6 +284,45 @@
             SetDivElementText("txtProName", data.provider_lname + ", " + data.provider_fname);
             SetDivElementText("txtSpecialty", data.priority);
             SetDivElementText("txtReason", data.reason);
+
+        }
+
+        function GetDate(dte) {
+            let DATE = new Date(dte);
+
+            return DATE;
+        }
+
+        async function CreateEvent(){
+
+            var startDate = $('#txtStartDate').val();
+            var minutes = $('#txtMinutes').val();
+            var isAvailable = (IsCheckBoxChecked("#isAvailable") === true) ? 1 : 0;
+            var isPriority = (IsCheckBoxChecked("#isPriority") === true)? 1 : 0;
+            var isStatus = (IsCheckBoxChecked("#isStatus") === true)?1 : 0;
+
+            var reason = $('#txReason').val();
+            var creator = $('#txtCreator').val();
+
+            let data = JSON.stringify({ "id": 0, "sdate": startDate, "provider_no": 0, "available": isAvailable, "priority": isPriority,
+
+                "reason": reason, "hour": minutes, "creator": creator, "status": isStatus  });
+
+            data.sdate = GetDate(startDate);
+
+            console.log("data", data);
+
+            const response = await fetch(APIUrl + "CreateScheduleEvent", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/json",
+                }),
+                body: data
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                })
 
         }
 

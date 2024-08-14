@@ -24,4 +24,6 @@
     <ProjectReference Include="..\CM3070.DbRepositoryCore\CM3070.DbRepositoryCore.csproj" />
   </ItemGroup>
 
+  
+
 </Project>

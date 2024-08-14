@@ -635,3 +635,10 @@ async function LoadPhysicianGroups(id) {
         })
 
 }
+
+
+function GetDate(dte) {
+    let DATE = new Date(dte);
+
+    return DATE;
+}

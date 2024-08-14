@@ -53,5 +53,17 @@ namespace CM3070_Client.Controllers.Api
 
             return PartialView("Sections/_documentDetail", result[0]);
         }
+
+        [HttpPost]
+        [Route("CreateScheduleEvent")]
+        public async Task<IActionResult> CreateScheduleEvent ( [FromBody] RowDate data )
+        {
+            var result = new ScheduleDate();
+
+            result.sdate = data.datetime;
+
+
+            return PartialView("Popups/_CreateCalanderEvent", result);
+        }
     }
 }

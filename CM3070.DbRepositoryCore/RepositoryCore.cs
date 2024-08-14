@@ -121,6 +121,7 @@ namespace CM3070.DbRepositoryCore
             return result;
         }
 
+        
         public SchaduleEventDetail GetScheduleEvent ( int id )
         {
            
@@ -191,6 +192,42 @@ namespace CM3070.DbRepositoryCore
 
             return result;
         }
+
+        public int CreateScheduleEvent ( ScheduleDate detail )
+        {
+            
+
+            try
+            {
+                SqlParameter [] dataParameters =
+                {
+                     ExtensionMethods.SetSqlParameter("@id",false,detail.id, SqlDbType.Int),
+                     ExtensionMethods.SetSqlParameter("@sdate",false,detail.sdate, SqlDbType.DateTime),
+                     ExtensionMethods.SetSqlParameter("@provider_no",false,detail.provider_no, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@available",false,detail.available, SqlDbType.Char),
+                     ExtensionMethods.SetSqlParameter("@priority",false,detail.priority, SqlDbType.Char),
+                     ExtensionMethods.SetSqlParameter("@reason",false,detail.reason, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@hour",false,detail.hour, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@creator",false,detail.creator, SqlDbType.NVarChar),
+                     ExtensionMethods.SetSqlParameter("@status",false,detail.status, SqlDbType.Char),
+                };
+
+                var sqlRaw = "dbo.CreateSchaduleEvent @id, @sdate, @provider_no, @available, @priority, @reason, @hour, @creator, @status";
+
+                var result = _cm3070DbContext.ScheduleDate.FromSqlRaw(sqlRaw, dataParameters).AsEnumerable().FirstOrDefault();
+
+                return 1;
+
+            }
+            catch (Exception)
+            {
+
+                return 0;
+            }
+
+           
+        }
+
 
         public int UpdateProvider ( Provider provider )
         {
