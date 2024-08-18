@@ -446,8 +446,38 @@
 
                     </section>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnProviderCancel" onclick="CancelProviderUpdate(); return false;">Cancel</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnProviderUpdate" onclick="ProviderUpdate(); return false;">Update</button>
+
+                        <button type="button" class="btn btn-primary px-5" data-bs-dismiss="modal" id="btnProviderUpdate" onclick="ProviderUpdate(); return false;">Update</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnProviderCancel" onclick="CancelProviderUpdate(); return false;">Cancel</button>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal popPatienDemographic -->
+<div class="modal fade" id="popPatienDemographic" tabindex="-1" role="dialog" aria-labelledby="popPatienDemographic" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:800px">
+            <div class="modal-header">
+                <h5> Update or Create </h5>
+            </div>
+            <div class="d-flex flex-column px-2 py-2">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                    </div>
+                    <section class="card-body" id="popPatienDemographicBody">
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary px-5" data-bs-dismiss="modal" id="btnPatienDemographicUpdate" onclick="PatienDemographicUpdate(); return false;">Update</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnPatienDemographicCancel" onclick="CancelPatienDemographicUpdate(); return false;">Cancel</button>
+                        
                     </div>
                 </div>
 
@@ -632,23 +662,112 @@
 
 
             var data = JSON.stringify({
-                "demographic_no": 0, "patient_id": 0, "title": title, "last_name": last_name, "first_name": first_name, "sex": sex, "address": address,
+                "demographic_no": 0, "patient_id": "0", "title": title, "last_name": last_name, "first_name": first_name, "sex": sex, "address": address,
                 "city": city, "province": prov,"postal": postal,  "phone": phone, "phone2": phone2, "ver": healthRegion, "email": "", "hin": hin, "year_of_birth": "", "month_of_birth": "", "date_of_birth": "",
-                "provider_no": 0, "patient_status": patient_status, "family_doctor": family_doctor, "alias": alias   
+                "provider_no": "0", "patient_status": patient_status, "family_doctor": family_doctor, "alias": alias   
             });
 
             console.log("pdata", data);
 
-            const response = await fetch(APIUrl + "UpdateDemographic", {
+             const response = await fetch("/Api/DataFetch/UpdateDemographic", {
                 method: 'POST',
                 headers: new Headers({
-                    "Content-Type": "application/json",
+                    "Content-Type": "application/json;charset=UTF-8",
                 }),
-                body: data
+                body: data                     // JSON.stringify({ "id": id })
             })
-                .then(response => response.json())
+                .then(response => response.text())
                 .then(response => {
+                    LoadPatienDemographicPopup(response);
+                })
 
+
+        }
+
+        async function PatienDemographicUpdate(){
+
+            var hin = $('#txtPatientNumber').val();
+
+            var hinVer = $('txVer').val();  
+            
+            var title = $('#txtTitle').val(); 
+            
+            var postal = $('#txtPostal').val();
+
+            var email = $('#txtEmail').val();
+
+            var familyDoctor = $('#txtFamilyDoctor').val();
+
+            //var healthRegion = GetElementAndSelectedValue("#ddlHealthRegion") 
+            //
+            var first_name = $('#txtFirstName').val();
+
+            var DOB = $('#txtDOB').val();
+
+            var suffix = $('txtSuffix').val();
+            
+            var city = $('#txtCity').val();
+
+            var phone = $('#txtPhone').val();
+
+            var prov = GetElementAndSelectedValue("#ddlProv2");
+            
+            
+           
+           
+            
+            var last_name = $('#txtLastName').val();
+
+            //var sex = $('#txtSex').val();
+
+            var sex = GetElementAndSelectedValue("#ddlGender2");
+
+            var address = $('#txtAddress').val();
+
+            
+
+            var prov = GetElementAndSelectedValue("#ddlProv");
+            var phone2 = $('#txtPhone2').val();
+
+
+
+            var data = JSON.stringify({
+                "demographic_no": 0,
+                "patient_id": "1",
+                "title": title,
+                "last_name": last_name,
+                "first_name": first_name,
+                "suffix": suffix,
+                "sex": sex,
+                "address": address,
+                "city": city,
+                "province": prov,
+                "postal": postal,
+                "phone": phone,
+                "phone2": phone2,
+                "ver": hinVer,
+                "email": email,
+                "hin": hin,
+                "year_of_birth": DOB,
+                "month_of_birth": DOB,
+                "date_of_birth": DOB,
+                "provider_no": familyDoctor,
+                "patient_status": "Active",
+                "family_doctor": familyDoctor,
+                "alias": ""
+            });
+
+
+            const response = await fetch(APIUrl  +  "UpdateDemographic", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/json;charset=UTF-8",
+                }),
+                body: data                     // JSON.stringify({ "id": id })
+            })
+                .then(response => response.text())
+                .then(response => {
+                   // LoadPatienDemographicPopup(response);
                 })
 
         }
@@ -924,6 +1043,16 @@
             schaduleEvent.show();
 
         }
+
+        function LoadPatienDemographicPopup(result) {
+
+            $('#popPatienDemographicBody').html(result);
+
+            var schaduleEvent = new bootstrap.Modal(document.getElementById("popPatienDemographic"), {});
+            schaduleEvent.show();
+
+        }
+
 
         
         async function ChoosePhysician() {

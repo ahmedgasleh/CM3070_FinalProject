@@ -19,7 +19,7 @@ namespace CM3070_API.Contracts.v1
             public const string GetSchedule = "/GetSchedule";
             public const string GetScheduleByDate = "/GetScheduleByDate/{dte}";
             public const string GetScheduleEvent = "/GetScheduleEvent/{id}";
-            public const string CreateScheduleEvent = "/CreateScheduleEvent";
+            public const string UpdateScheduleEvent = "/UpdateScheduleEvent";
             public const string GetProviders = "/GetProviders";
             public const string GetProvider = "/GetProvider/{id}";
             public const string UpdateProvider = "/UpdateProvider";

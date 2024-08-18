@@ -62,8 +62,19 @@ namespace CM3070_Client.Controllers.Api
 
             result.sdate = data.datetime;
 
-
             return PartialView("Popups/_CreateCalanderEvent", result);
+        }
+
+  
+
+        [HttpPost("UpdateDemographic")]
+        public async Task<IActionResult> UpdateDemographic ( [FromBody] DemographicUpdate demographic )
+        {
+            var result = new DemographicUpdate();
+
+            result = demographic;
+
+            return PartialView("Popups/_UpdatePatientDemographic", result);
         }
     }
 }

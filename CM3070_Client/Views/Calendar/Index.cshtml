@@ -304,18 +304,26 @@
             var reason = $('#txReason').val();
             var creator = $('#txtCreator').val();
 
-            let data = JSON.stringify({ "id": 0, "sdate": startDate, "provider_no": 0, "available": isAvailable, "priority": isPriority,
+          
 
-                "reason": reason, "hour": minutes, "creator": creator, "status": isStatus  });
-
-            data.sdate = GetDate(startDate);
+            let data = JSON.stringify({
+                "id": 0,
+                "sdate": startDate,
+                "provider_no": "1",
+                "available": isAvailable,
+                "priority": isPriority,
+                "reason": reason,
+                "hour": minutes,
+                "creator": creator,
+                "status": isStatus
+            })
 
             console.log("data", data);
 
-            const response = await fetch(APIUrl + "CreateScheduleEvent", {
+            const response = await fetch(APIUrl + "UpdateScheduleEvent", {
                 method: 'POST',
                 headers: new Headers({
-                    "Content-Type": "application/json",
+                    "Content-Type": "application/x-www-form-urlencoded",
                 }),
                 body: data
             })
