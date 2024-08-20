@@ -17,6 +17,8 @@
 mono_crash.*
 
 # Build results
+**/bin/
+**/**/bin/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -35,6 +37,7 @@ bin/
 obj/
 /bin/
 /obj/
+CM3070_Client/bin/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -73,6 +76,7 @@ ScaffoldingReadMe.txt
 StyleCopReport.xml
 
 # Files built by Visual Studio
+*.dll
 *_i.c
 *_p.c
 *_h.h
