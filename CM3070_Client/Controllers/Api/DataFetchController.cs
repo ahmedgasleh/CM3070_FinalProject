@@ -55,6 +55,15 @@ namespace CM3070_Client.Controllers.Api
         }
 
         [HttpPost]
+        [Route("GetMailDetail")]
+        public async Task<IActionResult> GetMailDetail ( [FromBody] RowId data )
+        {
+            var result = _repositoryCore.GetMail(data.Id);
+
+            return PartialView("Sections/_emailDetail", result [0]);
+        }
+
+        [HttpPost]
         [Route("CreateScheduleEvent")]
         public async Task<IActionResult> CreateScheduleEvent ( [FromBody] RowDate data )
         {
@@ -75,6 +84,15 @@ namespace CM3070_Client.Controllers.Api
             result = demographic;
 
             return PartialView("Popups/_UpdatePatientDemographic", result);
+        }
+
+        [HttpPost]
+        [Route("GetPrescriptionDetail")]
+        public async Task<IActionResult> GetPrescriptionDetail ( [FromBody] RowId data )
+        {
+            var result = _repositoryCore.GetPrescription(data.Id);
+
+            return PartialView("Sections/_prescriptionDetail", result);
         }
     }
 }

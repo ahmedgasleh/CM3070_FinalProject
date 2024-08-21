@@ -151,7 +151,7 @@
                                     </div>
 
                                     <div class="col-2">
-                                        <button class="btn btn-success" onclick="UpdateOrCreateDemographics(); return;"> Update or Create </button>
+                                        <button class="btn btn-success" id="btnUpdateDemographic" onclick="UpdateOrCreateDemographics(); return;" style="display: none"> Update or Create </button>
                                     </div>
                                 </div>
                             </div>
@@ -329,9 +329,7 @@
                                 </div>
                                 <div class="d-flex flex col-3">
                                     <input class="form-control bg-warning bg-opacity-10" name="txtPhoneCell" type="text" id="txtPhoneCell" tabindex="0" />
-                                </div>
-                                
-                               
+                                </div>                             
 
                             </div>
                             
@@ -824,6 +822,10 @@
             SetDivElementText("txtPatientStatus", "");
             SetDivElementText("txtHealthNumber2", "");
 
+            let enableCreateButton = document.getElementById("btnUpdateDemographic");
+
+            enableCreateButton.style.display = "none";
+
             //let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
             SetDivElementText("txtBirthDate", "");
 
@@ -864,7 +866,11 @@
             SetDivElementText("txtPatientStatus", "Active");
             SetDivElementText("txtHealthNumber2", id);
 
-           
+            let enableCreateButton = document.getElementById("btnUpdateDemographic");
+
+            enableCreateButton.style.display = "block";
+
+            
             SetDivElementText("txtBirthDate", dob);
 
             SetDivElementText("txtAddress", patient.address);

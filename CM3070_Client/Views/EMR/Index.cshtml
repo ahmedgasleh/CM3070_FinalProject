@@ -48,7 +48,8 @@
             <a class="nav-link " id="tab-1" data-bs-toggle="tab" href="#tbChart" role="tab" aria-controls="tbChart" aria-selected="true">Chart</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tbPrescription" role="tab" aria-controls="tbPrescription" aria-selected="true">Prescription</a>
+            <a class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tbPrescription" role="tab" 
+            aria-controls="tbPrescription" aria-selected="true" onclick="GetPrescriptions(); return;">Prescription</a>
         </li>
         
 
@@ -56,15 +57,39 @@
     <div class="tab-content pt-5" id="tab-content">
 
         <div class="tab-pane px-2 active" id="tbInbox" role="tabpanel" aria-labelledby="tbInbox">
-            <div class="card">
-                <div class="card-body bg-success bg-opacity-10">
-                    <div class="row g-1 py-2">
-                        <div class="col-12 h-100">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="card">
+                        <div class="card-body bg-success bg-opacity-10">
+                            <div class="row g-1 py-2">
+                                <div class="col-12 h-100">
+                                    <div id="tableInbox" class="table-responsive overflow-hidden">
+                                        <table id="inboxTable" class="table table-hover table-bordered" width="100%"
+                                               cellspacing="0">
+                                            <thead>
+                                                <tr id="InboxHeadings"> </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+
+                            <div id="emailDetail"></div>
+
                         </div>
 
                     </div>
                 </div>
+
             </div>
+
+            
         </div>
         <div class="tab-pane px-2" id="tbChart" role="tabpanel" aria-labelledby="tab-0">
             <div class="card bg-light">
@@ -78,15 +103,25 @@
 
         </div>
         <div class="tab-pane px-2" id="tbPrescription" role="tabpanel" aria-labelledby="tbPrescription">
-            <div class="card bg-warning bg-opacity-10">
-                <div class="card-body">
-                    <div class="row g-1 py-2">
-                        <div class="col-12">
-                        </div>
 
+            <div class="col-12 px-2">
+                <div class="card bg-warning bg-opacity-10">
+                    <div class="card-body">
+                        <div class="row g-1 py-2">
+                            <div class="col-12">
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="card py-2">
+                    <div class="card-body">
+                        <div id="emailDetail">
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
         </div>
 
@@ -96,7 +131,7 @@
 
     <script type="text/javascript">
 
-        var APIUrl = '@_configuration ["App:APIUrl"]';
+        var APIUrl = '@_configuration["App:APIUrl"]';
 
         window.addEventListener("DOMContentLoaded", (event) => {
             console.log("loaded")
@@ -104,11 +139,30 @@
             getMailTapContent();
         })
 
+        async function GetPrescriptions() {
+
+            const response = await fetch("/Api/DataFetch/GetPrescriptionDetail", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/json;charset=UTF-8",
+                }),
+                body: JSON.stringify({ "Id": 0 })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    //loadMailItems(response, document.getElementById("inboxTable"))
+                })
+
+        }
+
         async function getMailTapContent(){
 
             console.log("getMailTapContent");
 
-            const response = await fetch(APIUrl + "GetMail", {
+            const response = await fetch(APIUrl + "GetMail/" + 0, {
                 method: 'GET',
                 headers: new Headers({
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -117,16 +171,79 @@
                 .then(response => response.json())
                 .then(response => {
 
-                    console.log("result:", response)
+                    //console.log("result:", response)
 
-                   
+                    loadMailItems(response, document.getElementById("inboxTable"))
                 })
 
         }
 
-        function loadMailItems(response, pid){
-            console.log(response);
+        function loadMailItems(data, table){
+
+            console.log("loadMailItems", data, table);
+
+            const tableHead = table.querySelector("thead");
+            const tableBody = table.querySelector("tbody");
+
+            //clear table
+            tableHead.innerHTML = "<tr></tr>"
+            tableBody.innerHTML = "";
+
+            tableHead.querySelector("tr").appendChild(createHeaders("ID", "ColId", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Provider #", "ColProvider", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Received Date", "ColReceivedCDate", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Priority Id", "ColPriorityDate", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Attached", "ColAttached", ["tblColumn"]))
+            tableHead.querySelector("tr").appendChild(createHeaders("Message", "ColMessage", ["tblColumn"]))
+
+            for (let i = 0; i < data.length; i++) {
+
+                console.log("item", data[i])
+                const rowElement = document.createElement("tr");
+                rowElement.setAttribute("id", "Id" + data[i].id);
+                rowElement.appendChild(createCell(data[i].id));
+                rowElement.appendChild(createCell(data[i].provider_no));
+                rowElement.appendChild(createCell(data[i].received_date));
+                rowElement.appendChild(createCell(data[i].priority_id));
+                rowElement.appendChild(createCell(data[i].attachment));
+                rowElement.appendChild(createCell(data[i].message));
+                rowElement.appendChild(createButtonCellFunc("Load", "LoadEmailDetail(" + data[i].id + ")"));
+
+                tableBody.appendChild(rowElement);
+
+                $('#emailDetail').html("");
+            
+            }
+            
         }
+
+        async function LoadEmailDetail(id) {
+
+            console.log("LoadEmailDetail", id);
+
+            const response = await fetch("/Api/DataFetch/GetMailDetail", {
+                method: 'POST',
+                headers: new Headers({
+                    "Content-Type": "application/json;charset=UTF-8",
+                }),
+                body: JSON.stringify({ "Id": id })
+            })
+                .then(response => response.text() )
+                .then(response => {
+
+                    console.log("result:", response)
+                    LoadDetail(response);
+                    
+                })
+
+        }
+
+        async function LoadDetail(data) {     
+
+            $('#emailDetail').html(data);
+        }
+
+
         
     </script>
 }

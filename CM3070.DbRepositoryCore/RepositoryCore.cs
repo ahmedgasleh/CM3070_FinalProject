@@ -188,10 +188,47 @@ namespace CM3070.DbRepositoryCore
 
         public List<Mail> GetMail( int id )
         {
-            var result = _cm3070DbContext.Mail.Where(t => t.priority_id == id).ToList();
+            if(id == 0)
+            {
+                var result = _cm3070DbContext.Mail.Where(t => t.priority_id >= id).ToList();
 
-            return result;
+                return result;
+            }
+            else
+            {
+                var result = _cm3070DbContext.Mail.Where(t => t.priority_id == id).ToList();
+
+                return result;
+            }
+            
         }
+
+        public List<prescription> GetPrescription ( int id )
+        {
+            try
+            {
+                if (id == 0)
+                {
+                    var result = _cm3070DbContext.Prescriptions.Where(t => t.script_no >= id).ToList();
+
+                    return result;
+                }
+                else
+                {
+                    var result = _cm3070DbContext.Prescriptions.Where(t => t.script_no == id).ToList();
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
+
+        }
+
 
         public int CreateScheduleEvent ( ScheduleDate detail )
         {

@@ -29,6 +29,7 @@ namespace CM3070_API.Contracts.v1
             public const string GetHomeTask = "/GetHomeTask/{id}";
             public const string GetHomeDocuments = "/GetHomeDocuments";
             public const string GetMail = "/GetMail/{id}";
+            public const string GetMailDetail = "/GetMailDetail";
 
 
 

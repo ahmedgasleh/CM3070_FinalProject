@@ -116,9 +116,8 @@ namespace CM3070_API.Controllers.v1
         {
             
             return Ok(_repositoryCore.GetMail(id));
-        }
+        }     
 
-        
 
         [HttpGet(ApiRoutes.Posts.GetHomeTree)]
         public async Task<IActionResult> GetHomeTree ( )

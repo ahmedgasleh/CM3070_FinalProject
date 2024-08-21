@@ -26,7 +26,9 @@ namespace CM3070.DbContextCore
         public virtual DbSet<Tickler_Category> Tickler_Categories { get; set; }
         public virtual DbSet<DbModelCore.Task> Tasks { get; set; }
 
-        public virtual DbSet<Mail> Mail { get; set; }   
+        public virtual DbSet<Mail> Mail { get; set; }
+
+        public virtual DbSet<prescription> Prescriptions { get; set; }
 
 
 
@@ -119,6 +121,12 @@ namespace CM3070.DbContextCore
             modelBuilder.Entity<Mail>(entity =>
             {
                 entity.HasKey(e => e.id);
+
+            });
+
+            modelBuilder.Entity<prescription>(entity =>
+            {
+                entity.HasKey(e => e.script_no);
 
             });
 

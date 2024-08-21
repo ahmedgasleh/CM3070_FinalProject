@@ -1,0 +1,51 @@
+﻿@model CM3070.DbModelCore.Mail
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="d-flex flex-row">
+    <label class="col-form-label"> Id </label>
+    <label class="col-form-label px-4"> @Model.id </label>
+</div>
+<div class="d-flex flex-row">
+    <label class="col-form-label"> Provider </label>
+    <label class="col-form-label px-4" id="providerno"> @Model.provider_no</label>
+    <label class="col-form-label"> Received Date</label>
+    <label class="col-form-label px-4" id="recieved_date"> @Model.received_date</label>
+    <label class="col-form-label"> Priority</label>
+    <label class="col-form-label px-4" id="updtaded_date"> @Model.received_date</label>
+   
+</div>
+<div class="d-flex flex-row">
+
+    <label class="col-form-label"> Message </label>
+    <label class="col-form-label px-4" id="source"> @Model.message </label>
+
+   
+</div>
+
+<div class="d-flex flex-row py-4">
+    @if(!string.IsNullOrEmpty(Model.attachment) ){         
+        <div class="d-flex flex-row">
+            <div >
+                <div class="btn btn-warning opacity-10" onclick="LoadPdfDocument('@Model.attachment'); return;"> Load File</div>
+            </div>
+            <div class="px-4">
+                <button class="btn btn-outline-primary " id="prev">Previous</button>
+            </div>
+            
+            <button class="btn btn-outline-primary" id="next">Next</button>
+            <div class="px-2">
+                <span> Page: <span id="page_num"></span> / <span id="page_count"></span> </span>
+            </div>
+            
+        </div>
+    }   
+   
+</div>
+<div class="py-2">
+    <canvas id="pdf-canvas"></canvas>
+</div>
+

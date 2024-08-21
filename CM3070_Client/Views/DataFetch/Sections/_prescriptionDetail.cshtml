@@ -1,0 +1,44 @@
+﻿@model List<CM3070.DbModelCore.prescription>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+<div class="col">
+
+    @if (Model != null) {
+        @foreach(var item in Model)
+        {
+            <div class="card py-2">
+                <div class="card-header">
+                    <div class="d-flex flex-row">
+                        <label for="id_name" class="col-form-label"> Prescription :</label>
+                        <label for="id" class="col-form-label px-5"> @item.script_no</label>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-row">
+                        <label for="id_update_date_title" class="col-form-label"> Date :</label>
+                        <label for="id_update_date" class="col-form-label px-5"> @item.lastUpdateDate</label>
+                    </div>
+
+                    <div class="d-flex flex-row py-4">
+                        <label for="id_update_text_title" class="col-form-label"> Detail:</label>
+                        <div>
+                            <label for="id_text" class="col-form-label px-5"> @item.textView</label>
+                            <label for="id_commnet" class="col-form-label px-5 py-3"> @item.rx_comments</label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        }        
+    }
+</div>
+
+
+
+
