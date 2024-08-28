@@ -31,6 +31,10 @@ namespace CM3070_API.Contracts.v1
             public const string GetMail = "/GetMail/{id}";
             public const string GetMailDetail = "/GetMailDetail";
 
+            public const string GetPatientId = "/GetPatientId/&hin={hin}";
+
+            public const string GetChart = "/GetChart/&id={id}";
+
 
 
             //public const string GetPhysician = Base + "/Physician/{search}/&uuid={uuid}";

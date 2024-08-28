@@ -33,8 +33,9 @@
 
                     </section>
                     <div class="modal-footer">
+                       
+                        <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal" id="btnCreateEventUpdate" onclick="CreateEvent(); return false;">Update</button>
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnCreateEventCancel">Cancel</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCreateEventUpdate" onclick="CreateEvent(); return false;">Select</button>
                     </div>
 
                 </div>
@@ -49,7 +50,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content" style="width:800px">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">A Mikel</h5>
+                <h5 class="modal-title" id="schaduleEventTitle"></h5>
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="width:20px">
                     <span aria-hidden="true">X</span>
                 </button>
@@ -184,6 +185,40 @@
                 })
         }
 
+        async function GetPatientId() {
+
+            var hin = $('#heath_number').val();
+
+            console.log("health number", hin);
+
+            const response = await fetch(APIUrl + "GetPatientId/&hin=" + hin, {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    Authorization: "Bearer " + '@currentToken'
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    //LoadCalendar(response);
+
+                    let idElement = document.getElementById("hn_id2");
+                    let lastNameElement = document.getElementById("sp_last_name");
+                    let lastFirstElement = document.getElementById("sp_first_name");
+
+                    SetDivElementText('hn_id', response.demographic_no)
+
+                    idElement.innerHTML = response.demographic_no;
+                    lastNameElement.innerHTML = response.last_name;
+                    lastFirstElement.innerHTML = response.first_name;
+
+                })
+
+        }
+
         function LoadCalendar(data) {
 
             console.log("calender is loaded", data);
@@ -258,9 +293,7 @@
                 })
             })
                 .then(response => response.json())
-                .then(response => {
-
-                    //console.log("result:", response)
+                .then(response => {                   
 
                     LoadSchaduleEventPopUp(response);
 
@@ -284,6 +317,7 @@
             SetDivElementText("txtProName", data.provider_lname + ", " + data.provider_fname);
             SetDivElementText("txtSpecialty", data.priority);
             SetDivElementText("txtReason", data.reason);
+            SetDivElementText('schaduleEventTitle', data.last_name + ", " + data.first_name);
 
         }
 
@@ -297,25 +331,27 @@
 
             var startDate = $('#txtStartDate').val();
             var minutes = $('#txtMinutes').val();
-            var isAvailable = (IsCheckBoxChecked("#isAvailable") === true) ? 1 : 0;
-            var isPriority = (IsCheckBoxChecked("#isPriority") === true)? 1 : 0;
-            var isStatus = (IsCheckBoxChecked("#isStatus") === true)?1 : 0;
+            var isAvailable = (IsCheckBoxChecked("#isAvailable") === true) ? "1" : "0";
+            var isPriority = (IsCheckBoxChecked("#isPriority") === true)? "1" : "0";
+            var isStatus = (IsCheckBoxChecked("#isStatus") === true)? "1" : "0";
 
             var reason = $('#txReason').val();
             var creator = $('#txtCreator').val();
 
-          
+            var demo_id = $('#hn_id').val();
+
 
             let data = JSON.stringify({
                 "id": 0,
-                "sdate": startDate,
+                "sdate": new Date(startDate).toISOString(),
                 "provider_no": "1",
                 "available": isAvailable,
                 "priority": isPriority,
                 "reason": reason,
                 "hour": minutes,
                 "creator": creator,
-                "status": isStatus
+                "status": isStatus,
+                "demographic_no": Number(demo_id),
             })
 
             console.log("data", data);
@@ -323,12 +359,15 @@
             const response = await fetch(APIUrl + "UpdateScheduleEvent", {
                 method: 'POST',
                 headers: new Headers({
-                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Content-Type": "application/json;charset=UTF-8",
                 }),
                 body: data
             })
                 .then(response => response.json())
                 .then(response => {
+
+                    //window.location.href.reload();
+                    location.reload();
 
                 })
 

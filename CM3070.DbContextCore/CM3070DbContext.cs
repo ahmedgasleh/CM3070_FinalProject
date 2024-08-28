@@ -28,7 +28,10 @@ namespace CM3070.DbContextCore
 
         public virtual DbSet<Mail> Mail { get; set; }
 
-        public virtual DbSet<prescription> Prescriptions { get; set; }
+        public virtual DbSet<Prescription> Prescription { get; set; }
+
+        public virtual DbSet<Chart>  Chart { get; set; }
+
 
 
 
@@ -124,11 +127,19 @@ namespace CM3070.DbContextCore
 
             });
 
-            modelBuilder.Entity<prescription>(entity =>
+            modelBuilder.Entity<Prescription>(entity =>
             {
                 entity.HasKey(e => e.script_no);
 
             });
+
+            modelBuilder.Entity<Chart>(entity =>
+            {
+                entity.HasKey(e => e.chart_no);
+
+            });
+
+            
 
 
         }

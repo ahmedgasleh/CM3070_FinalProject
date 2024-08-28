@@ -116,7 +116,21 @@ namespace CM3070_API.Controllers.v1
         {
             
             return Ok(_repositoryCore.GetMail(id));
-        }     
+        }
+
+        [HttpGet(ApiRoutes.Posts.GetChart)]
+        public async Task<IActionResult> GetChart ( [FromRoute] int id )
+        {
+
+            return Ok(_repositoryCore.GetChart(id));
+        }
+
+        [HttpGet(ApiRoutes.Posts.GetPatientId)]
+        public async Task<IActionResult> GetPatientId ( [FromRoute] string hin )
+        {
+
+            return Ok(_repositoryCore.GetPatientId(hin));
+        }
 
 
         [HttpGet(ApiRoutes.Posts.GetHomeTree)]

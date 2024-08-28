@@ -57,8 +57,16 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\data\\Patient\\1\\chart001.pdf",
+      "PackagePath": "staticwebassets\\data\\Patient\\1\\chart001.pdf"
+    },
+    {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\data\\report13.pdf",
       "PackagePath": "staticwebassets\\data\\report13.pdf"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\data\\report14.pdf",
+      "PackagePath": "staticwebassets\\data\\report14.pdf"
     },
     {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\favicon.ico",
@@ -531,6 +539,10 @@
     {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\bs5treeview.js",
       "PackagePath": "staticwebassets\\js\\bs5treeview.js"
+    },
+    {
+      "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\loadPdfFile.js",
+      "PackagePath": "staticwebassets\\js\\loadPdfFile.js"
     },
     {
       "Id": "D:\\Development\\University Of London\\Final Project and CW2 of CM2020\\Program Final Project CM3070\\CM3070_FinalProject\\CM3070_Client\\wwwroot\\js\\site.js",

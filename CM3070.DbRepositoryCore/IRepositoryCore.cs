@@ -37,7 +37,11 @@ namespace CM3070.DbRepositoryCore
 
         public List<Mail> GetMail( int id );
 
-        public List<prescription> GetPrescription ( int id );
+        public Demographic GetPatientId ( string phn );
+
+        public List<Prescription> GetPrescription ( int id );
+
+        public Chart GetChart ( int id );
 
         public int CreateScheduleEvent (ScheduleDate detail);
 

@@ -16,7 +16,7 @@ namespace CM3070.DbModelCore
     public partial class ScheduleDate
     {
         public int id { get; set; }
-        public System.DateTime sdate { get; set; }
+        public DateTime sdate { get; set; }
         public string provider_no { get; set; }
         public string available { get; set; }
         public string priority { get; set; }
@@ -24,6 +24,7 @@ namespace CM3070.DbModelCore
         public string hour { get; set; }
         public string creator { get; set; }
         public string status { get; set; }
+        public int demographic_no { get; set; }
     }
 
     [Keyless]
@@ -39,5 +40,8 @@ namespace CM3070.DbModelCore
         public string? provider_lname { get; set; }
         public string? provider_fname { get; set; }
         public string? specialty { get; set; }
+
+        public string first_name { get; set; } = string.Empty;
+        public string last_name { get; set; } = string.Empty;
     }
 }

@@ -11,8 +11,24 @@
 <div id="wrap01" class="px-1">
 
     <div ID="Content4">
-        <form>
+      
             <div class="row g-2">
+
+            <div class="mb-1 d-flex flex-row">
+                <div class="" id="sp_last_name"></div>
+               
+                <div class="px-4" id="sp_first_name"></div>
+              
+            </div>
+
+               <input type="text" class="form-control" id="hn_id" style="display:none"/>
+
+                <div class="mb-1 input-group">
+                    <span  class="input-group-text" id="hn_id2"></span>
+                    
+                    <input type="text" id="heath_number" class="form-control" placeholder="Health Number" aria-label="Health number" aria-describedby="basic-addon1">
+                    <button class="btn btn-secondary" onclick="GetPatientId();">...</button>
+                </div>
 
                 <div class="mb-1">
                     <label for="firt-name" class="col-form-label">Start Date:</label>
@@ -73,7 +89,7 @@
                 </div>
 
             </div>
-        </form>
+       
 
     </div>
 

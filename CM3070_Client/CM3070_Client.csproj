@@ -7,10 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\data\NewFolder\**" />
+    <Content Remove="wwwroot\data\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\data\NewFolder\**" />
+    <None Remove="wwwroot\data\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Views\Shared\Popups\" />
     <Folder Include="Views\Shared\Section\" />
     <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\data\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\DataFetch\Sections\_emailDetail .cshtml">
+    <Content Update="Views\DataFetch\Sections\_emailDetail.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

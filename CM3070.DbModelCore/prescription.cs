@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CM3070.DbModelCore
 {
-    public partial class prescription
+    public partial class Prescription
     {
         public int script_no { get; set; }
         public string? provider_no {  get; set; }

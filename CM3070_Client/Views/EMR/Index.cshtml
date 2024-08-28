@@ -1,5 +1,7 @@
 ﻿@inject IConfiguration _configuration;
 
+
+
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -45,7 +47,7 @@
             <a class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tbInbox" role="tab" aria-controls="tbInbox" aria-selected="true">Inbox</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link " id="tab-1" data-bs-toggle="tab" href="#tbChart" role="tab" aria-controls="tbChart" aria-selected="true">Chart</a>
+            <a class="nav-link " id="tab-1" data-bs-toggle="tab" href="#tbChart" role="tab" aria-controls="tbChart" aria-selected="true" onclick="GetChartDetail(); return;" >Chart</a>
         </li>
         <li class="nav-item" role="presentation">
             <a class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tbPrescription" role="tab" 
@@ -96,6 +98,21 @@
                 <div class="card-body">
                     <div class="row g-1 py-2">
                         <div class="col-12">
+                            <div class="d-flex flex-row">                                
+                                <div class="px-4">
+                                    <button class="btn btn-outline-primary " id="prev">Previous</button>
+                                </div>
+
+                                <button class="btn btn-outline-primary" id="next">Next</button>
+                                <div class="px-2">
+                                    <span> Page: <span id="page_num"></span> / <span id="page_count"></span> </span>
+                                </div>
+
+                            </div>
+                            <div class="py-4">
+                                <canvas id="pdf-canvas2"></canvas>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -116,7 +133,7 @@
                 </div>
                 <div class="card py-2">
                     <div class="card-body">
-                        <div id="emailDetail">
+                        <div id="prescriptionDetail">
 
                         </div>
                     </div>
@@ -126,7 +143,8 @@
         </div>
 
 </div>
-
+<script src="~/pdf.js/pdf.mjs" type="module" asp-append-version="true"></script>
+<script src="~/js/loadpdffile.js"></script>
 @section Scripts{
 
     <script type="text/javascript">
@@ -139,6 +157,10 @@
             getMailTapContent();
         })
 
+        function LoadPdfDocument(url) {
+            pdfjs_load("data/" + url, 'pdf-canvas');
+        }
+
         async function GetPrescriptions() {
 
             const response = await fetch("/Api/DataFetch/GetPrescriptionDetail", {
@@ -148,14 +170,30 @@
                 }),
                 body: JSON.stringify({ "Id": 0 })
             })
+                .then(response => response.text())
+                .then(response => {
+
+                    LoadPrescriptionDetail(response);                   
+               })
+        }
+
+        async function GetChartDetail() {
+
+            const response = await fetch(APIUrl + "GetChart/&id=" + 1, {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
                 .then(response => response.json())
                 .then(response => {
 
                     console.log("result:", response)
 
+                    LoadChartDetail(response);
+                
                     //loadMailItems(response, document.getElementById("inboxTable"))
                 })
-
         }
 
         async function getMailTapContent(){
@@ -243,6 +281,16 @@
             $('#emailDetail').html(data);
         }
 
+
+        async function LoadPrescriptionDetail(data) {
+
+            $('#prescriptionDetail').html(data);
+        }
+
+        async function LoadChartDetail(data) {
+
+            pdfjs_load("data/Patient/" + data.demographic_no + "/" + data.docfilename, 'pdf-canvas2');
+        }
 
         
     </script>

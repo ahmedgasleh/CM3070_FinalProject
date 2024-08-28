@@ -66,7 +66,7 @@ namespace CM3070.DbRepositoryCore
         {
             List<SchaduleEvents> schaduleEvents  = new List<SchaduleEvents>();
 
-            var scheduleDates = _cm3070DbContext.ScheduleDate.Where(s => s.id > 0).ToArray();
+            var scheduleDates = _cm3070DbContext.ScheduleDate.Where(s => s.id > 0).ToList();
 
             foreach (var p in scheduleDates)
             {
@@ -97,7 +97,7 @@ namespace CM3070.DbRepositoryCore
 
         private string GetEventColor ( string reason )
         {
-            var eventColor = new Dictionary<string, string>() { { "#378006", "Visit" }, { "#86D1FC", "Follow" }, { "#EBE134", "Unknown" } };
+            var eventColor = new Dictionary<string, string>() { { "#378006", "Visit" }, { "#86D1FC", "Follow" }, { "#42b405", "Call" }, { "#EBE134", "Unknown" } };
             
             foreach(var item in eventColor)
             {
@@ -203,19 +203,39 @@ namespace CM3070.DbRepositoryCore
             
         }
 
-        public List<prescription> GetPrescription ( int id )
+        public Chart GetChart ( int id )
+        {
+            var result = _cm3070DbContext.Chart.Where(t => t.chart_no >= id).FirstOrDefault();
+
+            return result;
+        }
+
+        public Demographic GetPatientId ( string phn )
+        {
+            var result = new Demographic();
+            if (!string.IsNullOrEmpty(phn))
+            {
+                result = _cm3070DbContext.Demographic.Where(p => p.hin == phn).FirstAsync().Result;
+
+                return result;
+            }
+
+            return result;
+        }
+
+        public List<Prescription> GetPrescription ( int id )
         {
             try
             {
                 if (id == 0)
                 {
-                    var result = _cm3070DbContext.Prescriptions.Where(t => t.script_no >= id).ToList();
+                    var result = _cm3070DbContext.Prescription.Where(t => t.script_no >= id).ToList();
 
                     return result;
                 }
                 else
                 {
-                    var result = _cm3070DbContext.Prescriptions.Where(t => t.script_no == id).ToList();
+                    var result = _cm3070DbContext.Prescription.Where(t => t.script_no == id).ToList();
 
                     return result;
                 }
@@ -247,16 +267,17 @@ namespace CM3070.DbRepositoryCore
                      ExtensionMethods.SetSqlParameter("@hour",false,detail.hour, SqlDbType.NVarChar),
                      ExtensionMethods.SetSqlParameter("@creator",false,detail.creator, SqlDbType.NVarChar),
                      ExtensionMethods.SetSqlParameter("@status",false,detail.status, SqlDbType.Char),
+                     ExtensionMethods.SetSqlParameter("@demographic_no",false,detail.demographic_no, SqlDbType.Int),
                 };
 
-                var sqlRaw = "dbo.CreateSchaduleEvent @id, @sdate, @provider_no, @available, @priority, @reason, @hour, @creator, @status";
+                var sqlRaw = "dbo.CreateSchaduleEvent @id, @sdate, @provider_no, @available, @priority, @reason, @hour, @creator, @status, @demographic_no";
 
                 var result = _cm3070DbContext.ScheduleDate.FromSqlRaw(sqlRaw, dataParameters).AsEnumerable().FirstOrDefault();
 
                 return 1;
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 return 0;

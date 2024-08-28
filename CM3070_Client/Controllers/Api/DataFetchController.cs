@@ -94,5 +94,14 @@ namespace CM3070_Client.Controllers.Api
 
             return PartialView("Sections/_prescriptionDetail", result);
         }
+
+        [HttpPost]
+        [Route("GetChart")]
+        public async Task<IActionResult> GetChart ( [FromBody] RowId data )
+        {
+            var result = _repositoryCore.GetPrescription(data.Id);
+
+            return PartialView("Sections/_prescriptionDetail", result);
+        }
     }
 }
