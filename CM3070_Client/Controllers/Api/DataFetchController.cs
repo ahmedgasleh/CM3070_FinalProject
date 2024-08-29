@@ -99,7 +99,7 @@ namespace CM3070_Client.Controllers.Api
         [Route("GetChart")]
         public async Task<IActionResult> GetChart ( [FromBody] RowId data )
         {
-            var result = _repositoryCore.GetPrescription(data.Id);
+            var result = _repositoryCore.GetChart(data.Id);
 
             return PartialView("Sections/_prescriptionDetail", result);
         }

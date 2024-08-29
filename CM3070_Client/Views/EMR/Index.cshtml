@@ -8,40 +8,24 @@
 @{
 }
 
-@* <div class="d-flex align-items-start">
-    <div class="nav flex-column nav-pills me-3" id="v-emr-tab" role="tablist" aria-orientation="vertical">
-        <button class="nav-link active" id="v-emr-char-tab" data-bs-toggle="pill" data-bs-target="#v-emr-chart" type="button" role="tab" aria-controls="v-emr-chart" aria-selected="true">Chart</button>
-        <button class="nav-link" id="v-emr-prescription-tab" data-bs-toggle="pill" data-bs-target="#v-emr-prescription" type="button" role="tab" aria-controls="v-emr-prescription" aria-selected="false">Prescription</button>
-    </div>
-    <div class="tab-content" id="v-emr-tabContent">
-        <div class="tab-pane fade show active" id="v-emr-chart" role="tabpanel" aria-labelledby="v-emr-char-tab">
-            <div class="h-100">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="col-12">
-                            Chart
-                        </div>
-                    </div>
-                </div>
-            </div>
-                   
-        </div>
-        <div class="tab-pane fade show" id="v-emr-prescription" role="tabpanel" aria-labelledby="v-emr-prescription-tab">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row g-1 py-2">
-                        <div class="col-12" style="width:100%; height:100%">
-                            Prescription
-                        </div>
-                    </div>       
-                   
-                </div>
-            </div>           
-        </div>
-    </div>
-</div> *@
+<div id="content" class="container-fluid">
+    <div class="col-12 px-2">
+        <div class="card">
+            <div class="card-body">
 
-<div class="row g-1 py-2 px-2">
+                <div class="d-flex flex-row">
+                    <div class="input-group mb-3">
+                        <input class="form-control bg-warning bg-opacity-10" name="txtHealthNumber" type="text" id="txtHealthNumber" tabindex="0" />
+                        <button class="btn btn-outline-primary" type="button" id="btnHealthNumber" onclick="GetPatient(); return;">...</button>
+                    </div>
+                </div>              
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row g-1 py-2 px-2">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation">
             <a class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tbInbox" role="tab" aria-controls="tbInbox" aria-selected="true">Inbox</a>
@@ -140,7 +124,9 @@
                 </div>
             </div>            
         </div>
-        </div>
+    </div>
+
+</div>
 
 </div>
 <script src="~/pdf.js/pdf.mjs" type="module" asp-append-version="true"></script>
@@ -161,14 +147,59 @@
             pdfjs_load("data/" + url, 'pdf-canvas');
         }
 
+        function GetPatient() {
+
+            let patientNumber = $('#txtHealthNumber').val();
+
+            GetThisPatient(patientNumber)
+
+        }
+
+        async function GetThisPatient(pid) {
+
+            console.log("GetPatient", APIUrl, pid);
+
+            const response = await fetch(APIUrl + "GetDemographic/" + pid, {
+                method: 'GET',
+                headers: new Headers({
+                    "Content-Type": "application/x-www-form-urlencoded",
+                })
+            })
+                .then(response => response.json())
+                .then(response => {
+
+                    console.log("result:", response)
+
+                    if (response.demographic_no === 0) {
+                        //ClearPatientFormData();
+                    }
+                    else {
+                        LoadPatientFormData(response, pid);
+                        
+                    }
+                })
+        }
+
+        function LoadPatientFormData(patient, id) {
+
+            let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
+
+            SetDivElementText("textCurrentSubjectId", patient.demographic_no)
+            SetDivElementText("textCurrentSubjectHIN", patient.hin)
+
+            SetDivElementText("textCurrentSubject", patient.last_name + ", " + patient.first_name + " " + dob);
+        }
+
         async function GetPrescriptions() {
+
+            let id = GetElementValueAtribute('textCurrentSubjectId');
 
             const response = await fetch("/Api/DataFetch/GetPrescriptionDetail", {
                 method: 'POST',
                 headers: new Headers({
                     "Content-Type": "application/json;charset=UTF-8",
                 }),
-                body: JSON.stringify({ "Id": 0 })
+                body: JSON.stringify({ "Id": id })
             })
                 .then(response => response.text())
                 .then(response => {

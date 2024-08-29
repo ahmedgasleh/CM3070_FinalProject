@@ -227,18 +227,12 @@ namespace CM3070.DbRepositoryCore
         {
             try
             {
-                if (id == 0)
-                {
-                    var result = _cm3070DbContext.Prescription.Where(t => t.script_no >= id).ToList();
-
-                    return result;
-                }
-                else
-                {
+                
+                
                     var result = _cm3070DbContext.Prescription.Where(t => t.script_no == id).ToList();
 
                     return result;
-                }
+                
             }
             catch (Exception ex)
             {

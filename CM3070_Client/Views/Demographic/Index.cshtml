@@ -855,7 +855,9 @@
             
             let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
 
+            SetDivElementText("textCurrentSubjectId", patient.hin);
 
+            SetDivElementText("textCurrentSubjectHIN", patient.demographic_no
 
             SetDivElementText("textCurrentSubject", patient.last_name + ", " + patient.first_name + " " + dob);
             //SetDivElementText("textCurrentSubject", "ahmed");
