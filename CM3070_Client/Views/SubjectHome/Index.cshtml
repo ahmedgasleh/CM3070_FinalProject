@@ -42,22 +42,7 @@
                             
 
                             <div id="taskDetail"> 
-                                @* <div class="d-flex flex-row">
-
-                                    <label class="col-form-label"> Patient </label>
-                                    <label class="col-form-label px-5" type="text" id="pname"> A Omer </label>
-                                    <label class="col-form-label px-2" > Created </label>
-                                    <label class="col-form-label" type="text" id="createdBy"> BD</label>
-                                </div>
-
-                                <div class="d-flex flex-row">
-                                    <label class="col-form-label"> Due Date </label>
-                                    <label class="col-form-label px-5" id="dueDate"> 2024-07-08T09:13:00</label>
-                                    <label class="col-form-label"> Priority </label>
-                                    <label class="col-form-label" id="priority"> Normal</label>
-                                </div>
-                                <label class="col-form-label"> Notes </label>
-                                <textarea class="form-control bg-warning bg-opacity-10" id="notes" rows="10"> Lab result arrived call for visit</textarea> *@
+                                
                             </div>
                             
                         </div>
@@ -102,17 +87,7 @@
 
             pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.js/pdf.worker.mjs';
 
-            // if (AfterSlash === "" || AfterSlash === null || AfterSlash === undefined) {
-            //     pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.js/pdf.worker.mjs';
-            // }
-            // else {
-            //     let moduleFolder = AfterSlash.concat('/', 'pdf.js/pdf.worker.mjs');
-            //     console.log("module folder", moduleFolder);
-            //     pdfjsLib.GlobalWorkerOptions.workerSrc = moduleFolder;
-            //     //url = AfterSlash.concat("/", url);
-
-            // }
-
+            
 
             var pdfDoc = null,
                 pageNum = 1,
@@ -206,6 +181,11 @@
 
         }
 
+        /**
+         * When the application loads it calls GetHomeTask
+         * which loads list of task the needs an action
+         */
+
         window.addEventListener("DOMContentLoaded", (event) => {
 
             console.log("Doc Loaded");
@@ -231,6 +211,10 @@
             })
         }
 
+        /**
+         * Loads the list tasks for the default landing page
+         */
+
         async function GetHomeTask() {
 
             console.log("GetHomeTask");
@@ -247,6 +231,10 @@
                     loadHomeTask(response, document.getElementById("homeListDetail"));
                 })
         }
+
+        /**
+         * Loads the list of documents 
+         */
 
         async function GetHomeDocuments(){
 
@@ -266,6 +254,10 @@
                 })
 
         }
+
+        /**
+         * Loads Task table
+         */
 
         function loadHomeTask(data, table) {
 
@@ -309,6 +301,10 @@
 
             $('#taskDetail').html("");
         }
+
+        /**
+         * loads document table
+         */
 
         function loadHomeDocuments(data, table){
 
@@ -359,6 +355,11 @@
            
 
         }
+
+        /**
+         * Load detail document 
+         * id document record id
+         */
         async function LoadDocumentDetail(id) {
             console.log("loadDocDetail", id);
 
@@ -378,19 +379,20 @@
                 })
         }
 
+        /**
+         * assings document detail to document detail element 
+         */
+
         function loadDocumentDetail(data) {
 
-            console.log("docDetail", data)
-
-            // SetDivElementText("pname", data[0].demographic_no);
-            // SetDivElementText("createdBy", data[0].created_by);
-            // SetDivElementText("dueDate", data[0].due_date);
-            // SetDivElementText("priory", data[0].priority_id);
-            // SetDivElementText("notes", data[0].notes);
+            console.log("docDetail", data)          
 
             $('#taskDetail').html(data);
 
         }
+        /**
+         * Loads Task detail
+         */
 
         async function LoadTaskDetail(id) {
             console.log("loadTaskDetail", id);
@@ -409,15 +411,14 @@
             })
         }
 
+        /**
+         * Assings task detail to detail task element 
+         */
         function loadHomeTaskDetail(data) {
 
              console.log("taskDetail", data)
 
-            // SetDivElementText("pname", data[0].demographic_no);
-            // SetDivElementText("createdBy", data[0].created_by);
-            // SetDivElementText("dueDate", data[0].due_date);
-            // SetDivElementText("priory", data[0].priority_id);
-            // SetDivElementText("notes", data[0].notes);
+           
 
             $('#taskDetail').html(data);
 

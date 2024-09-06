@@ -155,6 +155,11 @@
 
         }
 
+        /**
+         * Get patient
+         * pid the Id of the patient to load
+         */
+
         async function GetThisPatient(pid) {
 
             console.log("GetPatient", APIUrl, pid);
@@ -180,6 +185,10 @@
                 })
         }
 
+        /**
+         * Loads patient info in the header of the page
+         */
+
         function LoadPatientFormData(patient, id) {
 
             let dob = patient.year_of_birth + "/" + patient.month_of_birth + "/" + patient.date_of_birth;
@@ -189,6 +198,10 @@
 
             SetDivElementText("textCurrentSubject", patient.last_name + ", " + patient.first_name + " " + dob);
         }
+
+        /**
+         * Get prescription detail 
+         */
 
         async function GetPrescriptions() {
 
@@ -208,9 +221,15 @@
                })
         }
 
+        /**
+         * Get Chart detail
+         */
+
         async function GetChartDetail() {
 
-            const response = await fetch(APIUrl + "GetChart/&id=" + 1, {
+            let id = GetElementValueAtribute('textCurrentSubjectId');
+
+            const response = await fetch(APIUrl + "GetChart/&id=" + id, {
                 method: 'GET',
                 headers: new Headers({
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -226,6 +245,10 @@
                     //loadMailItems(response, document.getElementById("inboxTable"))
                 })
         }
+
+        /**
+         * Get mail tap content
+         */
 
         async function getMailTapContent(){
 
@@ -246,6 +269,10 @@
                 })
 
         }
+
+        /**
+         * Load mail table that contains list mails
+         */
 
         function loadMailItems(data, table){
 
@@ -286,6 +313,11 @@
             
         }
 
+
+        /**
+         * Loads the mail detail
+         */
+
         async function LoadEmailDetail(id) {
 
             console.log("LoadEmailDetail", id);
@@ -307,12 +339,18 @@
 
         }
 
+        /**
+         * Assings mail detail to detail element
+         */
+
         async function LoadDetail(data) {     
 
             $('#emailDetail').html(data);
         }
 
-
+        /**
+        * Assings prescription detail to detail element
+        */
         async function LoadPrescriptionDetail(data) {
 
             $('#prescriptionDetail').html(data);

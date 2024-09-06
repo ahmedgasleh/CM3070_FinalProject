@@ -612,6 +612,9 @@
             console.log(getAbsolutePixelDistance(13, 23));
         })
 
+        /**
+         * reads the Health Number and calls with GetThisPatient
+         */
         function GetPatient(){
 
             let patientNumber = $('#txtHealthNumber').val();
@@ -619,6 +622,11 @@
             GetThisPatient(patientNumber)
 
         }
+
+        /**a
+         * Updates or Creats Patient
+         * Reads element the contains demographics
+         */
 
         async function UpdateOrCreateDemographics(){
 
@@ -681,6 +689,10 @@
 
 
         }
+
+        /**
+         * Assigns demographic data to document element
+         */
 
         async function PatienDemographicUpdate(){
 
@@ -770,6 +782,10 @@
 
         }
 
+        /**
+         * Loads provider table data
+         */
+
         async function LoadProvidersTable() {
 
             const response = await fetch(APIUrl + "GetProviders", {
@@ -787,6 +803,10 @@
 
                 })
         }
+
+        /**
+         * Gets patient info with pid
+         */
 
         async function GetThisPatient(pid) {
 
@@ -811,6 +831,10 @@
                     }                   
                 })
         }
+
+        /**
+         * Clear patient demographics forms
+         */
 
         function ClearPatientFormData(){
             console.log("form is clearing");
@@ -849,7 +873,9 @@
 
         }
 
-       
+       /**
+        * Assigns the patient data to form html elements
+        */
 
         function LoadPatientFormData(patient, id) { 
             
@@ -890,6 +916,14 @@
 
         }
 
+        /**
+         * Update the dropdown method
+         * id of the element that contain a dropdown list
+         * valueToSet: the value to to the deopdown list
+         * defaultValue: the default value if the list is empty
+         * items.  list oc current items in the droptdown list
+         */
+
         function UpdateDropDown(valueToSet, id, defaultValue, items) {
 
             let currentElement = document.getElementById(id);            
@@ -924,6 +958,11 @@
 
         }
 
+        /**
+         * Update list an item in list of items
+         * items: current items
+         * id: the item to update
+         */
         function UpdatePhysicianSearchResult(items, id) {
 
             let currentElement = document.getElementById(id);
@@ -938,12 +977,20 @@
             }
 
         }
+
+        /**
+         * Clear the search input elemenst
+         */
                
         function ClearPhysicianSearch() {
             ClearInnerElement("PhysicianSearchResult");
             ClearTextElement("txtPhysicianID");            
             ClearTextElement("txtPhysicianLastName");
         }
+
+        /**
+        * Clear the  input elemenst
+        */
 
         function AddRefPhysician() {
             ClearPhysicianSearch();
@@ -952,11 +999,19 @@
 
         }
 
+        /**
+        * Clear the search input elemenst
+        */
         function AddFamilyPhysician() {
             ClearPhysicianSearch();
             SetDivElementValue("#targetId", "txtFamilyPhys");
             SetDivElementValue("#targetCallback", "SetDivElementText");
         }
+
+        /**
+         * Update a provider
+         * call Update Provider end-point
+         */
 
         async function ProviderUpdate() {
 
@@ -1024,6 +1079,10 @@
 
         }
 
+        /**
+         * Load provider new form 
+         */
+
         async function CreateNewProvider(){
 
             var id = $('#txtProviderNumnber').val();
@@ -1043,6 +1102,10 @@
 
         }
 
+        /**
+        * Load provider new form
+        */
+
         function LoadProviderPopup(result) {
 
             $('#popProviderBody').html(result);
@@ -1051,6 +1114,10 @@
             schaduleEvent.show();
 
         }
+
+        /**
+        * Load new provider pop-up form
+        */
 
         function LoadPatienDemographicPopup(result) {
 
@@ -1062,7 +1129,9 @@
         }
 
 
-        
+        /**
+         * Load pysician search
+         */
         async function ChoosePhysician() {
             
             let physicianID = $('#txtPhysicianID').val();
@@ -1086,6 +1155,10 @@
                 })
         }
 
+
+        /**
+         * Select an item in physician search box 
+         */
         function SelectRefPhysician() {
 
             let value = GetElementAndSelectedInnerText('#PhysicianSearchResult');      
@@ -1107,6 +1180,10 @@
                 }
             }
         }
+
+        /**
+         * Load provider list table 
+         */
 
         function loadProviderable(result, table) {
 
@@ -1146,6 +1223,10 @@
         
         }
 
+        /**
+         * Load a calander page with existing events
+         */
+
         async function LoadCalender() {
 
             const response = await fetch(APIUrl + "GetSchedule", {
@@ -1165,6 +1246,10 @@
 
            
         }
+
+        /**
+         * Show the full calander inline
+         */
 
         function ShowCalanderInLine(data) {
 
@@ -1199,10 +1284,10 @@
             calendar.render();
 
         }
-        //TDO move next functions make to shared location
-
-  
-
+          
+        /**
+         * Load calander event detial
+         */
         async function LoadEventDetail(id) {
             console.log("Load Event Detail", id);
 
@@ -1223,6 +1308,10 @@
 
 
         }
+
+        /**
+         * Load the Schadule Event pop-up
+         */
 
         function LoadSchaduleEventPopUp(data) {
             console.log("data", data);

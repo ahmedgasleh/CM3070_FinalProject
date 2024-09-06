@@ -32,13 +32,13 @@ namespace CM3070.DbModelCore
         public System.DateTime lastUpdated { get; set; }
         
         public Nullable<int> registrationIntake { get; set; }
-        public int rxInteractionWarningLevel { get; set; }
-        public int displayAllVacancies { get; set; }
-        public string vacancyWithdrawnTicklerProvider { get; set; }
-        public Nullable<int> vacancyWithdrawnTicklerDemographic { get; set; }
-        public string assignNewVacancyTicklerProvider { get; set; }
-        public Nullable<int> assignNewVacancyTicklerDemographic { get; set; }
-        public string assignRejectedVacancyApplicant { get; set; }
+        //public int rxInteractionWarningLevel { get; set; }
+        //public int displayAllVacancies { get; set; }
+        //public string vacancyWithdrawnTicklerProvider { get; set; }
+        //public Nullable<int> vacancyWithdrawnTicklerDemographic { get; set; }
+        //public string assignNewVacancyTicklerProvider { get; set; }
+        //public Nullable<int> assignNewVacancyTicklerDemographic { get; set; }
+        //public string assignRejectedVacancyApplicant { get; set; }
     
         
     }

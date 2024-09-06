@@ -19,8 +19,12 @@ var defaultConnString = builder.Configuration.GetConnectionString("CM3070DbIDPCo
 //    SeedData.EnsureSeedData(defaultConnString);
 //}
 
+//builder.Services.AddDbContext<AspNetIdentityDbContext>(options =>
+//    options.UseSqlServer(defaultConnString,
+//        b => b.MigrationsAssembly(assembly)));
+
 builder.Services.AddDbContext<AspNetIdentityDbContext>(options =>
-    options.UseSqlServer(defaultConnString,
+    options.UseMySql(defaultConnString, ServerVersion.AutoDetect(defaultConnString),
         b => b.MigrationsAssembly(assembly)));
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>( opt =>
